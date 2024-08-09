@@ -9,7 +9,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Image from 'next/image';
-import Link from 'next/link';
 import Button from '../Button';
 
 
@@ -25,7 +24,7 @@ const sliders = [
 
 const HeroSlider = () => {
     return (
-        <div className='py-16'>
+        <div className='md:py-16'>
             <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -40,30 +39,15 @@ const HeroSlider = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        <SwiperSlide className='mb-10 w-full h-[300px] md:h-[100vh]'>
           
-                <section className='relative'>
-                        <Image  alt="car" src="/images/banner/1.jpg" width={1000} height={500} className='relative w-full z-0'/>
-                        <div className='absolute z-10 bg-[#00000000] w-full  md:top-20 top-5 left-16   '>
-                                    <div className='container text-[2vw]'>
-                                    <h2 className='text-[white] '>The All New</h2>
-                                    <h1 className='text-[white]  font-extrabold'>CRETA</h1>
-                                    <h3 className=' text-[white]'> <span className='bg-[green]'>MADE IN</span><span className='bg-[red]'>BANGLADESH</span></h3>
-                                    <Link href="/" className='text-[white] lg:text-sm lg:px-12  lg:py-2 p-2  bg-primary shadow-md md:mt-16 lg:mt-32 mt-6 inline-block'>Know More</Link>
-                                    </div>
+                <section className='relative w-[100%] h-[300px] md:h-full '>
+                        <Image  alt="car" src="/images/banner/1.jpg" width={1000} height={500} className='relative w-full h-full object-cover z-0'/>
+                        <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
+                                    <div className='container text-[2vw] space-y-2'>
                                     
-                        </div>
-                        
-                </section>
-        </SwiperSlide>
-        <SwiperSlide>
-                <section className='relative'>
-                        <Image  alt="car" src="/images/banner/2.jpg" width={1000} height={500} className='relative w-full z-0'/>
-                        <div className='absolute z-10 bg-[#00000000] w-full  md:top-20 top-5 left-16   '>
-                                    <div className='container text-[2vw]'>
-                                    <h2 className='text-[white] '>The All New</h2>
-                                    <h1 className='text-[white]  font-extrabold'>CRETA</h1>
-                                    <h3 className=' text-[white]'> <span className='bg-[green]'>MADE IN</span><span className='bg-[red]'>BANGLADESH</span></h3>
+                                    <Button href="/">Booking</Button>
+                                    
                                     <Button href="/">Know more</Button>
                                     </div>
                                     
@@ -72,6 +56,22 @@ const HeroSlider = () => {
                 </section>
         </SwiperSlide>
         
+        <SwiperSlide className='mb-10 w-full h-[300px] md:h-[100vh]'>
+          
+                <section className='relative w-[100%] h-[300px] md:h-full '>
+                        <Image  alt="car" src="/images/banner/2.jpg" width={1000} height={500} className='relative w-full h-full object-cover z-0'/>
+                        <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
+                                    <div className='container text-[2vw] space-y-2'>
+                                    
+                                    <Button href="/">Booking</Button>
+                                    
+                                    <Button href="/">Know more</Button>
+                                    </div>
+                                    
+                        </div>
+                        
+                </section>
+        </SwiperSlide>
         
         
       </Swiper>

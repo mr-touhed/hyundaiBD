@@ -26,7 +26,7 @@ const Blogs = () => {
         <TagLine sub="WHAT’S NEW" title="See what’s happening"/>
             <div className="container my-8 grid md:grid-cols-3 ">
                     {
-                        blogs.map(blog => <div key={blog.title} className="max-w-72 mx-auto overflow-hidden  ">
+                        blogs.map(blog => <div key={blog.title} className=" mx-auto overflow-hidden  ">
                                     <div className="w-auto h-80 overflow-hidden rounded-md">
                                         <Image  src={blog.img} alt="img" width={300} height={300} className="w-full h-auto object-cover"/>
                                     </div>

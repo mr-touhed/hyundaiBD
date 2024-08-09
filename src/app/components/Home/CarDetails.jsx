@@ -21,7 +21,7 @@ const CarDetails = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     return (
-        <section className="container">
+        <section className="">
             <h2 className="text-2xl font-semibold text-center">Hyundai Cars</h2>
 
             <div className="py-6 overflow-x-scroll lg:overflow-hidden">
