@@ -5,34 +5,42 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const CarMenu = () => {
-    const [model,setModel] = useState('Hatchback');
+    const [model,setModel] = useState('SUV');
     const [index,setindex] = useState(0);
     const [displayCar,setDisplayCar] = useState([])
-    const models = ['Hatchback','Sedan','SUV','Electric','All'];
+    const models = ['SUV','Pick-up','All'];
 
     useEffect(()=>{
 
         const carData = [
             {
-                models:"Hatchback",
+                models:"SUV",
                 cars:[
                     {
-                        name:"Grand i10 NIOS",
-                        img:"/images/venue_thumbnail_pc.png"
+                        name:"PALISADE",
+                        img:"/images/thumb/Palisade-thumb.png"
                     },
                     {
-                         name:"i20",
-                        img:"/images/i20pe_PC.png"
-                    }
+                         name:"TUCSON",
+                        img:"/images/thumb/tucson_thumbnail_pc.png"
+                    },
+                    {
+                        name:"CRETA GRAND",
+                       img:"/images/thumb/Creat_grand-thumb.png"
+                   },
+                    {
+                        name:"CRETA",
+                       img:"/images/thumb/creta-thumb.png"
+                   },
 
                 ]
             },           
             {
-                models:"Sedan",
+                models:"Pick-up",
                 cars:[
                     {
-                         name:"Aura",
-                        img:"/images/aura_thumbnail_pc.png"
+                         name:"H 100",
+                        img:"/images/thumb/H-100_thumbnil.png"
                     },
                     
                 ]
@@ -54,7 +62,7 @@ const CarMenu = () => {
     },[model])
     return (
         <div>
-            <ul className="bg-[#444444] text-[white] flex max-w-3xl justify-between ">
+            <ul className="bg-[#444444] text-[white] flex max-w-3xl  ">
                 {
                     models.map((modl,i)=> <li onClick={()=>{setindex(i); setModel(modl)}} key={i} className={`${i === index ? "bg-[white] text-[black]" : ''}  w-40 text-center py-2 cursor-pointer hover:text-[black] hover:bg-[white]`}>{modl}</li>)
                 }

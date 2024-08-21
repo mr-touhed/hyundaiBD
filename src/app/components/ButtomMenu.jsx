@@ -1,10 +1,11 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { IoLocationOutline } from "react-icons/io5";
-const ButtomMenu = () => {
+
+const ButtomMenu = ({className}) => {
     return (
-        <div className="fixed bottom-0 bg-primary p-4 md:text-lg text-sm md:font-semibold text-[white] w-full z-50 ">
+        <section className={className}>
+            <div className=" bg-primary p-4 md:text-lg text-sm md:font-semibold text-[white] w-full z-10 ">
                 <ul className="flex md:gap-28 gap-4 justify-center">
                     <li>
                          <Link href={'/'} className="flex items-center md:flex-row flex-col text-center gap-2">
@@ -38,6 +39,7 @@ const ButtomMenu = () => {
                     </li>
                 </ul>
         </div>
+        </section>
     );
 };
 

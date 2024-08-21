@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <Navbar/>
         {children}
         <Footer/>
-        <ButtomMenu/>
+       
         </body>
     </html>
   );

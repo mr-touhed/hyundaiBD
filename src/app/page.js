@@ -1,3 +1,4 @@
+import ButtomMenu from "./components/ButtomMenu";
 import Blogs from "./components/Home/Blogs";
 import CarDetails from "./components/Home/CarDetails";
 import HeroSlider from "./components/Home/HeroSlider";
@@ -15,6 +16,7 @@ const Home = () => {
       <ShowCase/>
       <SocialBlog/>
       <News/>
+      <ButtomMenu className="sticky bottom-0 z-20"/>
     </>
   );
 };
