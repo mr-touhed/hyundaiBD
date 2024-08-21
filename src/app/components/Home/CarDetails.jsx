@@ -13,43 +13,9 @@ import 'swiper/css/pagination';
 import { Pagination,Navigation, } from 'swiper/modules';
 import Image from "next/image";
 import Link from "next/link";
+import { carData } from "../../../../public/data/data";
 
-const carData = [
-    {
-        models:"SUV",
-        cars:[
-            {
-                name:"PALISADE",
-                img:"/images/Palisade-thumb.png"
-            },
-            {
-                 name:"TUCSON",
-                img:"/images/tucson_thumbnail_pc.png"
-            },
-            {
-                name:"CRETA GRAND",
-               img:"/images/Creat_grand-thumb.png"
-           },
-            {
-                name:"CRETA",
-               img:"/images/creta-thumb.png"
-           },
 
-        ]
-    },           
-    {
-        models:"Pick-up",
-        cars:[
-            {
-                 name:"H 100",
-                img:"/images/H-100_thumbnil.png"
-            },
-            
-        ]
-
-    },
-    
-]
 
 const CarDetails = () => {
     const [index,setIndex] = useState(0);
@@ -61,52 +27,7 @@ const CarDetails = () => {
     
 
     useEffect(()=>{
-        const carData = [
-            {
-                name:'PALISADE',
-                image:"/images/cars/palisade.png",
-                price:"1000",
-                engine:[
-                    "1.2 | Kappa petrol",
-                    "1.0 | kappa turbo GDi petrol"
-                ],
-                transmission:"5 speed manual / Smart Auto AMT",
-                model:"SUV"
-            },
-            {
-                name:'TUCSON',
-                image:"/images/cars/TUCSON.png",
-                price:"1000",
-                engine:[
-                    "1.2 | Kappa petrol",
-                    "1.0 | kappa turbo GDi petrol"
-                ],
-                transmission:"5 speed manual / Smart Auto AMT",
-                model:"SUV"
-            },
-            {
-                name:'CRETA GRAND',
-                image:"/images/cars/grand.png",
-                price:"1000",
-                engine:[
-                    "1.2 | Kappa petrol",
-                    "1.0 | kappa turbo GDi petrol"
-                ],
-                transmission:"5 speed manual / Smart Auto AMT",
-                model:"SUV"
-            },
-            {
-                name:'CRETA',
-                image:"/images/cars/creat.png",
-                price:"1000",
-                engine:[
-                    "1.2 | Kappa petrol",
-                    "1.0 | kappa turbo GDi petrol"
-                ],
-                transmission:"5 speed manual / Smart Auto AMT",
-                model:"SUV"
-            },
-        ]
+        
         if(showModel !== "All"){
            const update =  carData.filter(car => car.model === showModel)
            setShowCars(update)
@@ -151,7 +72,7 @@ const CarDetails = () => {
                
                 <Image src={car.image} alt="image" width={1000} height={500} className="w-full "/>
                 { activeIndex === i && <div className="md:flex gap-6 px-3  text-center">
-                <Link href="/" className="font-bold text-sm text-primary text-nowrap">{car.name} &gt;</Link> 
+                <Link href={car.path} className="font-bold text-sm text-primary text-nowrap">{car.name} &gt;</Link> 
                     <div className="grid md:grid-cols-3 md:gap-8 gap-2 items-start text-left">
                         <div className="text-nowrap text-xs md:text-sm">
                             <p className="font-semibold text-lightDark">Starting at </p>

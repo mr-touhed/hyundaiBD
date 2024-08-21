@@ -1,9 +1,13 @@
+"use client"
 import ButtomMenu from "@/app/components/ButtomMenu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 const CarDetailsPage = ({carName,children}) => {
-    
+    const path = usePathname()
+ 
+    const currentPage = path?.split("/")[3]
     const menu = [
         
         {
@@ -51,7 +55,7 @@ const CarDetailsPage = ({carName,children}) => {
                         <li>&gt;</li>
                         <li className="underline">{carName}</li>
                         <li>&gt;</li>
-                        <li className="underline text-primary font-semibold">Page</li>
+                        <li className="underline text-primary font-semibold">{currentPage}</li>
                     </ul>
 
                     <section className="container">
@@ -66,7 +70,7 @@ const CarDetailsPage = ({carName,children}) => {
                         <ul className="flex  items-center h-full gap-16">
                             <li className="font-semibold">{carName}</li>
                             {
-                                menu.map(link => <li key={link.name} ><Link className="font-semibold" href={link?.path || "/"} >{link.name}</Link></li>)
+                                menu.map(link => <li key={link.name} ><Link className={`font-semibold ${link.path == currentPage && "underline text-primary"}`} href={link?.path || "/"} >{link.name}</Link></li>)
                             }
                             <li className="font-semibold text-nowrap">e-brochure</li>
                         </ul>

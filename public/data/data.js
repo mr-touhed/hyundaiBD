@@ -249,3 +249,55 @@ export const StoryMenuItems = [
        
     },
 ]
+
+
+export const carData = [
+    {
+        name:'PALISADE',
+        image:"/images/cars/palisade.png",
+        price:"1000",
+        engine:[
+            "1.2 | Kappa petrol",
+            "1.0 | kappa turbo GDi petrol"
+        ],
+        transmission:"5 speed manual / Smart Auto AMT",
+        model:"SUV",
+        path:"/find-a-car/palisade/highlights"
+    },
+    {
+        name:'TUCSON',
+        image:"/images/cars/TUCSON.png",
+        price:"1000",
+        engine:[
+            "1.2 | Kappa petrol",
+            "1.0 | kappa turbo GDi petrol"
+        ],
+        transmission:"5 speed manual / Smart Auto AMT",
+        model:"SUV",
+        path:"/find-a-car/tucson/highlights"
+    },
+    {
+        name:'CRETA GRAND',
+        image:"/images/cars/grand.png",
+        price:"1000",
+        engine:[
+            "1.2 | Kappa petrol",
+            "1.0 | kappa turbo GDi petrol"
+        ],
+        transmission:"5 speed manual / Smart Auto AMT",
+        model:"SUV",
+        path:"/find-a-car/creta-grand/highlights"
+    },
+    {
+        name:'CRETA',
+        image:"/images/cars/creat.png",
+        price:"1000",
+        engine:[
+            "1.2 | Kappa petrol",
+            "1.0 | kappa turbo GDi petrol"
+        ],
+        transmission:"5 speed manual / Smart Auto AMT",
+        model:"SUV",
+        path:"/find-a-car/creta/highlights"
+    },
+]

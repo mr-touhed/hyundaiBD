@@ -8,7 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { TfiClose } from "react-icons/tfi";
 import SubMenu from './menu/SubMenu';
-import { ServiceMenuItems, StoryMenuItems } from '../../../public/data/menuItems';
+import { ServiceMenuItems, StoryMenuItems } from '../../../public/data/data';
 const Navbar = () => {
     const [activeIndex,setActiveIndex] = useState(0);
     const [selectMenu,setSelectMenu] = useState('');
@@ -18,11 +18,13 @@ const Navbar = () => {
         console.log(menuType);
     }
     
-
+    const handel_close = () =>{
+        setSelectMenu('');setActiveIndex(0)
+    }
     let showMenuElem;
 
     if(selectMenu === 'find_car'){
-        showMenuElem = <CarMenu/>
+        showMenuElem = <CarMenu handel_close={handel_close}/>
     }else if (selectMenu === 'service'){
         showMenuElem = <SubMenu menuItems={ServiceMenuItems}/>
     }else if(selectMenu === 'story'){
@@ -69,7 +71,7 @@ const Navbar = () => {
                 {
                     selectMenu && 
                     <section className='container absolute z-20 top-16 left-0 right-0 min-h-44  pt-10 bg-[white] p-16'>
-                    <button className='absolute right-8 top-8' onClick={()=> {setSelectMenu('');setActiveIndex(0)}}><TfiClose className='w-6 h-6 text-[#a7a5a5]'/></button>
+                    <button className='absolute right-8 top-8' onClick={handel_close}><TfiClose className='w-6 h-6 text-[#a7a5a5]'/></button>
                         
 
                     {
