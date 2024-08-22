@@ -1,10 +1,11 @@
 "use client"
 import ButtomMenu from "@/app/components/ButtomMenu";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 
-const CarDetailsPage = ({carName,children}) => {
+const CarDetailsTemplete = ({carName,image,children}) => {
     const path = usePathname()
  
     const currentPage = path?.split("/")[3]
@@ -47,7 +48,7 @@ const CarDetailsPage = ({carName,children}) => {
 
     return (
         <div>
-            <section className="h-screen bg-[#EEEDF2]">
+            <section className="bg-[#EEEDF2]">
                     <ul className="flex container py-6 gap-2 font-light">
                         <li className="underline ">
                             <Link href="/">Home</Link>
@@ -58,16 +59,16 @@ const CarDetailsPage = ({carName,children}) => {
                         <li className="underline text-primary font-semibold">{currentPage}</li>
                     </ul>
 
-                    <section className="container">
-                    image
-            </section>
+                    <section >
+                            <Image src={image} alt={`${carName}'s image banner`} width={1000} height={500} className="w-full h-auto"/>
+                    </section>
             </section>
 
             
-            <section className="sticky top-0 bg-[white] shadow-md">
+            <section className="sticky top-0 bg-[white] shadow-md z-50">
             <ButtomMenu />
                 <div className="h-16 container ">
-                        <ul className="flex  items-center h-full gap-16">
+                        <ul className="flex  items-center h-full gap-12 md:overflow-hidden overflow-scroll">
                             <li className="font-semibold">{carName}</li>
                             {
                                 menu.map(link => <li key={link.name} ><Link className={`font-semibold ${link.path == currentPage && "underline text-primary"}`} href={link?.path || "/"} >{link.name}</Link></li>)
@@ -77,12 +78,9 @@ const CarDetailsPage = ({carName,children}) => {
                 </div>
             </section>
             
-            <section className="container">
-                {children}
-            </section>
-            
+            {children}    
         </div>
     );
 };
 
-export default CarDetailsPage;
+export default CarDetailsTemplete;
