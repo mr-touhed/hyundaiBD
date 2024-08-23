@@ -14,7 +14,7 @@ const Video = ({thumbnail,videoId}) => {
     };
 
     return (
-        <div id='youtube' className="block w-full text-center overflow-hidden relative max-h-[420px]">
+        <div id='youtube' className="block w-full text-center overflow-hidden relative md:max-h-[420px] h-auto">
             <div className="absolute left-0 bottom-0 top-0 right-0 z-20 bg-[rgba(0,0,0,.6)]"></div>
             <div className="relative w-[100%] h-[100%] z-10 overflow-hidden">
                 <picture>
@@ -38,7 +38,7 @@ const Video = ({thumbnail,videoId}) => {
                 {showIframe && (
                     <div id="iferm" className="absolute top-0 left-0 right-0 bottom-0 z-0">
                         {/* Load the YouTube iframe when `showIframe` is true */}
-                        <iframe className="w-full h-[420px]" width="853" height="480" src={`https://www.youtube.com/embed/${videoId}`} title="The all new PALISADE full size family SUV | Now in Bangladesh | Fair Technology | Fair Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe className="w-full md:h-[420px] h-[100%]" width="853" height="480" src={`https://www.youtube.com/embed/${videoId}`} title="The all new PALISADE full size family SUV | Now in Bangladesh | Fair Technology | Fair Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 )}
             </div>

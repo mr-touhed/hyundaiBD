@@ -13,23 +13,8 @@ import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 
-const ImageSlider = () => {
-    const gallary = [
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-01-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-02-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-03-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-04-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-05-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-06-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-07-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-08-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-09-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-10-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-11-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-12-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-13-pc.jpg',
-        '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-14-pc.jpg',
-    ]
+const ImageSlider = ({gallary}) => {
+    
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
@@ -40,7 +25,7 @@ const ImageSlider = () => {
           '--swiper-pagination-color': '#fff',
         }}
         loop={true}
-        spaceBetween={10}
+        
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
@@ -61,13 +46,13 @@ const ImageSlider = () => {
       }}
         onSwiper={setThumbsSwiper}
         loop={true}
-        spaceBetween={10}
+        
         slidesPerView={4}
         freeMode={true}
         
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
+        className="imageGallery"
       >
         {
             gallary.map((img,i)=> <SwiperSlide key={i} className='cursor-move'>

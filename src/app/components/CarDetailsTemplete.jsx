@@ -60,7 +60,7 @@ const CarDetailsTemplete = ({carName,image,children}) => {
                     </ul>
 
                     <section >
-                            <Image src={image} alt={`${carName}'s image banner`} width={1000} height={500} className="w-full h-auto"/>
+                            <Image src={image} alt={`${carName}'s image banner`} width={1200} height={700} className="w-full md:h-[72vh] h-[30vh] object-cover"/>
                     </section>
             </section>
 

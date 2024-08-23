@@ -3,6 +3,24 @@ import Video from "@/app/components/Video";
 import Image from "next/image";
 
 const Highlights = () => {
+
+        const gallary = [
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-01-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-02-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-03-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-04-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-05-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-06-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-07-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-08-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-09-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-10-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-11-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-12-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-13-pc.jpg',
+                '/images/cardetails/palisade/highlights/slider/palisade-lx2-pe-gallery-14-pc.jpg',
+            ]
+
     return (
         <>
            <section className="container space-y-2">
@@ -54,7 +72,7 @@ knowing that PALISADE is equipped with advanced safety systems that protect you 
                     <div className="container space-y-16">
                     <h2 className="text-center text-4xl font-bold">Gallery</h2> 
                             <div className="pb-16">
-                            <ImageSlider />
+                            <ImageSlider gallary={gallary}/>
                             </div>
             
                         
