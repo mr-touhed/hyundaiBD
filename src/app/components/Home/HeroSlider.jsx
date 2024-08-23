@@ -18,13 +18,13 @@ const sliders = [
   "/images/banner/img_3.jpg",
   "/images/banner/img_4.jpg",
   "/images/banner/img_5.jpg",
-  "/images/banner/img_6.jpg",
+  "/images/banner/img_6.png",
   "/images/banner/img_7.jpg",
 ]
 
 const HeroSlider = () => {
     return (
-        <div className='md:py-16'>
+        <div className='md:pb-16 pt-4'>
             <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -37,12 +37,34 @@ const HeroSlider = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        style={{
+          '--swiper-navigation-color': '#002C5F',
+          '--swiper-pagination-color': '#002C5F',
+        }}
       >
-        <SwiperSlide className='mb-10 w-full h-[300px] md:h-[100vh]'>
+        {
+          sliders.map((image,i) => <SwiperSlide key={i} className='mb-10 w-full h-[300px] md:h-[100vh]'>
+          
+          <section className='relative w-[100%] h-[300px] md:h-full '>
+                  <Image  alt="car" src={image} width={1500} height={800} className=' w-full h-full object-cover z-0'/>
+                  <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
+                              <div className='container text-[2vw] space-y-2'>
+                              
+                              <Button href="/">Booking</Button>
+                              
+                              <Button href="/">Know more</Button>
+                              </div>
+                              
+                  </div>
+                  
+          </section>
+  </SwiperSlide>)
+        }
+        
+        {/* <SwiperSlide className='mb-10 w-full h-[300px] md:h-[100vh]'>
           
                 <section className='relative w-[100%] h-[300px] md:h-full '>
-                        <Image  alt="car" src="/images/banner/1.jpg" width={1000} height={500} className='relative w-full h-full object-cover z-0'/>
+                        <Image  alt="car" src="/images/banner/2.jpg" width={1500} height={700} className='relative w-full h-full object-cover z-0'/>
                         <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
                                     <div className='container text-[2vw] space-y-2'>
                                     
@@ -55,24 +77,7 @@ const HeroSlider = () => {
                         
                 </section>
         </SwiperSlide>
-        
-        <SwiperSlide className='mb-10 w-full h-[300px] md:h-[100vh]'>
-          
-                <section className='relative w-[100%] h-[300px] md:h-full '>
-                        <Image  alt="car" src="/images/banner/2.jpg" width={1000} height={500} className='relative w-full h-full object-cover z-0'/>
-                        <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
-                                    <div className='container text-[2vw] space-y-2'>
-                                    
-                                    <Button href="/">Booking</Button>
-                                    
-                                    <Button href="/">Know more</Button>
-                                    </div>
-                                    
-                        </div>
-                        
-                </section>
-        </SwiperSlide>
-        
+         */}
         
       </Swiper>
         </div>

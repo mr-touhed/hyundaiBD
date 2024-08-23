@@ -36,16 +36,16 @@ const Navbar = () => {
         <header className='relative  border-b-lightDark shadow-lg '>
                 <div className='container flex justify-between h-16 items-center'>
                 <div>
-                        <Image src="/images/ico-logo.png" width={160} height={80} alt="logo"/>
+                        <Link href="/"><Image src="/images/ico-logo.png" width={1000} height={500} alt="logo" className='max-w-40 h-auto'/></Link>
                 </div>
                 {/* for dextop menu  */}
-                <nav className='lg:flex gap-6 hidden text-sm '>
-                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(0)}}  data="find_car" className={`${activeIndex === 0 && "active"} `}>Find a Car</button>
-                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(1)}}  data="sell your car" className={`${activeIndex === 1 && "active"}`}>Sell your Car</button>
+                <nav className='lg:flex gap-6 hidden text-xs uppercase'>
+                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(0)}}  data="find_car" className={`${activeIndex === 0 && "active"} uppercase`}>Find a Car</button>
+                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(1)}}  data="sell your car" className={`${activeIndex === 1 && "active"} uppercase`}>Sell your Car</button>
                     <Link href="/">Vehicle Exchange</Link>
                     
-                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(3)}}  data="service" className={`${activeIndex === 3 && "active"}`}>Connect to Service</button>
-                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(4)}}  data="story" className={`${activeIndex === 4 && "active"}`}>Hyundai Story</button>
+                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(3)}}  data="service" className={`${activeIndex === 3 && "active"} uppercase`}>Connect to Service</button>
+                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(4)}}  data="story" className={`${activeIndex === 4 && "active"} uppercase`}>Hyundai Story</button>
                     
                     <Link href="/">News</Link>
                     <Link href="/">Contact Us</Link>

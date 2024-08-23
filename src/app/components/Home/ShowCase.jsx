@@ -15,9 +15,9 @@ import Button from '../Button';
 
 
 const images = [
+  "/images/showcase/3.jpg",
+  "/images/showcase/2.jpg",
     "/images/showcase/1.jpg",
-    "/images/showcase/2.jpg",
-    "/images/showcase/3.jpg",
 ]
 const ShowCase = () => {
     return (
@@ -28,10 +28,13 @@ const ShowCase = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className=""
+        style={{
+          '--swiper-navigation-color': '#002C5F',
+          '--swiper-pagination-color': '#002C5F',
+        }}
       >
         {
-          images.map(img => <SwiperSlide key={img} className=''><Image src={img} alt="img" width={1000} height={500} className='w-full max-h-[70vh] object-cover object-top'/> </SwiperSlide>)  
+          images.map(img => <SwiperSlide key={img} className=''><Image src={img} alt="img" width={1200} height={800} className='w-full max-h-[70vh] object-cover object-top'/> </SwiperSlide>)  
         }
 
 

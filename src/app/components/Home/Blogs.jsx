@@ -28,7 +28,7 @@ const Blogs = () => {
                     {
                         blogs.map(blog => <div key={blog.title} className=" mx-auto overflow-hidden  ">
                                     <div className="w-auto h-80 overflow-hidden rounded-md">
-                                        <Image  src={blog.img} alt="img" width={300} height={300} className="w-full h-auto object-cover"/>
+                                        <Image  src={blog.img} alt="img" width={1200} height={1200} className="w-full h-auto object-cover"/>
                                     </div>
                                     <div className="mt-4">
                                         <p>{blog.brand}</p>

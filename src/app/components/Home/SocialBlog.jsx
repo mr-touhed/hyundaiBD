@@ -43,7 +43,7 @@ const SocialBlog = () => {
             <section className="container grid md:grid-cols-3 grid-cols-1 gap-4">
                     {
                         blogs.map((blog,i) => <a key={i} href={blog.link} className="group md:max-h-[400px] overflow-hidden rounded-md shadow-lg relative">
-                                <Image src={blog.img} alt="blog" width={150} height={150} className="w-full h-auto object-cover"/>
+                                <Image src={blog.img} alt="blog" width={1200} height={1200} className="w-full h-auto object-cover"/>
                                 <div className="absolute  bg-[#002c5fd0] group-hover:opacity-100 transition-all ease-out duration-500 md:h-[350px] top-0 left-0 m-4 rounded-md p-6 text-[white] text-xl md:pt-16 opacity-0">
                                         <p>{blog.details}</p>
                                         <br/>
