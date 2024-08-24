@@ -19,22 +19,17 @@ const Highlights = () => {
     return (
         <>
            <section className="container space-y-2">
-           <h2 className="text-center text-4xl font-bold">Overtake the ordinary</h2> 
-           <p className="max-w-[800px] mx-auto text-center">The new TUCSON signals the start of a new day, and a new way of driving.
-Rejecting the ordinary, the new TUCSON pushes the boundaries of the segment to reinvent everything.
-Outside, the new TUCSON is designed to impress while inside, you’ll discover a level of roominess,
-comfort and versatility that exceeds all expectations.</p>
-            <Image src="/images/cardetails/tucson/highlights/tucson-highlights-walker-pc.jpg" alt="" width={1000} height={600} className="w-full h-auto py-16" />
+           <h2 className="text-center text-4xl font-bold">Highlights</h2> 
+           <h2 className="text-center text-2xl font-thin">Count the small wins.</h2> 
+           <p className="max-w-[800px] mx-auto text-center">Realizing that you are a canvas of endless potential, you are constantly challenging yourself to be better. It’s time to discover the undiscovered. Start small, make a mess, but just keep going. Every mark represents your growth. Because these moments and experiences are worth treasuring.</p>
+            <Image src="/images/cardetails/tucson/highlights/tucson-highlights-endless-potential.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
            </section>
 
             <section className="bg-[#EDEDED] md:p-16 pt-3">
                     <div className="container space-y-2">
-                    <h2 className="text-center text-4xl font-bold">Design that’s thrilling and timeless.</h2> 
-                    <p className="max-w-[800px] mx-auto text-center">With its 3D parametric-style grille and jewel-like surfaces,
-the new TUCSON is for trendsetters with a taste for futuristic design.
-Adopting a daring new design language we call Sensuous Sportiness and created with
-cutting-edge digital design tools, the new TUCSON stands out from the crowd.</p>
-            <Image src="/images/cardetails/tucson/highlights/tucson-nx4-2023-sunset-pc.jpg" alt="" width={1000} height={600} className="w-full h-auto py-16" />
+                    <h2 className="text-center text-4xl font-bold">Thoughtful interior features that let you focus.</h2> 
+                    <p className="max-w-[800px] mx-auto text-center">Once you’ve decided to make a change, go for it. The driver’s seat in Tucson has a hassle-free line up of the most essential, cutting edge technologies that lets you stay focused on your mission. Tucson’s roomy interior is also big enough to accommodate all the tools you need to achieve your wins.</p>
+            <Image src="/images/cardetails/tucson/highlights/tucson-highlights-Thoughtful-interior-features.jpg" alt="" width={1000} height={600} className="w-full h-auto py-16" />
                     </div>
 
             </section>

@@ -48,7 +48,7 @@ const CarDetails = () => {
                 </ul>
             </div>
 
-            <div className="md:my-16">
+            <div className="md:my-0">
 
             <Swiper
             slidesPerView={1}

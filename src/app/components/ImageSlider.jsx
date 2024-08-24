@@ -33,7 +33,7 @@ const ImageSlider = ({gallary}) => {
       >
         {
             gallary.map((img,i)=> <SwiperSlide key={i}>
-                <Image className='w-full ' src={img} alt="" width={1000} height={500}/>
+                <Image className='w-full md:max-h-[550px] object-cover' src={img} alt="" width={1000} height={500}/>
             </SwiperSlide>)
         }
         

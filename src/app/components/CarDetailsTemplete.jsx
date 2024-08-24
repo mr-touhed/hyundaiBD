@@ -3,6 +3,7 @@ import ButtomMenu from "@/app/components/ButtomMenu";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TestDrive from "./TestDrive";
 
 
 const CarDetailsTemplete = ({carName,image,children}) => {
@@ -78,7 +79,8 @@ const CarDetailsTemplete = ({carName,image,children}) => {
                 </div>
             </section>
             
-            {children}    
+            {children}
+            <TestDrive path={path}/> 
         </div>
     );
 };
