@@ -9,7 +9,8 @@ import TestDrive from "./TestDrive";
 const CarDetailsTemplete = ({carName,image,children}) => {
     const path = usePathname()
  
-    const currentPage = path?.split("/")[3]
+    const currentPage = path?.split("/")[3];
+    const carModel = path?.split("/")[2]
     const menu = [
         
         {
@@ -80,7 +81,7 @@ const CarDetailsTemplete = ({carName,image,children}) => {
             </section>
             
             {children}
-            <TestDrive path={path}/> 
+            <TestDrive path={path} carModel={carModel}/> 
         </div>
     );
 };

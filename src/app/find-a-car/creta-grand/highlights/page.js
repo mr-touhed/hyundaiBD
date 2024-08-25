@@ -17,14 +17,24 @@ const Highlights = () => {
             ]
             const TabData = [
                 {
-                    tab:"LED headlamps with LED DRLs",
-                    img:"/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-Mid-image_2-1.jpg",
-                    details:"Your fascination only grows as you move in closer to examine the details: The LED lighting, the strikingly-designed diamond-cut alloy wheels, and the catchy looking radiator grille."
+                    tab:"digital cluster",
+                    img:"/images/cardetails/creta-grand/highlights/cluster.jpg",
+                    details:`26.03 cm (10.25") multi display digital cluster`
                 },
                 {
-                    tab:"AC vent",
-                    img:"/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-Mid-image_3-1.jpg",
-                    details:"CRETA GRAND’s advanced temperature control system with 2nd row AC vent will always provide you with complete relaxation and peace of mind."
+                    tab:"premium sound",
+                    img:"/images/cardetails/creta-grand/highlights/bose-speakers-v3.jpg",
+                    details:"Bose premium sound system (8 Speakers)"
+                },
+                {
+                    tab:"Auto healthy air purifier",
+                    img:"/images/cardetails/creta-grand/highlights/purifier-v3.jpg",
+                    details:"Auto healthy air purifier with AQI display"
+                },
+                {
+                    tab:"seatback table",
+                    img:"/images/cardetails/creta-grand/highlights/hyundai-alcazar-suv-interio-small-all-840x540-3.jpg",
+                    details:"Auto healthy air purifier with AQI display"
                 },
                 
             ]
@@ -37,7 +47,7 @@ const Highlights = () => {
             <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
            </section>
                 <section className="">
-                                <TabImage TabData={TabData} page="md:grid-cols-2"/>
+                                <TabImage TabData={TabData} page="md:grid-cols-4"/>
                 </section>
                 <section className="container mt-16">
            <h2 className="text-center text-4xl font-bold">CRETA GRAND’s advanced powertrains deliver all the power you need</h2> 

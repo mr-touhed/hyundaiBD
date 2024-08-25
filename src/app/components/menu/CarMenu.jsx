@@ -71,7 +71,7 @@ const CarMenu = ({handel_close}) => {
                                 <div className="grid grid-cols-5">
                                     
                                     {
-                                        displayCar.filter(car => car.model === "SUV")?.map(car=> <Link href={car.path} key={car.name} className="cursor-pointer" onClick={handel_close}> 
+                                        displayCar.filter(car => car.model.toLowerCase() === "pick-up")?.map(car=> <Link href={car.path} key={car.name} className="cursor-pointer" onClick={handel_close}> 
                                             <Image   src={car.image} alt={car.name} width={200} height={100} className="p-6"/>
                                             <p className="text-center text-xs">{car.name}</p>
                                             </Link>)

@@ -107,7 +107,7 @@ const Highlights = () => {
                 <section className="container my-16  space-y-6">
                         <p>Built on Hyundai’s Global Design Language of ‘Sensuous Sportiness’, the new Hyundai CRETA exudes bolder stance and a head-turner design. Featuring a robust and modern exterior design with a blend of functional and premium interiors, new Hyundai CRETA represents a perfect amalgamation of an SUV that will match the city requirements of the customers as well as satiate the adrenaline daredevil in them.</p>
                         <p>Presenting a captivating and powerful appeal, the new Hyundai CRETA reveals a commanding front look with the new radiator grill and upright hood design displaying a strong, assertive and distinct road presence.</p>
-                            <Video thumbnail="/images/cardetails/creta-grand/highlights/thubmnil.jpg" videoId="4v3SVkkVDkI"/>
+                            <Video thumbnail="/images/cardetails/creta/highlights/thubmnil.jpg" videoId="56tz9wr0IVE"/>
                 </section>
 
             <section className=" md:p-16 ">

@@ -28,11 +28,16 @@ const CarDetails = () => {
 
     useEffect(()=>{
         
-        if(showModel !== "All"){
-           const update =  carData.filter(car => car.model === showModel)
+        if(showModel == "All"){
+           
+           setShowCars(carData)
+        }else if(showModel == "SUV") {
+
+            const update =  carData.filter(car => car.model === showModel)
            setShowCars(update)
-        }else{
-            setShowCars(carData)
+        }else if(showModel == "Pick-up"){
+            const update =  carData.filter(car => car.model.toLowerCase() === showModel.toLowerCase())
+           setShowCars(update)
         }
 
     },[showModel])

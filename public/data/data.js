@@ -300,4 +300,16 @@ export const carData = [
         model:"SUV",
         path:"/find-a-car/creta/highlights"
     },
+    {
+        name:'H-100',
+        image:"/images/cars/h-100.png",
+        price:"1000",
+        engine:[
+            "1.2 | Kappa petrol",
+            "1.0 | kappa turbo GDi petrol"
+        ],
+        transmission:"5 speed manual / Smart Auto AMT",
+        model:"Pick-up",
+        path:"/find-a-car/pick-up/highlights"
+    },
 ]
