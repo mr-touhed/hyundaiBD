@@ -1,10 +1,13 @@
 
 import TestDrivePageForm from "@/app/components/TestDrivePageForm";
+import { getDistrictList } from "@/app/utils/locations";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 
 
-const TestDrivepage = () => {
+const TestDrivepage = async  () => {
+    const districtList = await getDistrictList()
     return (
         <div>
             <section className="bg-[#EEEDF2]">
@@ -25,7 +28,9 @@ const TestDrivepage = () => {
                     <h2 className='font-semibold text-center text-3xl py-8'>Request a Test drive</h2>
             </section>
             <section>
-                    <TestDrivePageForm/>
+                    <Suspense fallback={"Loading....."}>
+                    <TestDrivePageForm districtList={districtList}/>
+                    </Suspense>
             </section>
             <section className="">
             <h2 className='font-semibold text-center text-3xl py-8'>Explore more</h2>

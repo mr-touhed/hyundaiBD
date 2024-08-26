@@ -47,8 +47,8 @@ const Navbar = () => {
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(3)}}  data="service" className={`${activeIndex === 3 && "active"} uppercase`}>Connect to Service</button>
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(4)}}  data="story" className={`${activeIndex === 4 && "active"} uppercase`}>Hyundai Story</button>
                     
-                    <Link href="/">News</Link>
-                    <Link href="/">Contact Us</Link>
+                    
+                    <Link href="/contact-us">Contact Us</Link>
                 </nav>
                 <div>
                     <ul className='flex gap-6 '>

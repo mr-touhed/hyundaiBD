@@ -6,6 +6,7 @@ import News from "./components/Home/News";
 import Service from "./components/Home/Service";
 import ShowCase from "./components/Home/ShowCase";
 import SocialBlog from "./components/Home/SocialBlog";
+import LocationMap from "./components/LocationMap";
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <ShowCase/>
       <SocialBlog/>
       <News/>
+      <LocationMap/>
       <ButtomMenu className="sticky bottom-0 z-20"/>
     </>
   );

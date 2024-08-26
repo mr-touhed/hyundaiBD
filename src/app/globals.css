@@ -3,6 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
 *{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;

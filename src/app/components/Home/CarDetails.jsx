@@ -74,7 +74,7 @@ const CarDetails = () => {
       >
         
         {
-            showCars.map((car,i) => <SwiperSlide key={i} className=" md:min-h-[350px] min-h-[320px] space-y-8" >
+            showCars.map((car,i) => <SwiperSlide key={i} className=" md:min-h-[350px] min-h-[330px] space-y-8" >
                
                 <Image src={car.image} alt="image" width={1500} height={700} className="w-full h-auto object-cover"/>
                 { activeIndex === i && <div className="md:flex gap-6 px-3  text-center">

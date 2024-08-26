@@ -145,8 +145,9 @@ export const ServiceMenuItems = [
 ]
 
 export const StoryMenuItems = [
+   
     {
-        menu:"Hyundai Motor India",
+        menu:"Hyundai Motor Bangladesh",
         sub:[
             {
                 menu:"About Us"
@@ -171,12 +172,10 @@ export const StoryMenuItems = [
     {
         menu:"Media Center",
         sub:[
+            
             {
-                menu:"Global News",
-
-            },
-            {
-                menu:"India News",
+                menu:"Bangladesh News",
+               
 
             },
             {
@@ -184,10 +183,9 @@ export const StoryMenuItems = [
                 sub:[
                     {
                         menu:"Awards",
+                       
                     },
-                    {
-                        menu:"Awards",
-                    }
+                   
                 ]
 
             },
@@ -211,16 +209,17 @@ export const StoryMenuItems = [
         ]
     },
     {
-        menu:"CSR"
+        menu:"CSR",
+        
+    },
+    
+    {
+        menu:"Apply for Hyundai Dealership",
+      
     },
     {
-        menu:"Exports"
-    },
-    {
-        menu:"Apply for Hyundai Dealership"
-    },
-    {
-        menu:"Corporate Governance"
+        menu:"Corporate Governance",
+        
     },
     {
         menu:"Career"
@@ -228,26 +227,14 @@ export const StoryMenuItems = [
     {
         menu:"Campaign"
     },
-    {
-        menu:"N Line Merchandise"
-    },
+    
     {
         menu:"Progress for Humanity"
     },
     {
         menu:"myHyundai App"
     },
-    {
-        menu:"Samarth by Hyundai"
-    },
-    {
-        menu:"Khatron Ke Khiladi",
-       
-    },
-    {
-        menu:"For a Family Called Kerala",
-       
-    },
+    
 ]
 
 
