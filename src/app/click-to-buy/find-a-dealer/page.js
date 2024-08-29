@@ -1,3 +1,4 @@
+import LocationMap from '@/app/components/LocationMap';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,6 +21,9 @@ const FindDealerpage = () => {
                     </section>
 
                     <h2 className='font-semibold text-center text-3xl py-8'>Find Dealer</h2>
+
+
+                    <LocationMap/>
             </section>
 
 

@@ -40,7 +40,7 @@ const ShowCase = () => {
 
       </Swiper>
         <div className='container flex justify-center'>
-            <Button href="/find-a-car/creta/highlights" className='mt-6 '>Know More</Button>
+            <Button href="/connect-to-service/book-a-service" className='mt-6 '>Know More</Button>
         </div>
 
       </div>

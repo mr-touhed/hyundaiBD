@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -11,28 +12,28 @@ const Footer = () => {
                         <div>
                             <h2 className="text-xl font-semibold text-[white]">Hyundai Cars</h2>
                             <ul>
-                                <li>Creta</li>
-                                <li>Creta Grand</li>
-                                <li>Tucson</li>
-                                <li>Palisade</li>
-                                <li>H 100</li>
+                                <li><Link href="/find-a-car/creta/highlights">Creta</Link></li>
+                                <li><Link href="/find-a-car/creta-grand/highlights">Creta Grand</Link></li>
+                                <li><Link href="/find-a-car/tucson/highlights">Tucson</Link></li>
+                                <li><Link href="/find-a-car/palisade/highlights">Palisade</Link></li>
+                                <li><Link href="/find-a-car/pick-up/highlights">H 100</Link></li>
                             </ul>
                         </div>
                         <div>
                             <h2 className="text-xl font-semibold text-[white]">Sell your Car</h2>
                             <ul>
-                                <li>Request a Test Drive</li>
+                                <li><Link href="/click-to-buy/test-drive">Request a Test Drive</Link> </li>
                                 <li>Special Offers</li>
                                 <li>Prices</li>
-                                <li>Find a Dealer</li>
-                                <li>Online Booking</li>
+                                <li> <Link href="/click-to-buy/find-a-dealer">Find a Dealer</Link></li>
+                                <li><Link href="/bookACar">Online Booking</Link> </li>
                                 <li>Online Finance</li>
                             </ul>
                         </div>
                         <div>
                             <h2 className="text-xl font-semibold text-[white]">Connect to Service</h2>
                             <ul>
-                                <li>Book a Service</li>
+                                <li><Link href="/connect-to-service/book-a-service">Book a Service</Link> </li>
                                 <li>Warranty Policy</li>
                                 <li>Road Side Assistance</li>
                                 <li>Service Package</li>

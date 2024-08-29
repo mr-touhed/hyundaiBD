@@ -116,8 +116,8 @@ const TestDrivePageForm = ({districtList}) => {
                         </div>
                         <div className="flex gap-3 md:flex-row flex-col items-center">
                             <Button href="/find-a-car/creta/highlights">Know More</Button>
-                            <Button href="/">Book Now</Button>
-                            <Button href="/">Test Drive</Button>
+                            <Button href="/bookACar">Book Now</Button>
+                            <Button href="/click-to-buy/test-drive">Test Drive</Button>
                         </div>
                     </div>
 

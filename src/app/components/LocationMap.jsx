@@ -160,7 +160,7 @@ function AccordionPage (props){
     return (
         <div className="border border-[#dcdada] rounded-md mb-1 shadow-md"> 
         <button 
-            className="w-full p-4 text-left bg-gray-200  md:text-xl font-medium
+            className="w-full p-4 text-left bg-gray-200  md:text-md font-medium
                        hover:bg-gray-300 transition duration-300"
             onClick={props.toggleAccordion} 
         > 

@@ -92,7 +92,7 @@ const HeroSlider = () => {
                   <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
                               <div className='container text-[2vw] space-y-2'>
                               
-                              <Button href="/">Booking</Button>
+                              <Button href="/bookACar">Booking</Button>
                               
                               {/* <Button href={image.link}>Know more</Button> */}
                               <BuyButton StopSlider={StopSlider}/>

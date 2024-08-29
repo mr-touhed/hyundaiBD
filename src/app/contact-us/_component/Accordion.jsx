@@ -10,7 +10,7 @@ const Accordion = () => {
             title: 'Hyundai Experience Center, Tejgaon',
             number:"+88 09613-505080" ,
             data: `246, Rangs Babylonia, Bir Uttam Mir Shawkat Sarak, Tejgaon, Dhaka 1208.`, 
-            isOpen: true
+            isOpen: false
         }, 
         { 
             key: 2, 
@@ -99,7 +99,7 @@ const Accordion = () => {
 
 
     return ( 
-        <div className="grid md:grid-cols-2 grid-cols-1 items-start gap-4">
+        <div className="grid  grid-cols-1 items-start gap-1 max-h-[500px] overflow-y-scroll">
         
         {accordions.map((accordion) => ( 
                     <AccordionPage 
@@ -122,9 +122,9 @@ export default Accordion;
 
 function AccordionPage (props){
     return (
-        <div className="border border-[#dcdada] rounded-md mb-1 shadow-md"> 
+        <div className="border border-[#dcdada] rounded-md mb-1 shadow-sm"> 
         <button 
-            className="w-full p-4 text-left bg-gray-200  md:text-xl font-medium
+            className="w-full p-4 text-left bg-gray-200  md:text-sm font-medium
                        hover:bg-gray-300 transition duration-300"
             onClick={props.toggleAccordion} 
         > 

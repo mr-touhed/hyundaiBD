@@ -1,6 +1,7 @@
 import ButtomMenu from "./components/ButtomMenu";
 import Blogs from "./components/Home/Blogs";
 import CarDetails from "./components/Home/CarDetails";
+import DealerAndBooking from "./components/Home/DealerAndBooking";
 import HeroSlider from "./components/Home/HeroSlider";
 import News from "./components/Home/News";
 import Service from "./components/Home/Service";
@@ -15,6 +16,7 @@ const Home = () => {
       <HeroSlider/>
       <CarDetails/>
       <Service/>
+      <DealerAndBooking/>
       <Blogs/>
       <ShowCase/>
       <SocialBlog/>
