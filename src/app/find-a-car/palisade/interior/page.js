@@ -1,10 +1,11 @@
+import CarInsideDetails from "./_components/CarInsideDetails";
 
 
 
 const IntoriorPage = () => {
     return (
         <>
-            Intorior Page
+            <CarInsideDetails/>
         </>
     );
 };

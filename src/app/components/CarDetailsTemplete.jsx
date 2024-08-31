@@ -22,8 +22,8 @@ const CarDetailsTemplete = ({carName,image,children}) => {
             path:`exterior`
         },
         {
-            name:"Intorior",
-            path:`intorior`
+            name:"Interior",
+            path:`interior`
         },
         {
             name:"Performance",
