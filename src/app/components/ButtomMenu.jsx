@@ -30,13 +30,13 @@ const ButtomMenu = ({className}) => {
                         <span>Prices</span>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                     <Link href={'/bookACar'} className="flex items-center md:flex-row flex-col text-center gap-2">
                         
                     <Image src={`/images/icons/newctb.png`} alt="icones" width={25} height={25} className="w-4 h-4 md:w-auto md:h-auto"/>
                         <span>Click To Buy</span>
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
         </div>
         </section>

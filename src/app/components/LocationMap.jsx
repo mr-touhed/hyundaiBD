@@ -122,7 +122,7 @@ const LocationMap = () => {
                 <h4 className='text-2xl font-light text-center'>Locate your nearest dealership and visit.</h4>
         </div>
         <section className='grid md:grid-cols-2 grid-cols-1 gap-4 '>
-                 <div className="max-h-[60vh] overflow-y-scroll  no-scrollbar md:order-0 order-1">
+                 <div className="max-h-[60vh] overflow-y-scroll  no-scrollbar ">
                 
         {accordions.map((accordion) => ( 
                     <AccordionPage 
@@ -160,7 +160,7 @@ function AccordionPage (props){
     return (
         <div className="border border-[#dcdada] rounded-md mb-1 shadow-md"> 
         <button 
-            className="w-full p-4 text-left bg-gray-200  md:text-md font-medium
+            className="w-full p-4 text-left bg-gray-200  md:text-sm font-medium
                        hover:bg-gray-300 transition duration-300"
             onClick={props.toggleAccordion} 
         > 

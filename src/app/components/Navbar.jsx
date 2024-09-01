@@ -41,8 +41,8 @@ const Navbar = () => {
                 {/* for dextop menu  */}
                 <nav className='lg:flex gap-6 hidden text-xs uppercase'>
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(0)}}  data="find_car" className={`${activeIndex === 0 && "active"} uppercase`}>Find a Car</button>
-                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(1)}}  data="sell your car" className={`${activeIndex === 1 && "active"} uppercase`}>Sell your Car</button>
-                    <Link href="/">Vehicle Exchange</Link>
+                    {/* <button onClick={(e)=> {handelMenu(e), setActiveIndex(1)}}  data="sell your car" className={`${activeIndex === 1 && "active"} uppercase`}>Sell your Car</button> */}
+                    {/* <Link href="/">Vehicle Exchange</Link> */}
                     
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(3)}}  data="service" className={`${activeIndex === 3 && "active"} uppercase`}>Connect to Service</button>
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(4)}}  data="story" className={`${activeIndex === 4 && "active"} uppercase`}>Hyundai Story</button>

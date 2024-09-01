@@ -16,12 +16,13 @@ const Home = () => {
       <HeroSlider/>
       <CarDetails/>
       <Service/>
-      <DealerAndBooking/>
+      <LocationMap/>
+      
       <Blogs/>
       <ShowCase/>
       <SocialBlog/>
       <News/>
-      <LocationMap/>
+     
       <ButtomMenu className="sticky bottom-0 z-20"/>
     </>
   );
