@@ -64,7 +64,7 @@ const TestDrive = ({path}) => {
                         <select name="model" id="Mobile" className='p-1 border rounded-md border-[#dfdcdb] outline-none' value={carModel} disabled>
                         
                             {
-                               modelList.map(car => <option key={car} value={car}>{car.toUpperCase()}</option>)
+                               modelList?.map(car => <option key={car} value={car}>{car.toUpperCase()}</option>)
                             }
                         </select>
                 </div>
@@ -76,7 +76,7 @@ const TestDrive = ({path}) => {
                                     loading1 && <option >...</option>
                                 }
                                 {
-                                divisionList.map(dist => <option key={dist.coordinates} value={dist.division}>{dist.division}</option>)
+                              divisionList &&  divisionList?.map(dist => <option key={dist.coordinates} value={dist.division}>{dist.division}</option>)
                             }
                            
                         </select>

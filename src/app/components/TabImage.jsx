@@ -16,10 +16,10 @@ const TabImage = ({TabData,page}) => {
    console.log();
     return (
         <div className="container my-4"> 
-            <ul className={`grid ${page}`}>
+            <ul className={`grid ${page} bg-[white]`}>
                 {
    
-                    TabData.map(data => <li onClick={()=> handelChange(data.tab)} key={data.tab} className={`${showImage.tab === data.tab ? "bg-[#444444] text-[white]" : ''} font-semibold  h-16 text-md hover:text-[white] cursor-pointer hover:bg-[#444444] grid place-content-center`}>{data.tab}</li>)
+                    TabData.map(data => <li onClick={()=> handelChange(data.tab)} key={data.tab} className={`${showImage.tab === data.tab ? "bg-[#444444] text-[white]" : ''} font-semibold  h-16 text-sm break-words p-2  hover:text-[white] cursor-pointer hover:bg-[#444444] grid place-content-center`}>{data.tab}</li>)
                 }
             </ul>
             <div >
