@@ -57,7 +57,7 @@ const Experience360 = ({ images }) => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isDragging, currentX]);
+  }, [isDragging, currentX,]);
 
   useEffect(() => {
     let interval;
@@ -78,9 +78,9 @@ const Experience360 = ({ images }) => {
   }, [loading]);
 
   return (
-    <div>
+    <div className=''>
           
-         <div className='space-y-4'> 
+         <div className='space-y-6'> 
          <h2 className='text-3xl text-center'>360° Experience</h2>
          <p className='text-center'>Click and turn vehicle image to the left or right</p>
          </div>
@@ -99,23 +99,22 @@ const Experience360 = ({ images }) => {
       className='container relative w-full h-auto overflow-hidden'
     >
       {!showRotatedImage ? (
-        <div className='relative w-full'>
+        <div className='relative w-full mt-12'>
           <Image src={images[0]} alt="" width={1000} height={500} className='mx-auto ' />
           <button onClick={handleStart} className='absolute z-20 top-[45%] md:left-[46%] left-[42%]  md:w-[100px] w-[50px] h-[50px] md:h-[100px] rounded-full bg-[#00000065]'>
             {loading ? <span className='text-[white]'>{progress}%</span> : <Image src={`/images/btn_start.png`} alt="" width={100} height={100} className='' />}
           </button>
         </div>
       ) : (
-        <Image
-          width={1300}
-          height={700}
+        <img
+         
           src={images[currentIndex]}
           alt={`360 view ${currentIndex}`}
           style={{
             
             transform: 'rotate(360deg)', // Apply rotation if needed
           }}
-          className='md:w-[75%] w-full h-auto object-contain mx-auto'
+          className='md:w-[80%] w-full h-auto object-contain mx-auto'
         />
       )}
     </div>
