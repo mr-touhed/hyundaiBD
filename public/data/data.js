@@ -240,6 +240,18 @@ export const StoryMenuItems = [
 
 export const carData = [
     {
+        name:'STARGAZER',
+        image:"/images/cars/stargazer.png",
+        price:"1000",
+        engine:[
+            "1.2 | Kappa petrol",
+            "1.0 | kappa turbo GDi petrol"
+        ],
+        transmission:"5 speed manual / Smart Auto AMT",
+        model:"SUV",
+        path:"/find-a-car/stargazer/highlights"
+    },
+    {
         name:'PALISADE',
         image:"/images/cars/palisade.png",
         price:"1000",

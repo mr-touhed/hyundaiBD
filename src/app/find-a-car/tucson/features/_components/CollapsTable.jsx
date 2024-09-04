@@ -16,7 +16,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 const CollapsTable = () => {
     return (
         <>
-            <Accordion preExpanded={['a']}>
+            <Accordion preExpanded={['a']} >
             <AccordionItem uuid="a" >
                 <AccordionItemHeading>
                     <AccordionItemButton>
@@ -113,7 +113,7 @@ const CollapsTable = () => {
                 {/* INTERIOR TABLE  */}
 
 
-                <AccordionItem >
+                <AccordionItem uuid="b">
                 <AccordionItemHeading>
                     <AccordionItemButton>
                     INTERIOR
@@ -200,7 +200,7 @@ const CollapsTable = () => {
             {/* COMFORT & CONVENIENCE TABLE  */}
 
 
-            <AccordionItem >
+            <AccordionItem uuid="c">
                 <AccordionItemHeading>
                     <AccordionItemButton>
                     COMFORT & CONVENIENCE
@@ -422,7 +422,7 @@ const CollapsTable = () => {
 
 
 
-             <AccordionItem >
+             <AccordionItem uuid="d">
                 <AccordionItemHeading>
                     <AccordionItemButton>
                     INFOTAINMENT & CONNECTIVITY
@@ -542,7 +542,7 @@ const CollapsTable = () => {
 
 
             {/* Safety Technology & Safety  TABLE*/}
-            <AccordionItem >
+            <AccordionItem uuid="e">
                 <AccordionItemHeading>
                     <AccordionItemButton>
                     Safety Technology & Safety
@@ -812,6 +812,48 @@ const CollapsTable = () => {
                                     </table>
                 </AccordionItemPanel>
             </AccordionItem>
+
+                    
+                    {/* Feature Table  */}
+
+
+                    <AccordionItem  uuid="f">
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                    EXTERIOR
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className='p-0 overflow-x-auto'>
+                                    <table className='w-full text-left text-sm ' border={1} cellPadding={14} >
+                                            <thead className='bg-primary text-[white]'>
+                                                <tr className='border-x-0 border-[#DDDDDD]'>
+                                                    <th colSpan={2}>Feature</th>
+                                                    <th >Platinum</th>
+                                                    <th>Signature</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                <tr className='border-x-0 border border-[#DDDDDD]'>
+                                                    <td colSpan={2}>Drive mode select - Eco, Normal, Sport, *Smart</td>
+                                                     <td className='border-l border-[#DDDDDD]'>S</td>
+                                                     <td className='border-l border-[#DDDDDD]'>S</td>
+                                                </tr>
+                                                <tr className='border-x-0 border border-[#DDDDDD]'>
+                                                    <td colSpan={2}>4WD lock mode</td>
+                                                     <td className='border-l border-[#DDDDDD]'>-</td>
+                                                     <td className='border-l border-[#DDDDDD]'>S#</td>
+                                                </tr>
+                                                <tr className='border-x-0 border border-[#DDDDDD]'>
+                                                    <td colSpan={2}>Multi terrain modes (Snow, Mud, Sand)</td>
+                                                     <td className='border-l border-[#DDDDDD]'>-</td>
+                                                     <td className='border-l border-[#DDDDDD]'>S#</td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
+                </AccordionItemPanel>
+            </AccordionItem>
+               
             </Accordion>
         </>
     );
