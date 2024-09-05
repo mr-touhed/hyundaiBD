@@ -100,7 +100,7 @@ const Experience360 = ({ images }) => {
     >
       {!showRotatedImage ? (
         <div className='relative w-full mt-12'>
-          <Image src={images[0]} alt="" width={1000} height={500} className='mx-auto ' />
+          <Image src={images[0]} alt="" width={1300} height={700} className=' w-full' />
           <button onClick={handleStart} className='absolute z-20 top-[45%] md:left-[46%] left-[42%]  md:w-[100px] w-[50px] h-[50px] md:h-[100px] rounded-full bg-[#00000065]'>
             {loading ? <span className='text-[white]'>{progress}%</span> : <Image src={`/images/btn_start.png`} alt="" width={100} height={100} className='' />}
           </button>
@@ -114,7 +114,7 @@ const Experience360 = ({ images }) => {
             
             transform: 'rotate(360deg)', // Apply rotation if needed
           }}
-          className='md:w-[80%] w-full h-auto object-contain mx-auto'
+          className='md:w-[90%] w-full h-auto object-contain mx-auto'
         />
       )}
     </div>

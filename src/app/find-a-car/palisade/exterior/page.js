@@ -1,8 +1,9 @@
 
 
 import Experience360 from "@/app/components/Experience360";
+import ExtoriorCarDetails from "@/app/components/ExtoriorCarDetails";
 import Image from "next/image";
-import ExtoriorCarDetails from "./_components/ExtoriorCarDetails";
+
 
 
 

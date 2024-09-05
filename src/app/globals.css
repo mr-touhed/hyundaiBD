@@ -16,6 +16,10 @@
     }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -74,4 +78,19 @@
     background-color: transparent;
     
 
+  }
+
+
+
+  /* scroll to to  */
+
+
+  .scrollToTopButton {
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .scrollToTopButton.visible {
+    opacity: 1;
   }

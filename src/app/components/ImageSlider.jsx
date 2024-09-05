@@ -13,7 +13,7 @@ import 'swiper/css/thumbs';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 
-const ImageSlider = ({gallary}) => {
+const ImageSlider = ({gallary, color}) => {
     
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -21,8 +21,9 @@ const ImageSlider = ({gallary}) => {
         <>
             <Swiper
         style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
+          '--swiper-navigation-color': color || '#fff',
+          '--swiper-pagination-color': color || '#fff',
+          
         }}
         loop={true}
         

@@ -117,9 +117,9 @@ const LocationMap = () => {
         }
     return (
         <div className='py-16 bg-[#F6F5F5]'>
-        <div className='mb-6 space-y-6'>
-                <h2 className='text-3xl font-semibold text-center'>Find a Dealer & Location</h2>
-                <h4 className='text-2xl font-light text-center'>Locate your nearest dealership and visit.</h4>
+        <div className='mb-6 space-y-3'>
+                <h2 className='text-3xl font-semibold text-center'>Hyundai Outlets Locate your nearest </h2>
+                <h4 className='text-2xl font-light text-center'>Outlet and plan your visit.</h4>
         </div>
         <section className='grid md:grid-cols-2 grid-cols-1 gap-4 '>
                  <div className="max-h-[60vh] overflow-y-scroll  no-scrollbar ">

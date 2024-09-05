@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import TestDrive from "./TestDrive";
+import { Suspense } from "react";
 
 
 const CarDetailsTemplete = ({carName,image,children}) => {
@@ -81,7 +82,9 @@ const CarDetailsTemplete = ({carName,image,children}) => {
             </section>
             
             {children}
+            {/* <Suspense fallback="Loading....">
             <TestDrive path={path} carModel={carModel}/> 
+            </Suspense> */}
         </div>
     );
 };

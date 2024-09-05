@@ -19,22 +19,26 @@ const TestDrive = ({path}) => {
     useEffect(()=>{
         const getDivitionData = async () =>{
            const list = await  getDistrictList();
-           setLoading1(false)
+           
            setDivisionList(list);
+           setLoading1(false)
         }
         getDivitionData()
     },[])
 
 
     useEffect(()=>{
-        const getDistrictData = async () =>{
-            
-           const list = await  getCityList(divisionName);
-           setLoading2(false)
+        const getDistrictData = async (name) =>{
+           
+           const list = await  getCityList(name);
+          
            setDistrictList(list)
+           setLoading2(false)
            
         }
-        getDistrictData()
+           
+                getDistrictData(divisionName)
+            
     },[divisionName])
 
     return (

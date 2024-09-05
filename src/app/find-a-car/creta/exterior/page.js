@@ -1,8 +1,9 @@
 
 
 import Experience360 from "@/app/components/Experience360";
+import ExtoriorCarDetails from "@/app/components/ExtoriorCarDetails";
 import Image from "next/image";
-import ExtoriorCarDetails from "./_components/ExtoriorCarDetails";
+
 
 
 
@@ -59,53 +60,38 @@ const ExteriorPage = () => {
 
             <section>
 
-                <ExtoriorCarDetails heading="Front" title="Full LED headlamps / Dark chrome radiator grille" image="/images/cardetails/palisade/exterior/Accordion_Depan-Desktop_1920x580.jpg">
+                <ExtoriorCarDetails heading="Front"  image="/images/cardetails/creta/exterior/depan-akordeon.jpg">
                             <div className="container p-16 space-y-8">
-                                    <div>
-                                    <h2 className="text-3xl text-center">Even Bolder.</h2>
-                                    <Image src="/images/cardetails/palisade/exterior/Exterior_Premium-Parametric-Shield_2-Kolom_1120x600_PC.jpg" alt="image" width={1300} height={700}  />
-                                    </div>
+                                    
 
-                                    <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+                                    <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
                                             <div>
-                                            <Image src="/images/cardetails/palisade/exterior/Exterior_LED-DRL_2-Kolom_544x360.jpg" alt="image" width={1300} height={700}  />
-                                                    <h2 className="text-3xl ">LED DRL + Full LED Headlamps (Hi/Low)</h2>
+                                            <Image src="/images/cardetails/creta/exterior/2-kolom-Parametric-Jewel-Pattern-Grille-&-Hidden-type-LED-DRL.jpg" alt="image" width={1300} height={700}  />
+                                                    <h2 className="text-3xl ">Parametric Jewel Pattern Grille & Hidden-type LED DRL</h2>
                                             </div>
                                             <div>
-                                            <Image src="/images/cardetails/palisade/exterior/Exterior_Dark-chrome-grille_2-Kolom_544x360.jpg" alt="image" width={1300} height={700}  />
-                                            <h2 className="text-3xl ">Dark chrome grille</h2>
+                                            <Image src="/images/cardetails/creta/exterior/2-kolom-LED-Headlamp-.jpg" alt="image" width={1300} height={700}  />
+                                            <h2 className="text-3xl ">LED Headlamp</h2>
                                             </div>
 
                                     </div>
                             </div>
                 </ExtoriorCarDetails>
 
-                <ExtoriorCarDetails heading="Side" title='20" Alloy Wheel' image="/images/cardetails/palisade/exterior/Accordion_Samping-Desktop_1920x580.jpg">
+                <ExtoriorCarDetails heading="Side"  image="/images/cardetails/creta/exterior/samping-akordeon.jpg">
                 
                             <div className="container py-8">
-                            <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
-                                            <div>
-                                            <Image src="/images/cardetails/palisade/exterior/Exterior_Outside-mirror_2-Kolom_544x360.jpg" alt="image" width={1300} height={700}  />
-                                                    <h2 className="text-3xl ">Outside mirror with LED turn signal</h2>
-                                            </div>
-                                            <div>
-                                            <Image src="/images/cardetails/palisade/exterior/Exterior_20-Inch-Alloy-Wheel_2-Kolom_544x360.jpg" alt="image" width={1300} height={700}  />
-                                            <h2 className="text-3xl ">20&ldquo; Alloy Wheel*</h2>
-                                            </div>
-
-                                    </div>
+                            <Image src="/images/cardetails/creta/exterior/1-kolom-17-inch.jpg" alt="image" width={1300} height={700}  />
+                            <h2 className="text-3xl ">17-inch Diamond Cut Alloy Wheels</h2>
                             </div>
                 </ExtoriorCarDetails>
 
-                <ExtoriorCarDetails heading="Rear" title='LED rear combination lamps' image="/images/cardetails/palisade/exterior/Accordion_Belakang-Desktop_1920x580.jpg">
+                <ExtoriorCarDetails heading="Back"  image="/images/cardetails/creta/exterior/belakang-akordeon.jpg">
                 
                             <div className="container py-8">
                             
-                                            <div className="space-y-8">
-                                            <h2 className="text-3xl text-center">LED rear combination lamp</h2>
-                                            <Image src="/images/cardetails/palisade/exterior/Exterior_LED-rear_1-Kolom_1120x600_PC.jpg" alt="image" width={1300} height={700}  className="max-w-[90%] mx-auto"/>
-                                                    
-                                            </div>
+                            <Image src="/images/cardetails/creta/exterior/1-kolom-LED-Rear-Combination-Lamp-.jpg" alt="image" width={1300} height={700}  className="max-w-[90%] mx-auto"/>
+                            <h2 className="text-3xl text-center">LED Rear Combination Lamp</h2>
                                             
 
                             </div>
