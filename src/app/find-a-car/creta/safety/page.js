@@ -22,7 +22,7 @@ const SafetyPage = () => {
                             <div className="space-y-3">
                             <Image src="/images/cardetails/creta/safety/2-kolom-lane-keeping-assist.png" alt="hyundai bd Safety image" width={1200} height={600} />
                                 <h3 className="text-2xl font-semibold">Lane Keeping Assist (LKA)*</h3>
-                                <p>The front view camera detects lane markings (by the roadside) to monitor the vehicle's position in the starting lane. The system will warn the driver if the car leaves the road without using the turn signal and will automatically help steer the steering wheel to prevent the vehicle from diverting from the proper lane.</p>
+                                <p>The front view camera detects lane markings (by the roadside) to monitor the vehicle&rsquo;s position in the starting lane. The system will warn the driver if the car leaves the road without using the turn signal and will automatically help steer the steering wheel to prevent the vehicle from diverting from the proper lane.</p>
                             </div>
                     </section>
                     <section className="grid md:grid-cols-2 gap-8 ">

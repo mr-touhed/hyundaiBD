@@ -158,7 +158,7 @@ const CollapsTable = () => {
                                                      <td className='border-l border-[#DDDDDD]'>S</td>
                                                 </tr>
                                                 <tr className='border-x-0 border border-[#DDDDDD]'>
-                                                    <td colSpan={2}>26.03 cm (10.25") floating type digital cluster</td>
+                                                    <td colSpan={2}>26.03 cm (10.25&rdquo;) floating type digital cluster</td>
                                                      <td className='border-l border-[#DDDDDD]'>S</td>
                                                      <td className='border-l border-[#DDDDDD]'>S</td>
                                                 </tr>
@@ -442,7 +442,7 @@ const CollapsTable = () => {
 
 
                                                 <tr className='border-x-0 border border-[#DDDDDD]'>
-                                                    <td colSpan={2}>26.03 cm (10.25") HD audio video navigation system</td>
+                                                    <td colSpan={2}>26.03 cm (10.25&rdquo;) HD audio video navigation system</td>
                                                      <td className='border-l border-[#DDDDDD]'>S</td>
                                                      <td className='border-l border-[#DDDDDD]'>S</td>
                                                 </tr>

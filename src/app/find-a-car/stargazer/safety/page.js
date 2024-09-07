@@ -29,7 +29,7 @@ const SafetyPage = () => {
                                 <div className="space-y-6">
                                     <Image src="/images/cardetails/stargazer/safety/KS_RHD_LKA_2kolom_.jpg" alt="hyundai-bd stargazer safety" width={1200} height={600} />
                                     <h3 className="text-2xl font-semibold">Lane Keeping Assist (LKA)*</h3>
-                                    <p>The front view camera detects a lane (on the roadside) to monitor the vehicle's starting lane position. The system will alert the driver if the vehicle deviates from its route without using the turn signal and automatically steer the steering wheel to keep the vehicle in its lane.</p>
+                                    <p>The front view camera detects a lane (on the roadside) to monitor the vehicle&rsquo;s starting lane position. The system will alert the driver if the vehicle deviates from its route without using the turn signal and automatically steer the steering wheel to keep the vehicle in its lane.</p>
                                 </div>
                         </section>
                         <section className="grid md:grid-cols-2 gap-8">
