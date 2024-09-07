@@ -5,7 +5,7 @@ import Button from "./Button";
 import { useEffect, useState } from "react";
 import { getCityList } from "../utils/locations";
 
-const TestDrivePageForm = ({districtList}) => {
+const TestDrivePageForm = ({districtList,car}) => {
     const modelList = carData.map(car => car.name.toLowerCase());
     const [selectState,setSelectState] = useState('Dhaka');
     const [cityList,SetcityList] = useState([])
@@ -24,9 +24,9 @@ const TestDrivePageForm = ({districtList}) => {
     },[selectState])
         console.log(cityList);
     return (
-        <div className=' py-16 '>
+        <div className=' py-16 bg-[#F6F3F2]'>
            
-            <form className="container space-y-2 " >
+            <form className="max-w-[700px] mx-auto space-y-2  " >
                 <div className='text-sm'>
                     <label htmlFor="gender">Salutation</label>
                     <div className='flex  gap-16 text-md '>
@@ -41,21 +41,21 @@ const TestDrivePageForm = ({districtList}) => {
                     </div>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="gender">Name</label>
-                <input type="text" name="name" id="name" className='p-1 border border-[gray]'/>
+                <label htmlFor="gender" className="text-sm">Name</label>
+                <input type="text" name="name" id="name" className='p-1 border border-[gray] rounded-md'/>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="Email">Email</label>
+                <label htmlFor="Email" className="text-sm">Email</label>
                 <input type="email" name="email" id="Email" className='p-1 border border-[gray]'/>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="Mobile">Mobile</label>
+                <label htmlFor="Mobile" className="text-sm">Mobile</label>
                 <input type="tel" name="mobile" id="Mobile" className='p-1 border border-[gray]'/>
                 </div>
 
                 <div className='grid text-md'>
-                <label htmlFor="Mobile">Model</label>
-                        <select name="model" id="Mobile" className='p-1 border border-[gray]' >
+                <label htmlFor="Mobile" className="text-sm">Model</label>
+                        <select name="model" id="Mobile" className='p-1 border border-[gray]' defaultValue={car} disabled={car}>
                         
                             {
                                modelList.map(car => <option key={car} value={car}>{car.toUpperCase()}</option>)
@@ -63,7 +63,7 @@ const TestDrivePageForm = ({districtList}) => {
                         </select>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="Mobile">State</label>
+                <label htmlFor="Mobile" className="text-sm">State</label>
                         <select name="state" id="State" className='p-1 border border-[gray]'  onChange={(e) => setSelectState(e.target.value)} >
                         <option value="">Select</option>
                         {
@@ -73,7 +73,7 @@ const TestDrivePageForm = ({districtList}) => {
                         </select>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="city">City</label>
+                <label htmlFor="city" className="text-sm">City</label>
                 <select name="city" id="city" className='p-1 border border-[gray]' disabled={!cityList} >
                         <option value="">Select</option>
                         {
@@ -84,18 +84,18 @@ const TestDrivePageForm = ({districtList}) => {
                 </div>
 
                 <div className='grid text-md'>
-                <label htmlFor="city">Dealer</label>
-                <select name="dealer" id="Dealer" className='p-1 border border-[gray]' >
+                <label htmlFor="city" className="text-sm">Dealer</label>
+                <select name="dealer" id="Dealer" className='p-1 border border-[gray]' disabled>
                         
-                           <option value="">FairTechnology</option>
+                           <option value="FairTechnology">FairTechnology</option>
                         </select>
                 </div>
                 <div className='grid text-md'>
-                    <label htmlFor="Comments">Comments</label>
+                    <label htmlFor="Comments" className="text-sm">Comments</label>
                     <textarea name="comments" id="Comments" className='h-44 border border-[gray]'></textarea>
                     <div className='flex items-center text-sm gap-3 mt-2'>
                         <input type="checkbox" name="agree" id="agree" className='w-5 h-5 '/>
-                        <label htmlFor="agree">* I accept the terms & conditions</label>
+                        <label htmlFor="agree" className="text-sm">* I accept the terms & conditions</label>
                     </div>
                 </div>
                 <div className='grid place-content-center'>

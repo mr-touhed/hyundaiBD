@@ -1,4 +1,5 @@
 import CarDetailsTemplete from "@/app/components/CarDetailsTemplete";
+import TestDriveButton from "@/app/components/TestDriveButton";
 
 
 const template = ({children}) => {
@@ -7,6 +8,8 @@ const template = ({children}) => {
             <CarDetailsTemplete carName="H-100" image="/images/cardetails/pick-up/banner.jpg">
                     <section className="mt-14">
                         {children}
+
+                        <TestDriveButton car="h-100"/>
                     </section>
             </CarDetailsTemplete>
             

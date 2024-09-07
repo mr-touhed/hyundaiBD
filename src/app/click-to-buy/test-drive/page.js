@@ -7,14 +7,15 @@ import Link from "next/link";
 import { Suspense } from "react";
 
 
-const TestDrivepage = async  () => {
+const TestDrivepage = async  ({searchParams}) => {
+    const {c} = searchParams
     const districtList = await getDistrictList()
     return (
         <div>
             <PageBanner path={['click-to-buy','Test Drive']} img={`/images/test-drive-banner.jpg`}/>
             <section>
                     <Suspense fallback={"Loading....."}>
-                    <TestDrivePageForm districtList={districtList}/>
+                    <TestDrivePageForm districtList={districtList} car={c}/>
                     </Suspense>
             </section>
             <section className="">
