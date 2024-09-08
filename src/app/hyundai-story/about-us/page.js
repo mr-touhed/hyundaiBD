@@ -1,11 +1,15 @@
+import LocationMap from "@/app/components/LocationMap";
+import PageBanner from "@/app/components/PageBanner";
 import { IoIosClock } from "react-icons/io";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { SiWebtrees } from "react-icons/si";
-import Accordion from "./_component/Accordion";
-import LocationMap from "../components/LocationMap";
+
 const ContactUspage = () => {
     return (
-        <div className="bg-[#F6F3F2] p-4 space-y-8">
+       <>
+       
+       
+       <div className="bg-[#F6F3F2] p-4 space-y-8">
             <div className="container p-16 space-y-16">
                 <section>
                 <h1 className="text-3xl font-bold text-center">A Smarter Way to Connect</h1>
@@ -66,6 +70,7 @@ If for any reason, you are not able to register your enquiry/ feedback. Please w
                 <LocationMap/>
             </div>
         </div>
+       </>
     );
 };
 

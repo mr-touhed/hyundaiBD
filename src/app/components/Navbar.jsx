@@ -8,7 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { TfiClose } from "react-icons/tfi";
 import SubMenu from './menu/SubMenu';
-import { ServiceMenuItems, StoryMenuItems } from '../../../public/data/data';
+import { ContactUsMenuItems, ServiceMenuItems, StoryMenuItems } from '../../../public/data/data';
 const Navbar = () => {
     const [activeIndex,setActiveIndex] = useState(0);
     const [selectMenu,setSelectMenu] = useState('');
@@ -26,9 +26,12 @@ const Navbar = () => {
     if(selectMenu === 'find_car'){
         showMenuElem = <CarMenu handel_close={handel_close}/>
     }else if (selectMenu === 'service'){
-        showMenuElem = <SubMenu menuItems={ServiceMenuItems}/>
+        showMenuElem = <SubMenu menuItems={ServiceMenuItems} handel_close={handel_close}/>
     }else if(selectMenu === 'story'){
-        showMenuElem = <SubMenu menuItems={StoryMenuItems}/>
+        showMenuElem = <SubMenu menuItems={StoryMenuItems} handel_close={handel_close}/>
+    }
+    else if(selectMenu === 'contact'){
+        showMenuElem = <SubMenu menuItems={ContactUsMenuItems} handel_close={handel_close}/>
     }
     
     return (
@@ -46,9 +49,10 @@ const Navbar = () => {
                     
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(3)}}  data="service" className={`${activeIndex === 3 && "active"} uppercase`}>Connect to Service</button>
                     <button onClick={(e)=> {handelMenu(e), setActiveIndex(4)}}  data="story" className={`${activeIndex === 4 && "active"} uppercase`}>Hyundai Story</button>
+                    <button onClick={(e)=> {handelMenu(e), setActiveIndex(5)}}  data="contact" className={`${activeIndex === 5 && "active"} uppercase`}>Contact Us</button>
                     
                     
-                    <Link href="/contact-us">Contact Us</Link>
+                   
                 </nav>
                 <div>
                     <ul className='flex gap-6 '>

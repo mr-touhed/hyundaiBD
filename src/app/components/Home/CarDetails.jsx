@@ -74,12 +74,12 @@ const CarDetails = () => {
       >
         
         {
-            showCars.map((car,i) => <SwiperSlide key={i} className=" md:min-h-[350px] min-h-[330px] space-y-8" >
+            showCars.map((car,i) => <SwiperSlide key={i} className=" md:min-h-[350px] min-h-[340px] space-y-8" >
                
                 <Image src={car.image} alt="image" width={1500} height={700} className="w-full h-auto object-cover"/>
                 { activeIndex === i && <div className="md:flex gap-6 px-3  text-center">
                 <Link href={car.path} className="font-bold text-sm text-primary text-nowrap">{car.name} &gt;</Link> 
-                    <div className="grid md:grid-cols-3 md:gap-8 gap-2 items-start text-left">
+                    <div className="grid md:grid-cols-3 md:gap-8 gap-2 items-start text-left pl-8 md:pl-0">
                         <div className="text-nowrap text-xs md:text-sm">
                             <p className="font-semibold text-lightDark">Starting at </p>
                             <p>{car.price}</p>

@@ -15,7 +15,7 @@ const ButtomMenu = ({className}) => {
                         </Link>
                     </li>
                     <li>
-                    <Link href={'/click-to-buy/test-drive'} className="flex items-center md:flex-row flex-col text-center gap-2 ">
+                    <Link href={'/contact-us/request-test-drive'} className="flex items-center md:flex-row flex-col text-center gap-2 ">
                         
                         <Image src={`/images/icons/ico-request-a-test-drive-pc.png`} alt="icones" width={25} height={25} className="w-4 h-4 md:w-auto md:h-auto"/>
                         
@@ -23,7 +23,7 @@ const ButtomMenu = ({className}) => {
                         </Link>
                     </li>
                     <li>
-                    <Link href={'/'} className="flex items-center md:flex-row flex-col text-center gap-2">
+                    <Link href={'/contact-us/prices'} className="flex items-center md:flex-row flex-col text-center gap-2">
                         
                     <Image src={`/images/icons/ico-request-a-quote-pc.png`} alt="icones" width={25} height={25} className="w-4 h-4 md:w-auto md:h-auto"/>
                     

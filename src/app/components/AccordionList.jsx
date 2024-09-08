@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import { FaMapLocationDot } from "react-icons/fa6";
-const Accordion = () => {
+const AccordionList = () => {
     
     const [accordions, setAccordion] = useState([ 
         { 
@@ -115,7 +115,7 @@ const Accordion = () => {
     ); 
 };
 
-export default Accordion;
+export default AccordionList;
 
 
 

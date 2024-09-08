@@ -1,240 +1,220 @@
+
+
 export const ServiceMenuItems = [
     {
-        menu:"Hyundai Service",
+        menu:"Book a Service",
         sub:[
             {
-                menu:"Book a Service"
+                menu:"Service Booking",
+                link:"/connect-to-service/book-a-service/service-booking"
+            }
+        ]
+    },
+    {
+        menu:"Know Your Hyundai",
+        sub:[
+            {
+                menu:"Warranty Policy",
+                link:"/connect-to-service/know-your-hyundai/warranty-policy"
             },
             {
-                menu:"Service Events",
-                sub:[
-                    {
-                        menu:"Hyundai Smart Care Clinic"
-                    },
-                    {
-                        menu:"Exprience Hyundai Camp"
-                    },
-                    {
-                        menu:"Seasonal Capms"
-                    }
-                ]
+                menu:"With in Warranty",
+                link:"/connect-to-service/know-your-hyundai/with-in-warranty"
             },
             {
-                menu:"Service Program",
-                sub:[
-                    {
-                        menu:"Know Your Hyundai"
-                    },
-                    {
-                        menu:"Hyundai Skill Development"
-                    }
-                ]
+                menu:"Post Warranty",
+                link:"/connect-to-service/know-your-hyundai/post-warranty"
             },
             {
-                menu:"Owner's Manual"
-            },
-            {
-                menu:"PMS Charts"
+                menu:"Extended Warranty",
+                link:"/connect-to-service/know-your-hyundai/extended-warranty"
             },
         ]
     },
     {
-        menu:"Warranty Policy",
+        menu:"Service Calculator",
+         link:"/connect-to-service/service-calculator"
+    },
+    {
+        menu:"Service Package",
+        link:"/connect-to-service/service-package"
+    },
+    {
+        menu:"PMS Charts",
+        link:"/connect-to-service/pms-charts"
+    },
+    {
+        menu:"Genuine Parts",
         sub:[
             {
-                menu:"Overview",
+                menu:"Genuine Parts",
+                link:"/connect-to-service/genuine-parts"
             },
             {
-                menu:"Replacement Part Warranty"
-            },
-            {
-                menu:"Emission Warranty"
-            },
-            {
-                menu:"Power Train Warranty"
-            },
-            {
-                menu:"Extended Warranty"
-            },
-            
+                menu:"Replacement Part Warranty",
+                link:"/connect-to-service/genuine-parts/replacement-part-warranty"
+            }
         ]
     },
     {
-        menu:"Maintenance",
+        menu:"Value Added Service",
         sub:[
             {
-                menu:"Value Added Services",
-                sub:[
-                    {
-                        menu:"Beautification"
-                    },
-                    {
-                        menu:"Underbody Coating"
-                    },
-                    {
-                        menu:"Throttle Body Cleaning"
-                    },
-                    {
-                        menu:"Sanitization"
-                    }
-                    
-                ]
+                menu:"Beautification",
+                link:"/connect-to-service/value-added-service/beautification"
             },
             {
-                menu:"Tips & Advice"
+                menu:"Underbody Coating",
+                link:"/connect-to-service/value-added-service/underbody-coating"
             },
             {
-                menu:"Oils & Consumables",
-                sub:[
-                    {
-                        menu:"Engine Oil"
-                    },
-                    {
-                        menu:"Manual Transmission Oil"
-                    },
-                    {
-                        menu:"Automatic Transmission Oil"
-                    },
-                    {
-                        menu:"Coolant"
-                    },
-                    {
-                        menu:"Brake Oil"
-                    },
-                ]
+                menu:"Throttle Body Cleaning",
+                link:"/connect-to-service/value-added-service/throttle-body-cleaning"
+            },
+            {
+                menu:"Sanitization",
+                link:"/connect-to-service/value-added-service/sanitization"
+            },
+        ]
+    },
+    {
+        menu:"Oil & Consummables",
+        sub:[
+            {
+                menu:"Engine Oil",
+                link:"/connect-to-service/oil-&-consummables/engine-oil"
+            },
+            {
+                menu:"Manual Transmission Oil",
+                 link:"/connect-to-service/oil-&-consummables/manual-transmission-oil"
+            },
+            {
+                menu:"Automatic Transmission Oil",
+                link:"/connect-to-service/oil-&-consummables/automatic-transmission-oil"
+            },
+            {
+                menu:"Coolant",
+                link:"/connect-to-service/oil-&-consummables/coolant"
+            },
+            {
+                menu:"Brake Oil",
+                 link:"/connect-to-service/oil-&-consummables/brake-oil"
+            },
+        ]
+    },
+    {
+        menu:"Owner's Manual",
+        link:"/connect-to-service/owners-manual"
+    },
+    {
+        menu:"Important Customer Notification",
+        link:"/connect-to-service/important-customer-notification"
+    },
+    {
+        menu:"Vehicle Tips & Advice",
+        link:"/connect-to-service/vehicle-tips-&-advice"
+    },
+    {
+        menu:"Hyundai Service Camps",
+        sub:[
+            {
+                menu:"Hyundai Smart Care Clinic",
+                link:"/connect-to-service/hyundai-service-camps/hyundai-smart-care-clinic"
+            },
+            {
+                menu:"Exprience Hyundai Camp",
+                 link:"/connect-to-service/hyundai-service-camps/exprience-hyundai-camp"
             }
         ]
     },
     {
         menu:"Road Side Assistance",
-        sub:[
-            {
-                menu:"With in Warranty"
-            },
-            {
-                menu:"Post Warranty"
-            }
-        ]
-    },
-    {
-        menu:"Genuine Parts"
-    },
-    {
-        menu:"Service Calculator"
-    },
-    {
-        menu:"Important Customer Notification "
-    },
-    {
-        menu:"Navigation Updates"
-    },
-    {
-        menu:"Service Packages",
-        sub:[
-            {
-                menu:"Shield of Trust"
-            },
-            {
-                menu:"iCare Package"
-            },
-            {
-                menu:"Shield of Trust Super"
-            },
-        ]
-    },
+        link:"/connect-to-service/road-side-assistance"
+    }
 ]
 
-export const StoryMenuItems = [
-   
-    {
-        menu:"Hyundai Motor Bangladesh",
-        sub:[
-            {
-                menu:"About Us"
-            },
-            {
-                menu:"Milestones (2016-2022)"
-            },
-            {
-                menu:"Milestones (2011-2015)"
-            },
-            {
-                menu:"Milestones (2006-2010)"
-            },
-            {
-                menu:"Milestones (2001-2005)"
-            },
-            {
-                menu:"Milestones (1996-2000)"
-            },
-        ]
-    },
-    {
-        menu:"Media Center",
-        sub:[
-            
-            {
-                menu:"Bangladesh News",
-               
 
-            },
-            {
-                menu:"Photo-Gallery",
-                sub:[
-                    {
-                        menu:"Awards",
-                       
-                    },
-                   
-                ]
 
-            },
-        ]
+export const StoryMenuItems =[
+    {
+        menu:"About Us",
+        link:"/hyundai-story/about-us"
     },
     {
-        menu:"Bluelink",
-        sub:[
-            {
-                menu:"Overview"
-            },
-            {
-                menu:"Value-added-service"
-            },
-            {
-                menu:"Bluelink-Subscription"
-            },
-            {
-                menu:"Bluelink-Subscription"
-            },
-        ]
+        menu:"Milestones - 2023 onwards",
+        link:"/hyundai-story/milestones"
     },
     {
-        menu:"CSR",
-        
+        menu:"Global News",
+        link:"/hyundai-story/global-news"
     },
-    
     {
-        menu:"Apply for Hyundai Dealership",
-      
+        menu:"Bangladesh News",
+        link:"/hyundai-story/bangladesh-news"
+    },
+    {
+        menu:"Photo Gallery",
+        link:"/hyundai-story/photo-gallery"
+    },
+    {
+        menu:"Awards",
+        link:"/hyundai-story/awards"
     },
     {
         menu:"Corporate Governance",
-        
+        link:"/hyundai-story/corporate-governance"
     },
     {
-        menu:"Career"
+        menu:"Career",
+        link:"/hyundai-story/career"
     },
     {
-        menu:"Campaign"
+        menu:"myHyundai App",
+        link:"/hyundai-story/myhyundai-app"
     },
-    
+]
+
+export const ContactUsMenuItems = [
     {
-        menu:"Progress for Humanity"
+        menu:"Request a Test Drive",
+        link:"/contact-us/request-test-drive"
     },
     {
-        menu:"myHyundai App"
+        menu:"Prices",
+        link:"/contact-us/prices"
     },
-    
+    {
+        menu:"Special Offers",
+        link:"/contact-us/special-offers"
+    },
+    {
+        menu:"Find an Outlet",
+        link:"/contact-us/find-an-outlet"
+    },
+    {
+        menu:"Online Booking",
+        link:"/contact-us/online-booking"
+    },
+    {
+        menu:"Online Finance",
+        link:"/contact-us/online-finance"
+    },
+    {
+        menu:"Hyundai Partners",
+        link:"/contact-us/hyundai-partners"
+    },
+    {
+        menu:"Career",
+        link:"/contact-us/career"
+    },
+    {
+        menu:"Media center",
+        link:'/contact-us/media-center'
+    },
+    {
+        menu:"Legal Disclaimer",
+        link:"/contact-us/legal-disclaimer"
+    },
 ]
 
 

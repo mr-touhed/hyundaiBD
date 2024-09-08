@@ -1,18 +1,19 @@
 "use client"
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { RxCaretRight } from "react-icons/rx";
 
-const SubMenu = ({menuItems}) => {
+const SubMenu = ({menuItems,handel_close}) => {
     
     const [activeMenu, setActiveMenu] = useState(null);
     const [activeSubMenu, setActiveSubMenu] = useState(null);
-    const [activeMultiSubMenu, setActiveMultiSubMenu] = useState(null);
+  
   
    
   
   useEffect(()=>{
     setActiveSubMenu(null)
-    setActiveMultiSubMenu(null)
+   
   },[menuItems])
   
     return (
@@ -20,21 +21,20 @@ const SubMenu = ({menuItems}) => {
                 <ul className="space-y-5">
                     {
                         menuItems.map(item => 
-                        <li onClick={() => {setActiveMultiSubMenu(null) ;setActiveMenu(item.menu); item.sub ? setActiveSubMenu(item.sub): setActiveSubMenu(null)}}  key={item.menu} className={`${activeMenu === item.menu && "text-skylight"} cursor-pointer hover:text-skylight md:w-60 flex justify-between items-center text-sm font-light`}><span>{item.menu}</span> {item.sub && <span><RxCaretRight /></span>}</li>)
+                          item.link ? <li key={item.menu}><Link onClick={handel_close} href={item.link}>{item.menu}</Link></li> : 
+                          <li onClick={() => {setActiveMenu(item.menu); item.sub ? setActiveSubMenu(item.sub): setActiveSubMenu(null)}}  key={item.menu} className={`${activeMenu === item.menu && "text-skylight"} cursor-pointer hover:text-skylight md:w-60 flex justify-between items-center text-sm font-light`}><span>{item.menu}</span> {item.sub && <span><RxCaretRight /></span>}</li>
+                        )
                     }
                 </ul>
                 <ul className="space-y-5">
                     {
                         activeSubMenu && activeSubMenu.map(item => 
-                            <li onClick={() => {setActiveMenu(item.menu); item.sub ? setActiveMultiSubMenu(item.sub): setActiveMultiSubMenu(null)}}  key={item.menu} className={`${activeMenu === item.menu && "text-skylight"} cursor-pointer hover:text-skylight md:w-60 flex justify-between items-center text-sm font-light`}><span>{item.menu}</span> {item.sub && <span><RxCaretRight /></span>}</li>)
+                          item.link ? <li key={item.menu}><Link onClick={handel_close} href={item.link}>{item.menu}</Link></li> : 
+                          <li onClick={() => {setActiveMenu(item.menu); item.sub ? setActiveSubMenu(item.sub): setActiveSubMenu(null)}}  key={item.menu} className={`${activeMenu === item.menu && "text-skylight"} cursor-pointer hover:text-skylight md:w-60 flex justify-between items-center text-sm font-light`}><span>{item.menu}</span> {item.sub && <span><RxCaretRight /></span>}</li>
+                        )
                     }
                 </ul>
-                <ul className="space-y-5">
-                    {
-                        activeMultiSubMenu && activeMultiSubMenu.map(item => 
-                            <li  key={item.menu} onClick={()=>setActiveMenu(item.menu)} className={`${activeMenu === item.menu && "text-skylight"} cursor-pointer hover:text-skylight md:w-60 flex justify-between text-sm `}>{item.menu}</li>)
-                    }
-                </ul>
+               
       </div>
     );
   };

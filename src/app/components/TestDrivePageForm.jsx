@@ -26,7 +26,7 @@ const TestDrivePageForm = ({districtList,car}) => {
     return (
         <div className=' py-16 bg-[#F6F3F2]'>
            
-            <form className="max-w-[700px] mx-auto space-y-2  " >
+            <form className="max-w-[700px] mx-auto space-y-2  p-2" >
                 <div className='text-sm'>
                     <label htmlFor="gender">Salutation</label>
                     <div className='flex  gap-16 text-md '>
