@@ -9,7 +9,7 @@ const PageBanner = ({img}) => {
     const PathList = pathName?.split("/");
     return (
         <section className="bg-[#EEEDF2]">
-                    <ul className="flex container py-6 gap-2 font-light">
+                    <ul className="flex container py-6 md:gap-2 gap-1 items-center font-light md:text-base text-xs flex-wrap">
                         <li className="underline ">
                             <Link href="/">Home</Link>
                         </li>
@@ -18,7 +18,7 @@ const PageBanner = ({img}) => {
                             {path}
                             
                         </li>
-                        {PathList.length-1 > i ? <li>&gt;</li> : ""}
+                        {PathList.length-1 > i ? <li className='font-bold'>&gt;</li> : ""}
                         </>)
                         }
                         {/* <li>&gt;</li>
