@@ -20,6 +20,7 @@ const SanitizationPage = () => {
                         <section className='container py-8'>
                                     <h2 className='text-xl font-semibold text-center'>Interior Surface Sanitization</h2>
                                     <table className='w-full ' cellPadding={15}>
+                                            <thead>
                                             <tr className='bg-primary text-[white] '>
                                                 <th  className='p-6 border-r border-[white]'>
                                                 Description</th>
@@ -28,6 +29,7 @@ const SanitizationPage = () => {
                                                 <th className='p-6 border-r border-[white]'>MEDIUM SEGMENT CAR (RS)</th>
                                                 <th className='p-6 border-r border-[white]'>LARGE SEGMENT CARS (RS)</th>
                                             </tr>
+                                            </thead>
                                             <tbody>
                                                     <tr>
                                                         <td className='border border-[#E4E1E0]'>Interior Antimicrobial Treatment</td>
@@ -84,6 +86,7 @@ const SanitizationPage = () => {
                         <section className='container py-8'>
                         <h2 className='text-xl font-semibold text-center'>Interior Smoke Sanitization</h2>
                                     <table className='w-full ' cellPadding={15}>
+                                            <thead>
                                             <tr className='bg-primary text-[white] '>
                                                 <th  className='p-6 border-r border-[white]'>
                                                 Description</th>
@@ -92,6 +95,7 @@ const SanitizationPage = () => {
                                                 <th className='p-6 border-r border-[white]'>MEDIUM SEGMENT CAR (RS)</th>
                                                 <th className='p-6 border-r border-[white]'>LARGE SEGMENT CARS (RS)</th>
                                             </tr>
+                                            </thead>
                                             <tbody>
                                             <tr>
                                                         <td className='border border-[#E4E1E0]'>Antimicrobial Smoke Sanitization</td>
