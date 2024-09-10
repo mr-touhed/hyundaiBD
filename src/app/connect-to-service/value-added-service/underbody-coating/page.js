@@ -21,7 +21,7 @@ const UnderbodycoatingPage = () => {
                 </div>
 
                 <div className="py-8">
-                        <section className="container">
+                        <section className="container md:overflow-hidden overflow-x-scroll">
                                     <table className="w-full text-center" cellPadding={15}>
                                         <tr className="bg-[#E4DCD3] ">
                                             <th className="font-bold">VENDOR</th>

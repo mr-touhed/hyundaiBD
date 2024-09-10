@@ -6,21 +6,21 @@ const GenuinePartPage = () => {
         <>
            <div className="relative">
            <PageBanner img="/images/pages/parts.jpg"/>
-                <div className="space-y-3 absolute top-[30%] left-[5%]">
-                    <h3 className="text-6xl font-bold">Genuine Parts</h3>
-                    <p className="text-lg">The Perfect Opportunity to Tailor your Car</p>
+                <div className="space-y-3 absolute top-[30%]  md:left-[5%] left-[15px]">
+                    <h3 className="md:text-6xl text-2xl font-bold">Genuine Parts</h3>
+                    <p className="text-md">The Perfect Opportunity to Tailor your Car</p>
                 </div>
            </div>
 
            <div className="container space-y-16 mb-16">
-                        <section className="max-w-[80%] mx-auto space-y-16">
+                        <section className="md:max-w-[80%] mx-auto space-y-16">
                                 <h2 className="text-3xl font-semibold text-center">Hyundai Genuine Parts</h2>
                                 <div className="relative  flex justify-center md:flex-row flex-col ">
-                                        <div className="bg-[#e2d6ca97] w-[260px] md:-mr-10 text-center p-10 h-[260px] rounded-full grid place-content-center font-bold text-lg text-[#545350]">Guaranteed to
+                                        <div className="bg-[#e2d6ca97] w-[260px] md:-mr-10 -mb-10 text-center p-10 h-[260px] rounded-full grid place-content-center font-bold text-lg text-[#545350]">Guaranteed to
                                         <br/>Fit</div>
                                         <div className="bg-[#e2d6ca97] w-[260px] p-10 text-center h-[260px] rounded-full grid place-content-center font-bold text-lg text-[#545350]">Guaranteed to
                                         Perform</div>
-                                        <div className="bg-[#e2d6ca97] w-[260px] md:-ml-10 text-center p-10 h-[260px] rounded-full grid place-content-center font-bold text-lg text-[#545350]">Guaranteed
+                                        <div className="bg-[#e2d6ca97] w-[260px] md:-ml-10 -mt-10 text-center p-10 h-[260px] rounded-full grid place-content-center font-bold text-lg text-[#545350]">Guaranteed
                                         Genuine</div>
                                 </div>
                                 <p>Hyundai Genuine Parts are designed and engineered specifically for delivering performance and longevity of your Hyundai cars, all Hyundai Genuine Parts are made to the standards.

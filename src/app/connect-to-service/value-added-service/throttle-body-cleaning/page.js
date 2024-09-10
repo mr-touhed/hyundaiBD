@@ -9,7 +9,7 @@ const ThrottlebodyPage = () => {
             <div className='bg-[#F6F3F2] py-8'>
                 <section className='container space-y-8'>
                     <h1 className='text-3xl font-semibold text-center'>Throttle Body Cleaning</h1>
-
+                    <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                     <table className='w-full text-center bg-[white]' cellPadding={15}>
                         <tr className='bg-primary text-[white]'>
                             <th className='border-r border-[white]'>VENDOR</th>
@@ -42,6 +42,7 @@ const ThrottlebodyPage = () => {
                                 </tr>
                         </tbody>
                     </table>
+                    </div>
                         <p><b>Disclaimer :</b> These are indicative prices. For details kindly contact your dealer.</p>
                         <p>*GST will be extra</p>
                 </section>

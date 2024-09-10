@@ -10,7 +10,7 @@ const Beautificationpage = () => {
                                     <h1 className='text-3xl font-semibold text-center'>Beautification</h1>
                                     <p className='text-left'>Small Segment Cars: EON, Santro, All New Santro, i10</p>
 
-                                <div>
+                                <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                     <table className='w-full bg-[white]' cellPadding={15}>
                                             <tr className='bg-[#E4DCD3]'>
                                               
@@ -152,7 +152,7 @@ const Beautificationpage = () => {
                     <section className='container space-y-8 text-center'>
                                    
 
-                                <div className=''>
+                    <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                     <table className='w-full bg-[white]' cellPadding={15}>
                                             <tr className='bg-[#E4DCD3]'>
                                               
@@ -286,7 +286,7 @@ const Beautificationpage = () => {
                     <section className='container space-y-8 text-center'>
                                    
 
-                                   <div>
+                    <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                        <table className='w-full bg-[white]' cellPadding={15}>
                                                <tr className='bg-[#E4DCD3]'>
                                                  
@@ -421,7 +421,7 @@ const Beautificationpage = () => {
                        <section className='container space-y-8 text-center' >
                                    
 
-                                   <div>
+                       <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                        <table className='w-full bg-[white]' cellPadding={15}>
                                                <tr className='bg-[#E4DCD3]'>
                                                  
@@ -483,7 +483,7 @@ const Beautificationpage = () => {
                        <section className='container space-y-8 text-center'>
                                    
                                                 <h2 className='text-xl font-semibold'>Large Segment Cars: Kona Electric</h2>
-                                   <div>
+                                                <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                        <table className='w-full bg-[white]' cellPadding={15}>
                                                <tr className='bg-[#E4DCD3]'>
                                                  

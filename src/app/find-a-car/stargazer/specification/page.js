@@ -11,6 +11,7 @@ const Specification = () => {
                         <h2 className="text-2xl text-center font-semibold my-6">Performance</h2>
                     </div>
 
+                    <div className="max-w-full md:overflow-hidden overflow-x-scroll">
                     <table className="w-full" cellPadding="10px" >
                         <thead>
                         <th className="bg-primary p-3 text-[white] font-semibold" colSpan={2}>Engine</th>
@@ -44,9 +45,10 @@ const Specification = () => {
                             </tr>
                         </tbody>
                     </table>
+                    </div>
 
 
-
+                    <div className="max-w-full md:overflow-hidden overflow-x-scroll">
                     <table className="w-full" cellPadding="10px" >
                         <thead>
                         <th className="bg-primary p-3 text-[white] font-semibold" colSpan={2}>Transmission</th>
@@ -59,8 +61,8 @@ const Specification = () => {
                             
                         </tbody>
                     </table>
-
-
+                    </div>
+                    <div className="max-w-full md:overflow-hidden overflow-x-scroll">
                     <table className="w-full" cellPadding="10px" >
                         <thead>
                         <th className="bg-primary p-3 text-[white] font-semibold" colSpan={2}>Fuel Consumption</th>
@@ -77,11 +79,11 @@ const Specification = () => {
                             
                         </tbody>
                     </table>
+                    </div>
 
 
 
-
-                    <div className="mt-16">
+                    <div className="mt-16 md:overflow-hidden overflow-x-scroll">
                     <table className="w-full" cellPadding="10px" >
                         <thead>
                         <th className="bg-primary p-3 text-[white] font-semibold" colSpan={2}>Exterior</th>

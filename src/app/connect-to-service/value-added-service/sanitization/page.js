@@ -19,6 +19,7 @@ const SanitizationPage = () => {
                         </section>
                         <section className='container py-8'>
                                     <h2 className='text-xl font-semibold text-center'>Interior Surface Sanitization</h2>
+                                    <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                     <table className='w-full ' cellPadding={15}>
                                             <thead>
                                             <tr className='bg-primary text-[white] '>
@@ -82,9 +83,11 @@ const SanitizationPage = () => {
                                                     
                                             </tbody>
                                     </table>
+                                    </div>
                         </section>
                         <section className='container py-8'>
                         <h2 className='text-xl font-semibold text-center'>Interior Smoke Sanitization</h2>
+                        <div className='max-w-full md:overflow-hidden overflow-x-scroll'>
                                     <table className='w-full ' cellPadding={15}>
                                             <thead>
                                             <tr className='bg-primary text-[white] '>
@@ -154,6 +157,7 @@ const SanitizationPage = () => {
                                                     </tr>
                                             </tbody>
                                     </table>
+                                    </div>
                         </section>
                         
                         <section className='container py-8'>
