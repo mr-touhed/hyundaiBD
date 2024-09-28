@@ -1,10 +1,10 @@
-import WaittingPage from '@/app/components/WaittingPage';
-import React from 'react';
+
+import DiscliaimerComponent from './_components/DiscliaimerComponent';
 
 const page = () => {
     return (
         <div>
-            <WaittingPage/>
+            <DiscliaimerComponent/>
         </div>
     );
 };

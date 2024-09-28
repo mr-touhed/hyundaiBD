@@ -114,23 +114,23 @@ export const ServiceMenuItems = [
         menu:"Vehicle Tips & Advice",
         link:"/connect-to-service/vehicle-tips-&-advice"
     },
-    {
-        menu:"Hyundai Service Camps",
-        sub:[
-            {
-                menu:"Hyundai Smart Care Clinic",
-                link:"/connect-to-service/hyundai-service-camps/hyundai-smart-care-clinic"
-            },
-            {
-                menu:"Exprience Hyundai Camp",
-                 link:"/connect-to-service/hyundai-service-camps/exprience-hyundai-camp"
-            }
-        ]
-    },
-    {
-        menu:"Road Side Assistance",
-        link:"/connect-to-service/road-side-assistance"
-    }
+    // {
+    //     menu:"Hyundai Service Camps",
+    //     sub:[
+    //         {
+    //             menu:"Hyundai Smart Care Clinic",
+    //             link:"/connect-to-service/hyundai-service-camps/hyundai-smart-care-clinic"
+    //         },
+    //         {
+    //             menu:"Exprience Hyundai Camp",
+    //              link:"/connect-to-service/hyundai-service-camps/exprience-hyundai-camp"
+    //         }
+    //     ]
+    // },
+    // {
+    //     menu:"Road Side Assistance",
+    //     link:"/connect-to-service/road-side-assistance"
+    // }
 ]
 
 
@@ -164,14 +164,11 @@ export const StoryMenuItems =[
         menu:"Corporate Governance",
         link:"/hyundai-story/corporate-governance"
     },
-    {
-        menu:"Career",
-        link:"/hyundai-story/career"
-    },
-    {
-        menu:"myHyundai App",
-        link:"/hyundai-story/myhyundai-app"
-    },
+   
+    // {
+    //     menu:"myHyundai App",
+    //     link:"/hyundai-story/myhyundai-app"
+    // },
 ]
 
 export const ContactUsMenuItems = [

@@ -1,12 +1,12 @@
-import WaittingPage from '@/app/components/WaittingPage';
-import React from 'react';
+import CareerComponent from "./_components/CareerComponent";
 
-const page = () => {
+
+const CareerPage = () => {
     return (
-        <div>
-            <WaittingPage/>
-        </div>
+        <>
+           <CareerComponent/>
+        </>
     );
 };
 
-export default page;
+export default CareerPage;

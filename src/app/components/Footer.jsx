@@ -23,11 +23,11 @@ const Footer = () => {
                             <h2 className="text-xl font-semibold text-[white]">Sell your Car</h2>
                             <ul>
                                 <li><Link href="/click-to-buy/test-drive">Request a Test Drive</Link> </li>
-                                <li>Special Offers</li>
-                                <li>Prices</li>
+                                {/* <li>Special Offers</li> */}
+                                <li><Link href="/contact-us/prices">Prices</Link></li>
                                 <li> <Link href="/click-to-buy/find-a-dealer">Find a Dealer</Link></li>
-                                <li><Link href="/bookACar">Online Booking</Link> </li>
-                                <li>Online Finance</li>
+                                {/* <li><Link href="/bookACar">Online Booking</Link> </li> */}
+                                {/* <li>Online Finance</li> */}
                             </ul>
                         </div>
                         <div>
@@ -35,7 +35,7 @@ const Footer = () => {
                             <ul>
                                 <li><Link href="/connect-to-service/book-a-service">Book a Service</Link> </li>
                                 <li>Warranty Policy</li>
-                                <li>Road Side Assistance</li>
+                                {/* <li>Road Side Assistance</li> */}
                                 <li>Service Package</li>
                                 
                             </ul>
@@ -43,19 +43,19 @@ const Footer = () => {
                         <div>
                             <h2 className="text-xl font-semibold text-[white]">Hyundai Story</h2>
                             <ul>
-                                <li>About Us</li>
+                                <li> <Link href="/hyundai-story/about-us"> About Us</Link></li>
                                 <li>Media center</li>
-                                <li>Hyundai Bluelink</li>
+                                {/* <li>Hyundai Bluelink</li> */}
                                 <li>Dealer Application</li>
-                                <li>Career</li>
+                                <li><Link href="/contact-us/career">Career</Link></li>
                                 <li>Samarth by Hyundai</li>
                             </ul>
                         </div>
                         <div>
                             <h2 className="text-xl font-semibold text-[white]">Contact Us</h2>
                             <ul>
-                                <li>Connect with Us</li>
-                                <li>Legal Disclaimer</li>
+                                <li><Link href="/hyundai-story/about-us">Connect with Us</Link></li>
+                                <li><Link href="/contact-us/legal-disclaimer">Legal Disclaimer</Link> </li>
                                 <li>Sitemap</li>
                                 <li>Hyundai Suppliers</li>
                                 <li>Hyundai Worldwide</li>
