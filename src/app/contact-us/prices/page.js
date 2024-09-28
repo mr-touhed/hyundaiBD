@@ -1,12 +1,14 @@
-import WaittingPage from '@/app/components/WaittingPage';
-import React from 'react';
+import PageBanner from "@/app/components/PageBanner";
+import PricesComponent from "./_components/PricesComponent";
 
-const page = () => {
+
+const PricesPage = () => {
     return (
-        <div>
-            <WaittingPage/>
-        </div>
+        <>
+            <PageBanner img="/images/pages/warranty-policy-banner.jpg"/>
+           <PricesComponent/>
+        </>
     );
 };
 
-export default page;
+export default PricesPage;

@@ -31,14 +31,14 @@ export const ServiceMenuItems = [
             },
         ]
     },
-    {
-        menu:"Service Calculator",
-         link:"/connect-to-service/service-calculator"
-    },
-    {
-        menu:"Service Package",
-        link:"/connect-to-service/service-package"
-    },
+    // {
+    //     menu:"Service Calculator",
+    //      link:"/connect-to-service/service-calculator"
+    // },
+    // {
+    //     menu:"Service Package",
+    //     link:"/connect-to-service/service-package"
+    // },
     {
         menu:"PMS Charts",
         link:"/connect-to-service/pms-charts"
@@ -191,14 +191,14 @@ export const ContactUsMenuItems = [
         menu:"Find an Outlet",
         link:"/contact-us/find-an-outlet"
     },
-    {
-        menu:"Online Booking",
-        link:"/contact-us/online-booking"
-    },
-    {
-        menu:"Online Finance",
-        link:"/contact-us/online-finance"
-    },
+    // {
+    //     menu:"Online Booking",
+    //     link:"/contact-us/online-booking"
+    // },
+    // {
+    //     menu:"Online Finance",
+    //     link:"/contact-us/online-finance"
+    // },
     {
         menu:"Hyundai Partners",
         link:"/contact-us/hyundai-partners"
