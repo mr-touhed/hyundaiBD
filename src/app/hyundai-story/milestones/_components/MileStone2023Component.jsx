@@ -15,12 +15,12 @@ const MileStone2023Component = () => {
         
             <Accordion preExpanded={['2023']}>
             <AccordionItem uuid="2023">
-                <AccordionItemHeading className='text-xl font-bold'>
-                    <AccordionItemButton>
+                <AccordionItemHeading className='text-xl font-bold  '>
+                    <AccordionItemButton >
                             2023
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className='bg-[#F6F3F2] px-16 py-8'>
                     
                             <table className='w-full text-center'cellPadding={10}  >
                                     <thead className='bg-[#E4DCD3]'>

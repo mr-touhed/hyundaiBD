@@ -289,3 +289,33 @@ export const carData = [
         path:"/find-a-car/pick-up/highlights"
     },
 ]
+
+
+
+
+export const backendData = [
+    {
+        id:"1",
+        title:"হুন্দাই এক্সচেঞ্জ প্রোগ্রামে এভিয়েশন পার্টনার হলো এয়ার এ্যাস্ট্রা",
+        category:"BD news",
+        link:"",
+        image:"/images/Creta_news.jpg",
+        details:"ফেয়ার টেকনোলজি লিমিটেডের হুন্দাই এক্সচেঞ্জ প্রোগ্রামে এভিয়েশন পার্টনার হিসেবে যুক্ত হলো এয়ার এ্যাস্ট্রা। রাজধানীর বনানীতে ফেয়ার গ্রুপ চেয়ারম্যান’স অফিসে মঙ্গলবার (১৭ অক্টোবর) এ ব্যাপারে সমঝোতা স্বাক্ষর করেন ফেয়ার টেকনোলজির ডিরেক্টর ও সিইও মুতাসসিম দায়ান ও এয়ার এ্যাস্ট্রা’র সিইও ইমরান আসিফ। সমঝোতা স্মারক অনুযায়ী হুন্দাই একচেঞ্জ প্রোগ্রামের আওতায় ব্র্যান্ড নিউ হুন্দাই গাড়ির পঁচিশ ক্রেতাকে ঢাকা-কক্সবাজার-ঢাকা ফ্লাইটের ",
+    },
+    {
+        id:"2",
+        title:"Fair Technology | Hyundai is the ‘HOLE-IN-ONE’ Sponsor of the Square Golf Tournament 2024.",
+        category:"Global news",
+        link:"",
+        image:"/images/Creta_news.jpg",
+        details:"Fair Technology Hyundai has become the 'hole-in-one' sponsor of the Square Golf Tournament 2024. The 3-day-long tournament has started today at the Kurmitola Golf Club (KGC) and will continue until February 16, 2024. Former FBCCI President and Ha-Meem Group Managing Director Mr. A. K. Azad MP, Newage Group Chairman Mr. A.S.M. Quasem, Power, Energy, and",
+    },
+    {
+        id:"",
+        title:"Change Maker of the Year- Mr. Puneet Anand, AVP & Vertical Head- Corporate Affairs, HMIL",
+        category:"award",
+        link:"",
+        image:"/images/Creta_news.jpg",
+        details:"Change Maker of the Year- Mr. Puneet Anand, AVP & Vertical Head- Corporate Affairs, HMIL",
+    }
+]
