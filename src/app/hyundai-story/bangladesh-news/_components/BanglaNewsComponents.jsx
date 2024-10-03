@@ -4,11 +4,11 @@ import NewsCard from "@/app/components/NewsCard";
 
 import { useState } from "react";
 
-const BanglaNewsComponents = ({data}) => {
-    const [newsData,setNewsData] = useState(data);
+const BanglaNewsComponents = ({news}) => {
+    const [newsData,setNewsData] = useState(news);
 
 
-
+    console.log(newsData);
     return (
         <div className="space-y-16 pb-16" >
             <div className="p-4 bg-[#F6F3F2] flex md:flex-row flex-col justify-center md:gap-8 gap-4">
@@ -19,12 +19,11 @@ const BanglaNewsComponents = ({data}) => {
 
 
             <section className="container grid md:grid-cols-3 gap-8">
-                            <NewsCard/>
-                            <NewsCard/>
-                            <NewsCard/>
-                            <NewsCard/>
-                            <NewsCard/>
-                            <NewsCard/>
+                {
+                    newsData?.map(news => <NewsCard key={news._id} news={news}/>)
+                }
+                            
+                            
             </section>
         </div>
     );

@@ -1,10 +1,13 @@
 import PageBanner from "@/app/components/PageBanner";
 import { backendData } from "../../../../public/data/data";
 import BanglaNewsComponents from "./_components/BanglaNewsComponents";
+import { getBlogs } from "@/app/utils/fetchingData";
 
 
 
-const page = () => {
+const BanglaNewsPage = async () => {
+    const BanglaNewsData = await getBlogs('BD News');
+    console.log(BanglaNewsData);
     return (
         <div className="space-y-8">
                 <div className="relative">
@@ -13,9 +16,9 @@ const page = () => {
                         <h1 className="text-3xl font-semibold uppercase text-[white]">Bangladeshi News</h1>
                     </div>
                 </div>
-            <BanglaNewsComponents data={backendData}/>
+            <BanglaNewsComponents news={BanglaNewsData?.result}/>
         </div>
     );
 };
 
-export default page;
+export default BanglaNewsPage;

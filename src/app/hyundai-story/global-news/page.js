@@ -2,9 +2,14 @@ import PageBanner from '@/app/components/PageBanner';
 
 
 import GlobalNewsComponent from './_components/GlobalNewsComponent';
-import { backendData } from '../../../../public/data/data';
+// import { backendData } from '../../../../public/data/data';
+import { getBlogs } from '@/app/utils/fetchingData';
 
-const page = () => {
+
+
+const GlobalNewsPage = async () => {
+    const globalNewsData = await getBlogs('Global News');
+   
     return (
         <div className="space-y-8">
                 <div className="relative">
@@ -13,9 +18,9 @@ const page = () => {
                         <h1 className="text-3xl font-semibold uppercase text-[white]">Global News</h1>
                     </div>
                 </div>
-            <GlobalNewsComponent data={backendData}/>
+            <GlobalNewsComponent news={globalNewsData?.result}/>
         </div>
     );
 };
 
-export default page;
+export default GlobalNewsPage;

@@ -152,10 +152,10 @@ export const StoryMenuItems =[
         menu:"Bangladesh News",
         link:"/hyundai-story/bangladesh-news"
     },
-    {
-        menu:"Photo Gallery",
-        link:"/hyundai-story/photo-gallery"
-    },
+    // {
+    //     menu:"Photo Gallery",
+    //     link:"/hyundai-story/photo-gallery"
+    // },
     {
         menu:"Awards",
         link:"/hyundai-story/awards"
