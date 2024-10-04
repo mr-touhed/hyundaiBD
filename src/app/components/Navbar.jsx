@@ -69,7 +69,7 @@ const Navbar = () => {
                         <li>
                         <IoShareSocialOutline />
                         </li>
-                        <li>
+                        <li className='md:hidden block'>
                             <button onClick={()=>setShowMobileMenu(true)}><GiHamburgerMenu /></button>
                         </li>
                     </ul>

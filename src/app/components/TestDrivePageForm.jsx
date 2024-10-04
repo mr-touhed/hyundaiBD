@@ -4,11 +4,16 @@ import { carData } from "../../../public/data/data";
 import Button from "./Button";
 import { useEffect, useState } from "react";
 import { getCityList } from "../utils/locations";
+import { submitCustomerForm } from "../utils/formValidator";
+import { ShowAlert } from "../utils/alert";
 
 const TestDrivePageForm = ({districtList,car}) => {
     const modelList = carData.map(car => car.name.toLowerCase());
     const [selectState,setSelectState] = useState('Dhaka');
     const [cityList,SetcityList] = useState([])
+    const [formData,setFormData] = useState({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:""})
+    const [loading,setLoading] = useState(false)
+
     useEffect(()=>{
 
             const getList = async () =>{
@@ -21,41 +26,65 @@ const TestDrivePageForm = ({districtList,car}) => {
             }
 
             getList()
+
+            setFormData(prev => ({...prev,state: selectState}))
+
     },[selectState])
-        console.log(cityList);
+       
+
+    const handel_form_value = (e) =>{
+        setFormData(prev => ({...prev, [e.target.name]:e.target.value}))
+    }
+
+    const handel_form_submit = async (e) =>{
+        e.preventDefault();
+
+            try {
+                setLoading(true)
+                const result = await submitCustomerForm(formData);
+                if(result.status){
+                    ShowAlert(result.status,result.message)
+                    setLoading(false)
+                    setFormData({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:""})
+                }else{
+                    ShowAlert(result.status,result.message)
+                    setLoading(false)
+                }
+            } catch (error) {
+                ShowAlert(false,error.message)
+                setLoading(false)
+            }
+        
+    }
+
     return (
         <div className=' py-16 bg-[#F6F3F2]'>
            
-            <form className="max-w-[700px] mx-auto space-y-2  p-2" >
-                <div className='text-sm'>
-                    <label htmlFor="gender">Salutation</label>
-                    <div className='flex  gap-16 text-md '>
-                            <div className='flex items-center gap-2 text-sm'>
-                            <input type="radio" name="gender" id="gender" value="Mr" />
-                            <label htmlFor="gender">Mr</label>
-                            </div>
-                            <div className='flex items-center gap-2'>
-                            <input type="radio" name="gender" id="gender" value="Mrs" />
-                            <label htmlFor="gender">Mrs</label>
-                            </div>
-                    </div>
+            <form className="max-w-[700px] mx-auto space-y-2  p-2" onSubmit={handel_form_submit}>
+                <div className=' flex gap-4 bg-[white] justify-center text-base font-light p-2 rounded-lg' >
+                    
+                    <select required onChange={(e)=>handel_form_value(e)} name="service_type" id="" className="text-base border bg-primary text-[white] p-1 rounded-md font-thin" value={formData.service_type}>
+                        <option disabled value="">Select Service Type</option>
+                        <option value="Test Drive">Test Drive</option>
+                        <option value="Query">Query</option>
+                    </select>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="gender" className="text-sm">Name</label>
-                <input type="text" name="name" id="name" className='p-1 border border-[gray] rounded-md'/>
+                <label htmlFor="name" className="text-sm">Name</label>
+                <input onChange={(e)=>handel_form_value(e)} value={formData.name} type="text" name="name" id="name" className='p-1 border border-[gray] rounded-md'/>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="Email" className="text-sm">Email</label>
-                <input type="email" name="email" id="Email" className='p-1 border border-[gray]'/>
+                <label htmlFor="email" className="text-sm">Email</label>
+                <input onChange={(e)=>handel_form_value(e)} value={formData.email} type="email" name="email" id="email" className='p-1 border border-[gray] rounded-md'/>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="Mobile" className="text-sm">Mobile</label>
-                <input type="tel" name="mobile" id="Mobile" className='p-1 border border-[gray]'/>
+                <label htmlFor="mobile" className="text-sm">Mobile</label>
+                <input onChange={(e)=>handel_form_value(e)} value={formData.mobile} type="tel" name="mobile" id="mobile" className='p-1 border border-[gray] rounded-md'/>
                 </div>
 
                 <div className='grid text-md'>
-                <label htmlFor="Mobile" className="text-sm">Model</label>
-                        <select name="model" id="Mobile" className='p-1 border border-[gray]' defaultValue={car} disabled={car}>
+                <label htmlFor="model" className="text-sm">Model</label>
+                        <select onChange={(e)=>handel_form_value(e)} value={formData.model} name="model" id="model" className='p-1 border border-[gray] rounded-md' disabled={car}>
                         
                             {
                                modelList.map(car => <option key={car} value={car}>{car.toUpperCase()}</option>)
@@ -63,9 +92,9 @@ const TestDrivePageForm = ({districtList,car}) => {
                         </select>
                 </div>
                 <div className='grid text-md'>
-                <label htmlFor="Mobile" className="text-sm">State</label>
-                        <select name="state" id="State" className='p-1 border border-[gray]'  onChange={(e) => setSelectState(e.target.value)} >
-                        <option value="">Select</option>
+                <label htmlFor="state" className="text-sm">State</label>
+                        <select required  name="state" id="state" className='p-1 border border-[gray] rounded-md'  onChange={(e) => setSelectState(e.target.value)} value={formData.state}>
+                        <option disabled value="">Select</option>
                         {
                             districtList.map(state => <option key={state.coordinates} value={state.division}>{state.division}</option>)
                         }
@@ -74,8 +103,8 @@ const TestDrivePageForm = ({districtList,car}) => {
                 </div>
                 <div className='grid text-md'>
                 <label htmlFor="city" className="text-sm">City</label>
-                <select name="city" id="city" className='p-1 border border-[gray]' disabled={!cityList} >
-                        <option value="">Select</option>
+                <select required onChange={(e)=>handel_form_value(e)} name="city" id="city" value={formData.city} className='p-1 border border-[gray] rounded-md' disabled={!cityList} >
+                        <option disabled value="">Select</option>
                         {
                             cityList?.map(city => <option key={city.coordinates} value={city.district}>{city.district}</option>)
                         }
@@ -85,21 +114,21 @@ const TestDrivePageForm = ({districtList,car}) => {
 
                 <div className='grid text-md'>
                 <label htmlFor="city" className="text-sm">Dealer</label>
-                <select name="dealer" id="Dealer" className='p-1 border border-[gray]' disabled>
+                <select name="dealer" id="Dealer" className='p-1 border border-[gray] rounded-md' disabled>
                         
                            <option value="FairTechnology">FairTechnology</option>
                         </select>
                 </div>
                 <div className='grid text-md'>
-                    <label htmlFor="Comments" className="text-sm">Comments</label>
-                    <textarea name="comments" id="Comments" className='h-44 border border-[gray]'></textarea>
-                    <div className='flex items-center text-sm gap-3 mt-2'>
+                    <label htmlFor="comments" className="text-sm">Comments</label>
+                    <textarea required onChange={(e)=>handel_form_value(e)} value={formData.comments} name="comments" id="comments" className='h-44 border border-[gray] rounded-md'></textarea>
+                    {/* <div className='flex items-center text-sm gap-3 mt-2'>
                         <input type="checkbox" name="agree" id="agree" className='w-5 h-5 '/>
                         <label htmlFor="agree" className="text-sm">* I accept the terms & conditions</label>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='grid place-content-center'>
-                            <button className='w-36 h-9 bg-primary text-[white]'>Submit</button>
+                            <button type="submit" disabled={loading} className='w-36 h-9 bg-primary disabled:bg-[#323262] text-[white]'>{loading ? "Loading..." : "Submit" } </button>
                 </div>
             </form>
 

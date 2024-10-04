@@ -1,7 +1,7 @@
 
 export const baseUrl = process.env.baseUrl;
 
-
+// blog Post Submit function
 
 export const submitBlogPost = async (data) =>{
         try {
@@ -55,7 +55,23 @@ export const submitSocialPost = async (data) =>{
 }
 
 
+// customer form submit form function
 
+export const submitCustomerForm = async (data) =>{
+            try {
+                const response = await fetch(`${baseUrl}/customers`,{
+                    method:"POST",
+                    headers:{
+                        "content-type":"application/json"
+                    },
+                    body:JSON.stringify(data)
+                });
+                const result = response.json();
+                    return result;
+            } catch (error) {
+                console.log(error);
+            }
+}
 
 
 
