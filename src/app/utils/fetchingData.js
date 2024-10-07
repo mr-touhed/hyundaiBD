@@ -18,6 +18,28 @@ export const getBlogs = async(type) =>{
 
 
 
+export const fetchingCustomerData = async (type) =>{
+    try {
+        const response = await fetch(`${baseUrl}/customers?type=${type}`,{cache:"no-cache"});
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+// Test Drive
+
+// Query
+
+
+
+
+
+
+
+
 export const shuffle = function(v){
    
 

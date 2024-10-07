@@ -11,7 +11,7 @@ const TestDrivePageForm = ({districtList,car}) => {
     const modelList = carData.map(car => car.name.toLowerCase());
     const [selectState,setSelectState] = useState('Dhaka');
     const [cityList,SetcityList] = useState([])
-    const [formData,setFormData] = useState({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:""})
+    const [formData,setFormData] = useState({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:"", type:"pending"})
     const [loading,setLoading] = useState(false)
 
     useEffect(()=>{
@@ -45,7 +45,7 @@ const TestDrivePageForm = ({districtList,car}) => {
                 if(result.status){
                     ShowAlert(result.status,result.message)
                     setLoading(false)
-                    setFormData({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:""})
+                    setFormData({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:"",type:"pending"})
                 }else{
                     ShowAlert(result.status,result.message)
                     setLoading(false)
