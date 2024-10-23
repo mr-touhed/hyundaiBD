@@ -132,7 +132,7 @@ const Experience360 = ({ images }) => {
             </button>
           </div>
         ) : (
-          <Image
+          <img
             src={images[currentIndex]}
             alt={`360 view ${currentIndex}`}
             width={1200}
