@@ -156,14 +156,14 @@ export const StoryMenuItems =[
     //     menu:"Photo Gallery",
     //     link:"/hyundai-story/photo-gallery"
     // },
-    {
-        menu:"Awards",
-        link:"/hyundai-story/awards"
-    },
-    {
-        menu:"Corporate Governance",
-        link:"/hyundai-story/corporate-governance"
-    },
+    // {
+    //     menu:"Awards",
+    //     link:"/hyundai-story/awards"
+    // },
+    // {
+    //     menu:"Corporate Governance",
+    //     link:"/hyundai-story/corporate-governance"
+    // },
    
     // {
     //     menu:"myHyundai App",
@@ -285,8 +285,8 @@ export const carData = [
             "1.0 | kappa turbo GDi petrol"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
-        model:"Pick-up",
-        path:"/find-a-car/pick-up/highlights"
+        model:"LCV",
+        path:"/find-a-car/H-100/highlights"
     },
 ]
 
@@ -319,3 +319,10 @@ export const backendData = [
         details:"Change Maker of the Year- Mr. Puneet Anand, AVP & Vertical Head- Corporate Affairs, HMIL",
     }
 ]
+
+
+
+
+
+
+

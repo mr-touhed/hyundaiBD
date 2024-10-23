@@ -47,10 +47,34 @@ export const submitAwardPost = async (data) =>{
 }
 export const submitSocialPost = async (data) =>{
             try {
-                const {image,details,type,hotNews,socialLink} = data;
-            const socialData = {image,details,type,hotNews,socialLink};
+                const {imgFile,hotNews,social_link, title,type} = data;
+
+                const imagePath = await uploadImageToImgBB(imgFile)
+            if(!imagePath){
+                    return {status:false, message:"Image can't post right now "}
+            }
+
+            const socialData = {image:imagePath,hotNews,social_link,title,type};
+
+            const response = await fetch(`${baseUrl}/socials/posts`,{
+                method:"POST",
+                headers:{
+                    'content-type':"application/json"
+                },
+                body:JSON.stringify(socialData)
+            })
+            if(!response.ok){
+                    console.log(response);
+                return {status:false, message:" can't post social right now "}
+                
+            }else{
+                const result = await response.json();
+                return result ;
+            }
+
         } catch (error) {
             console.log(error);
+            return {status:false, message:error.message}
         }
 }
 

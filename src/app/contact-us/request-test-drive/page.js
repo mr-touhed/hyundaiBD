@@ -30,12 +30,12 @@ const TestDrivepage = async  ({searchParams}) => {
                         <Link href="/bookACar"><Image src={`/images/Clicktobuy.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
                         <h4 className="text-xl font-semibold">Click To Buy</h4></Link>
                         </li>
-                        <li >
+                        {/* <li >
                         <Link href="/">
                         <Image src={`/images/specialofferpc.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
                             <h4 className="text-xl font-semibold">Spacial Offer</h4>
                         </Link>
-                        </li>
+                        </li> */}
                         <li >
                             <Link href="/">
                             <Image src={`/images/emiassurancepc.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>

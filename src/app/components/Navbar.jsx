@@ -60,9 +60,9 @@ const Navbar = () => {
                 </nav>
                 <div>
                     <ul className='flex gap-6 items-center'>
-                        <li>
+                        {/* <li>
                         <FaRegUser />
-                        </li>
+                        </li> */}
                         {/* <li>
                         <IoLocationOutline />
                         </li> */}

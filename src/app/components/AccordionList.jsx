@@ -7,35 +7,35 @@ const AccordionList = () => {
     const [accordions, setAccordion] = useState([ 
         { 
             key: 1, 
-            title: 'Hyundai Experience Center, Tejgaon',
+            title: 'Hyundai Experience Center, Tejgaon Dhaka',
             number:"+88 09613-505080" ,
             data: `246, Rangs Babylonia, Bir Uttam Mir Shawkat Sarak, Tejgaon, Dhaka 1208.`, 
             isOpen: false
         }, 
         { 
             key: 2, 
-            title: 'Hyundai 3S Center (Sales, Service & Spares), Tejgaon', 
+            title: 'Hyundai 3S Center (Sales, Service & Spares), Tejgaon Dhaka', 
             number:'+88 09613-505080279',
             data: `Tejgaon I/A, Dhaka-1208,Bangladesh`, 
             isOpen: false
         }, 
         { 
             key: 3, 
-            title: 'Hyundai 1S Center (Sales), Tejgaon', 
+            title: 'Hyundai 1S Center (Sales), Tejgaon Dhaka', 
             number:"+88 09613-505080",
             data: `191/A, Haque Tower, Bir Uttam Mir Shawkat Sarak,Tejgaon, Dhaka 1208`, 
             isOpen: false
         }, 
         { 
             key: 4, 
-            title: 'Hyundai 1S Center (Sales) Uttara, Rabindra Sarani', 
+            title: 'Hyundai 1S Center (Sales) Uttara, Rabindra Sarani Dhaka', 
             number:"+88 09613-505080",
             data: `Plot # 41, Sector # 03, Road # 15 (Rabindra Sarani), Uttara R/A.`, 
             isOpen: false
         }, 
         { 
             key: 5, 
-            title: 'Hyundai 1S Center (Sales), Dhanmondi', 
+            title: 'Hyundai 1S Center (Sales), Dhanmondi Dhaka', 
             number:"+88 09613-505080",
             data: `Hakim Heritage, 15/A, New-16, Road-6, Dhanmondi, Mirpur Road, Dhaka`, 
             isOpen: false
@@ -63,7 +63,7 @@ const AccordionList = () => {
         }, 
         { 
             key: 9, 
-            title: 'Hyundai 1S Center(Sales), Chattogram, Kazir Dewri', 
+            title: 'Hyundai 1S Center(Sales), Kazir Dewri, Chattogram', 
             number:"+88 09613-505080",
             data: `281, Chatteswari Road, Kazir Dewri, Chattogram.`, 
             isOpen: false
@@ -77,7 +77,7 @@ const AccordionList = () => {
         }, 
         { 
             key: 11, 
-            title: 'Hyundai 2S Center (Service & Spares), Diabari ,Uttara', 
+            title: 'Hyundai 2S Center (Service & Spares), Diabari ,Uttara Dhaka', 
             number:"+88 09613-505080",
             data: `R#2, Sector#15, Diya Bari, Zero Point, Uttara, Dhaka`, 
             isOpen: false

@@ -19,7 +19,7 @@ import { carData } from "../../../../public/data/data";
 
 const CarDetails = () => {
     const [index,setIndex] = useState(0);
-    const models = ['All','SUV','Pick-up'];
+    const models = ['All','SUV','LCV'];
     const [showModel,setShowModel] = useState('All')
     const [activeIndex, setActiveIndex] = useState(0);
     const [showCars,setShowCars] = useState([])
@@ -35,7 +35,7 @@ const CarDetails = () => {
 
             const update =  carData.filter(car => car.model === showModel)
            setShowCars(update)
-        }else if(showModel == "Pick-up"){
+        }else if(showModel == "LCV"){
             const update =  carData.filter(car => car.model.toLowerCase() === showModel.toLowerCase())
            setShowCars(update)
         }

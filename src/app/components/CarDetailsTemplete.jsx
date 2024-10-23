@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import TestDrive from "./TestDrive";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
+import PdfDownloaderBtn from "./PdfDownloaderBtn";
 
 
-const CarDetailsTemplete = ({carName,image,children}) => {
-    const path = usePathname()
- 
+
+const CarDetailsTemplete = ({carName,image,children,file}) => {
+    const path = usePathname(null)
+    
     const currentPage = path?.split("/")[3];
     const carModel = path?.split("/")[2]
     const menu = [
@@ -48,7 +50,7 @@ const CarDetailsTemplete = ({carName,image,children}) => {
         },
 
     ]
-
+   
     return (
         <div>
             <section className="bg-[#EEEDF2]">
@@ -76,7 +78,7 @@ const CarDetailsTemplete = ({carName,image,children}) => {
                             {
                                 menu.map(link => <li key={link.name} ><Link className={`font-semibold ${link.path == currentPage && "underline text-primary"}`} href={link?.path || "/"} >{link.name}</Link></li>)
                             }
-                            <li className="font-semibold text-nowrap">e-brochure</li>
+                            <PdfDownloaderBtn file={file} name={carName}/>
                         </ul>
                 </div>
             </section>

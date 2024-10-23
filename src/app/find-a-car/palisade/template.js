@@ -5,7 +5,7 @@ import TestDriveButton from "@/app/components/TestDriveButton";
 const template = ({children}) => {
     return (
         <main className="relative">
-            <CarDetailsTemplete carName="Palisade" image="/images/cardetails/palisade/banner.jpg">
+            <CarDetailsTemplete carName="PALISADE" image="/images/cardetails/palisade/banner.jpg">
                     <section className="mt-14">
                         {children}
 

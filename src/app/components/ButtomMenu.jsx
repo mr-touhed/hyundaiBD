@@ -11,7 +11,7 @@ const ButtomMenu = ({className}) => {
                          <Link href={'/click-to-buy/find-a-dealer'} className="flex items-center md:flex-row flex-col text-center gap-2">
                         
                         <Image src={`/images/icons/ico-find-a-dealer-pc.png`} alt="icones" width={25} height={25} className="w-4 h-4 md:w-auto md:h-auto"/>
-                        <span >Find a Dealer</span>
+                        <span >Outlet</span>
                         </Link>
                     </li>
                     <li>
