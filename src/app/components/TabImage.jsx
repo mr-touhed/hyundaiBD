@@ -25,7 +25,7 @@ const TabImage = ({TabData,page}) => {
             <div >
             <Image src={showImage.img} alt="" width={1200} height={600} className="w-full mb-16 h-auto"/>
                 <div className="max-w-[800px] mx-auto">
-                <h2 className=" text-4xl font-bold">{showImage.tab}</h2>
+                <h2 className=" md:text-4xl font-bold">{showImage.tab}</h2>
                 <p>{showImage.details}</p>
                 </div>
                 

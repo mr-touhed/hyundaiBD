@@ -1,10 +1,17 @@
 // components/MenuBar.js
 import Link from 'next/link';
 import React from 'react';
+import CarMenu from './CarMenu';
 
-const MobileMenu = ({ serviceMenuItems, storyMenuItems, contactUsMenuItems }) => {
+const MobileMenu = ({ serviceMenuItems, storyMenuItems, contactUsMenuItems,handel_close }) => {
     return (
         <div className="p-4 max-w-lg mx-auto ">
+            <details className="mb-2">
+                    <summary className="bg-gray-200 p-1 rounded-lg cursor-pointer  mb-4">
+                            <span className="font-semibold">Find A Car</span>
+                     </summary>
+                    <CarMenu handel_close={handel_close}/>
+            </details>
             {/* Service Menu */}
             <details className="mb-2">
                 <summary className="bg-gray-200 p-1 rounded-lg cursor-pointer  mb-4">
@@ -21,6 +28,7 @@ const MobileMenu = ({ serviceMenuItems, storyMenuItems, contactUsMenuItems }) =>
                                     {item.sub ? (
                                         item.sub.map((subItem, subIndex) => (
                                             <Link 
+                                                onTouchStart={handel_close}
                                                 key={subIndex} 
                                                 href={subItem.link} 
                                                 className="text-gray-800 block "
@@ -30,6 +38,7 @@ const MobileMenu = ({ serviceMenuItems, storyMenuItems, contactUsMenuItems }) =>
                                         ))
                                     ) : (
                                         <Link 
+                                        onTouchStart={handel_close}
                                             href={item.link} 
                                             className="text-gray-800 block"
                                         >
@@ -52,6 +61,7 @@ const MobileMenu = ({ serviceMenuItems, storyMenuItems, contactUsMenuItems }) =>
                     {storyMenuItems.map((item, index) => (
                         <li key={index}>
                             <Link 
+                            onTouchStart={handel_close}
                                 href={item.link} 
                                 className="bg-gray-100 rounded-lg block cursor-pointer "
                             >
@@ -71,6 +81,7 @@ const MobileMenu = ({ serviceMenuItems, storyMenuItems, contactUsMenuItems }) =>
                     {contactUsMenuItems.map((item, index) => (
                         <li key={index}>
                             <Link 
+                            onTouchStart={handel_close}
                                 href={item.link} 
                                 className="bg-gray-100  rounded-lg block cursor-pointer "
                             >

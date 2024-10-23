@@ -5,8 +5,8 @@ import Link from "next/link";
 const ButtomMenu = ({className}) => {
     return (
         <section className={className}>
-            <div className=" bg-primary p-4 md:text-lg text-xs md:font-semibold text-[white] w-full z-10 ">
-                <ul className="flex md:gap-28 gap-4 justify-center">
+            <div className=" bg-primary md:p-4 p-3 md:text-lg text-xs md:font-semibold text-[white] w-full z-10 ">
+                <ul className="flex md:gap-28 gap-8 justify-center">
                     <li>
                          <Link href={'/click-to-buy/find-a-dealer'} className="flex items-center md:flex-row flex-col text-center gap-2">
                         

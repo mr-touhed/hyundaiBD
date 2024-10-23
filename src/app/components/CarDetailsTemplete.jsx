@@ -74,7 +74,7 @@ const CarDetailsTemplete = ({carName,image,children,file}) => {
             <ButtomMenu />
                 <div className="h-16 container ">
                         <ul className="flex  items-center h-full gap-12 md:overflow-hidden overflow-scroll">
-                            <li className="font-semibold">{carName}</li>
+                            <li className="font-semibold md:text-base text-xs">{carName}</li>
                             {
                                 menu.map(link => <li key={link.name} ><Link className={`font-semibold ${link.path == currentPage && "underline text-primary"}`} href={link?.path || "/"} >{link.name}</Link></li>)
                             }

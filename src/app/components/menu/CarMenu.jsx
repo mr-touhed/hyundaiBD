@@ -47,7 +47,7 @@ const CarMenu = ({handel_close}) => {
                         )
                     }
             </section> */}
-            <section className="grid grid-cols-3 gap-8 p-8">
+            <section className="grid md:grid-cols-3 grid-cols-2 p-2 gap-8 md:p-8">
                     {
                       model !== "All" &&  displayCar && displayCar.map((car,i) => 
                             <Link href={car.path} key={i} className="cursor-pointer max-w-[400px]  group" onClick={handel_close}>
@@ -64,7 +64,7 @@ const CarMenu = ({handel_close}) => {
                          
                          <div>
                                 <h2  className="text-lg border-b border-b-[#d2d1d1] p-1 font-semibold max-w-[800px]" >SUV</h2>
-                                <div className="grid grid-cols-3 p-2">
+                                <div className="grid md:grid-cols-3 grid-cols-2 p-2">
                                     
                                     {
                                         displayCar.filter(car => car.model === "SUV")?.map(car=> <Link href={car.path} key={car.name} className="cursor-pointer max-w-[400px]  group" onClick={handel_close}> 
@@ -78,7 +78,7 @@ const CarMenu = ({handel_close}) => {
                          </div>
                          <div>
                                 <h2  className="text-lg border-b border-b-[#d2d1d1] p-1 font-semibold max-w-[800px]" >LCV</h2>
-                                <div className="grid grid-cols-3">
+                                <div className="grid md:grid-cols-3 grid-cols-2 p-2">
                                     
                                     {
                                         displayCar.filter(car => car.model === "LCV")?.map(car=> <Link href={car.path} key={car.name} className="cursor-pointer max-w-[400px]  group" onClick={handel_close}> 

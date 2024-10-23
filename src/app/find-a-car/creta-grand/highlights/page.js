@@ -50,21 +50,21 @@ const Highlights = () => {
                                 <TabImage TabData={TabData} page="md:grid-cols-4"/>
                 </section>
                 <section className="container mt-16">
-           <h2 className="text-center text-4xl font-bold">CRETA GRAND’s advanced powertrains deliver all the power you need</h2> 
+           <h2 className="text-center md:text-4xl font-bold">CRETA GRAND’s advanced powertrains deliver all the power you need</h2> 
           
            
             <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-Mid-image_1-1.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
            </section>
-                <section className="container flex justify-between">
-                        <div>
-                        <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-control-mode.jpg" alt="" width={1200} height={600} className="max-w-[544px] max-h-[360px]" />
-                                <h2 className=" text-4xl font-bold">Traction control mode</h2>   
+                <section className="container flex md:flex-row flex-col gap-16 md:gap-0  justify-between">
+                        <div className="space-y-3">
+                        <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-control-mode.jpg" alt="" width={1200} height={600} className="md:max-w-[544px] md:max-h-[360px]" />
+                                <h2 className=" md:text-4xl font-bold">Traction control mode</h2>   
                                 <p className="max-w-[544px]">Traction Control Mode automatically fine tunes CRETA GRAND’s front wheel
                                 drive system to adapt to difficult driving conditions.</p>
                         </div>
-                        <div>
-                        <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-wheels.jpg" alt="" width={1200} height={600} className="max-w-[544px] max-h-[360px]" />  
-                        <h2 className=" text-4xl font-bold">18″ diamond-cut alloy wheels</h2>   
+                        <div className="space-y-3">
+                        <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight-wheels.jpg" alt="" width={1200} height={600} className="md:max-w-[544px] md:max-h-[360px]" />  
+                        <h2 className=" md:text-4xl font-bold">18″ diamond-cut alloy wheels</h2>   
                                 <p className="max-w-[544px]">Modern, sporty, and masculine—it’s just my style, it’s in perfect tune with my sensibilities, and it fits in anywhere.</p> 
                         </div>
                 </section>

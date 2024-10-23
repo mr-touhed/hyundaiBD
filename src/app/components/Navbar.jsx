@@ -23,8 +23,16 @@ const Navbar = () => {
     }
     
     const handel_close = () =>{
-        setSelectMenu('');setActiveIndex(0)
+        setTimeout(()=>{
+            setSelectMenu('');setActiveIndex(0)
+        },400)
     }
+    const handel_close_mobile_menu = () =>{
+        setTimeout(()=>{
+            setShowMobileMenu(false)
+        },400)
+    }
+   
     let showMenuElem;
 
     if(selectMenu === 'find_car'){
@@ -70,12 +78,12 @@ const Navbar = () => {
                         <IoShareSocialOutline />
                         </li>
                         <li className='md:hidden block'>
-                            <button onClick={()=>setShowMobileMenu(true)}><GiHamburgerMenu /></button>
+                            <button onTouchStart={()=>setShowMobileMenu(true)} ><GiHamburgerMenu /></button>
                         </li>
                     </ul>
                     <div className={`fixed h-screen overflow-scroll top-0 ${showMobileMenu ? 'left-0' : "left-[10000000000px]"} transition-all ease-in duration-100  w-full z-50 bg-[#ffffffc8] backdrop-blur-md min-h-screen`}>
-                        <button onClick={()=>setShowMobileMenu(false)} className='w-16 block mt-6 ml-auto'><SlClose className='w-6 h-6'/></button>
-                    <MobileMenu contactUsMenuItems={ContactUsMenuItems} serviceMenuItems={ServiceMenuItems} storyMenuItems={StoryMenuItems}/>
+                        <button onTouchStart={()=>setShowMobileMenu(false)} className='w-16 block mt-6 ml-auto'><SlClose className='w-6 h-6'/></button>
+                    <MobileMenu contactUsMenuItems={ContactUsMenuItems} serviceMenuItems={ServiceMenuItems} storyMenuItems={StoryMenuItems} handel_close={handel_close_mobile_menu}/>
                     </div>
                 </div>
                 
