@@ -1,3 +1,4 @@
+import ShowCase from '@/app/components/Home/ShowCase';
 import LocationMap from '@/app/components/LocationMap';
 import WaittingPage from '@/app/components/WaittingPage';
 import Image from 'next/image';
@@ -22,10 +23,12 @@ const page = () => {
                             <Image src={`/images/test-drive-banner.jpg`} alt={` image banner`} width={1200} height={700} className="w-full md:h-[72vh] h-[30vh] object-cover"/>
                     </section>
 
-                    <h2 className='font-semibold text-center text-3xl py-8'>Find Dealer</h2>
+                    <h2 className='font-semibold text-center text-3xl py-8'>Find Outlet</h2>
 
 
                     <LocationMap/>
+
+                    <ShowCase/>
             </section>
 
 

@@ -8,7 +8,7 @@ const ButtomMenu = ({className}) => {
             <div className=" bg-primary md:p-4 p-3 md:text-lg text-xs md:font-semibold text-[white] w-full z-10 ">
                 <ul className="flex md:gap-28 gap-8 justify-center">
                     <li>
-                         <Link href={'/click-to-buy/find-a-dealer'} className="flex items-center md:flex-row flex-col text-center gap-2">
+                         <Link href={'/click-to-buy/find-an-outlet'} className="flex items-center md:flex-row flex-col text-center gap-2">
                         
                         <Image src={`/images/icons/ico-find-a-dealer-pc.png`} alt="icones" width={25} height={25} className="w-4 h-4 md:w-auto md:h-auto"/>
                         <span >Outlet</span>

@@ -25,7 +25,7 @@ const Footer = () => {
                                 <li><Link href="/click-to-buy/test-drive">Request a Test Drive</Link> </li>
                                 {/* <li>Special Offers</li> */}
                                 <li><Link href="/contact-us/prices">Prices</Link></li>
-                                <li> <Link href="/click-to-buy/find-a-dealer">Outlet</Link></li>
+                                <li> <Link href="/click-to-buy/find-an-outlet">Outlet</Link></li>
                                 {/* <li><Link href="/bookACar">Online Booking</Link> </li> */}
                                 {/* <li>Online Finance</li> */}
                             </ul>

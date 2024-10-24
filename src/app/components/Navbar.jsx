@@ -12,6 +12,7 @@ import { SlClose } from "react-icons/sl";
 import SubMenu from './menu/SubMenu';
 import { ContactUsMenuItems, ServiceMenuItems, StoryMenuItems } from '../../../public/data/data';
 import MobileMenu from './menu/MobileMenu';
+import ShareButton from './ShareButton';
 const Navbar = () => {
     const [showMobileMenu,setShowMobileMenu] = useState(false)
     const [activeIndex,setActiveIndex] = useState(0);
@@ -74,9 +75,7 @@ const Navbar = () => {
                         {/* <li>
                         <IoLocationOutline />
                         </li> */}
-                        <li>
-                        <IoShareSocialOutline />
-                        </li>
+                        <ShareButton/>
                         <li className='md:hidden block'>
                             <button onTouchStart={()=>setShowMobileMenu(true)} ><GiHamburgerMenu /></button>
                         </li>

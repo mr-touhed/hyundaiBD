@@ -14,7 +14,7 @@ const FindDealerpage = () => {
                         <li>&gt;</li>
                         <li className="underline">click-to-buy</li>
                         <li>&gt;</li>
-                        <li className="underline text-primary font-semibold">Find an Outletr</li>
+                        <li className="underline text-primary font-semibold">Find an Outlet</li>
                     </ul>
 
                     <section >

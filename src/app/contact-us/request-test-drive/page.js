@@ -23,8 +23,8 @@ const TestDrivepage = async  ({searchParams}) => {
             <div className="bg-[#F6F3F2] py-16">
             <ul className="flex md:flex-row flex-col md:items-baseline items-center space-y-8  justify-between container " >
                         <li >
-                                <Link href="/click-to-buy/find-a-dealer"><Image src={`/images/Find-a-Dealer.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
-                                <h4 className="text-xl font-semibold">Find a Dealer & Website</h4></Link>
+                                <Link href="/click-to-buy/find-an-outlet"><Image src={`/images/Find-a-Dealer.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
+                                <h4 className="text-xl font-semibold">Find an Outlet & Website</h4></Link>
                         </li>
                         <li >
                         <Link href="/bookACar"><Image src={`/images/Clicktobuy.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
