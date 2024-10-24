@@ -15,9 +15,11 @@ import Button from '../Button';
 
 
 const images = [
-  "/images/showcase/3.jpg",
+  "/images/showcase/1.jpg",
   "/images/showcase/2.jpg",
-    "/images/showcase/1.jpg",
+  "/images/showcase/3.jpg",
+  
+    
 ]
 const ShowCase = () => {
     return (

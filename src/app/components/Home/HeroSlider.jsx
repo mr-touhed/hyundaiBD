@@ -28,10 +28,10 @@ const sliders = [
     img:"/images/banner/img_3.jpg",
     link:"/find-a-car/tucson/highlights"
   },
-  // {
-  //   img:"/images/banner/img_4.jpg",
-  //   link:"/find-a-car/tucson/highlights"
-  // },
+  {
+    img:"/images/banner/img_4.jpg",
+    link:"/find-a-car/tucson/highlights"
+  },
   {
     img:"/images/banner/img_5.jpg",
     link:"/find-a-car/creta-grand/highlights"

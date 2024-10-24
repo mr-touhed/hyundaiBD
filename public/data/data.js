@@ -180,10 +180,10 @@ export const ContactUsMenuItems = [
         menu:"Prices",
         link:"/contact-us/prices"
     },
-    {
-        menu:"Special Offers",
-        link:"/contact-us/special-offers"
-    },
+    // {
+    //     menu:"Special Offers",
+    //     link:"/contact-us/special-offers"
+    // },
     {
         menu:"Find an Outlet",
         link:"/contact-us/find-an-outlet"

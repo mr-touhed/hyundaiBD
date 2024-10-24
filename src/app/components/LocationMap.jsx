@@ -40,7 +40,15 @@ const LocationMap = () => {
             isOpen: false
         },
         { 
-            key: 4, 
+            key: 6, 
+            title: 'Hyundai 2S Center (Service & Spares), Diabari ,Uttara Dhaka', 
+            number:"+88 09613-505080",
+            data: `R#2, Sector#15, Diya Bari, Zero Point, Uttara, Dhaka`,
+            pb:"!1m18!1m12!1m3!1d3648.4105407556476!2d90.3643988747958!3d23.875056683980294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3c26bf618dd%3A0xfca0687a33431c0d!2sHyundai%202S%20Service%20Center%20Diabari%2CUttara%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1724686278132!5m2!1sen!2sbd", 
+            isOpen: false
+        }, 
+        { 
+            key: 7, 
             title: 'Hyundai 1S Center (Sales) Uttara, Rabindra Sarani Dhaka', 
             number:"+88 09613-505080",
             data: `Plot # 41, Sector # 03, Road # 15 (Rabindra Sarani), Uttara R/A.`,
@@ -49,7 +57,7 @@ const LocationMap = () => {
         }, 
         
         { 
-            key: 6, 
+            key: 8, 
             title: 'Hyundai 1S Center (Sales), Kakrail, Dhaka ', 
             number:"+88 09613-505080",
             data: `House -77, Kakrail Circle, Ramna, Dhaka-1000`,
@@ -57,7 +65,7 @@ const LocationMap = () => {
             isOpen: false
         }, 
         { 
-            key: 7, 
+            key: 9, 
             title: 'Hyundai 1S Center (Sales), Progoti Sarani, Dhaka', 
             number:"+88 09613-505080",
             data: `House-49/1, Shahid Abdul Aziz Sarok, Howlader Tower, Pragati Sharani, Baridhara, Dhaka -1229`,
@@ -65,7 +73,7 @@ const LocationMap = () => {
             isOpen: false
         }, 
         { 
-            key: 8, 
+            key: 10, 
             title: 'Hyundai 3S Center (Sales, Service & Spares), Chattogram', 
             number:"+8809613-505080",
             data: `156, SKS Project, Shersha Bangla Bazar, Hyrrican Factory, Bayezid Link Road, Chattogram`,
@@ -73,7 +81,7 @@ const LocationMap = () => {
             isOpen: false
         }, 
         { 
-            key: 9, 
+            key: 11, 
             title: 'Hyundai 1S Center(Sales),Kazir Dewri, Chattogram', 
             number:"+88 09613-505080",
             data: `281, Chatteswari Road, Kazir Dewri, Chattogram.`,
@@ -81,21 +89,14 @@ const LocationMap = () => {
             isOpen: false
         }, 
         { 
-            key: 10, 
+            key: 12, 
             title: 'Hyundai 3S Center (Sales, Service & Spares), Bogura', 
             number:"+8809613-505080",
             data: `6123, Nishindara, Matidhali, Bogura.`,
             pb:"!1m18!1m12!1m3!1d3619.3403885431912!2d89.35957967482742!3d24.886368394221428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc557611f2dbfb%3A0xa4c4cd87ea18cc29!2sMatidali%2C%20Nishindara!5e0!3m2!1sen!2sbd!4v1724686235959!5m2!1sen!2sbd", 
             isOpen: false
         }, 
-        { 
-            key: 11, 
-            title: 'Hyundai 2S Center (Service & Spares), Diabari ,Uttara Dhaka', 
-            number:"+88 09613-505080",
-            data: `R#2, Sector#15, Diya Bari, Zero Point, Uttara, Dhaka`,
-            pb:"!1m18!1m12!1m3!1d3648.4105407556476!2d90.3643988747958!3d23.875056683980294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3c26bf618dd%3A0xfca0687a33431c0d!2sHyundai%202S%20Service%20Center%20Diabari%2CUttara%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1724686278132!5m2!1sen!2sbd", 
-            isOpen: false
-        }, 
+        
     ]);
 
 

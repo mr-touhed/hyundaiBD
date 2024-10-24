@@ -12,8 +12,8 @@ import PdfDownloaderBtn from "./PdfDownloaderBtn";
 const CarDetailsTemplete = ({carName,image,children,file}) => {
     const path = usePathname(null)
     
-    const currentPage = path?.split("/")[3];
-    const carModel = path?.split("/")[2]
+    const currentPage = capitalizeFirstLetter(path?.split("/")[3]);
+      const carModel = path?.split("/")[2]
     const menu = [
         
         {
@@ -50,7 +50,10 @@ const CarDetailsTemplete = ({carName,image,children,file}) => {
         },
 
     ]
-   
+    function capitalizeFirstLetter(string) {
+        if (string.length === 0) return string; // Handle empty string
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
     return (
         <div>
             <section className="bg-[#EEEDF2]">
