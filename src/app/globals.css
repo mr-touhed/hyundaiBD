@@ -5,15 +5,30 @@
 
 
 @layer utilities {
-    /* Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    
+
+
+  .no-scrollbar::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+    /* Track */
+    .no-scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    /* Handle */
+    .no-scrollbar::-webkit-scrollbar-thumb {
+      background: #002C5F;
+      border-radius: 15px;
+      
+    }
+    
+    /* Handle on hover */
+    .no-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #011732;
     }
 
-    .no-scrollbar {
-      -ms-overflow-style: none; /* IE and Edge */
-      scrollbar-width: none; /* Firefox */
-    }
 }
 
 html {
