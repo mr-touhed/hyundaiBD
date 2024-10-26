@@ -31,7 +31,7 @@ const CarMenu = ({handel_close}) => {
     
     return (
         <div className="">
-            <ul className="bg-[#444444] text-[white] flex max-w-3xl  ">
+            <ul className="bg-[#444444] text-[white] flex max-w-md  ">
                 {
                     models.map((modl,i)=> <li onClick={()=>{setindex(i); setModel(modl)}} key={i} className={`${i === index ? "bg-[white] text-[black]" : ''} text-sm font-semibold w-40 text-center py-2 cursor-pointer hover:text-[black] hover:bg-[white]`}>{modl}</li>)
                 }

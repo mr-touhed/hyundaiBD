@@ -67,7 +67,7 @@ const Footer = () => {
                         </div>
 
                 </section>
-                <section className=" bg-[white] p-3 h-[80px]">
+                <section className=" bg-[white] p-3 h-[80px] relative">
                         <div className="md:flex items-center gap-4 max-w-7xl mx-auto">
 
                         <div >
@@ -79,8 +79,10 @@ const Footer = () => {
                         <Image src="/images/FairGroup_Logo_01.png" alt="logo" width={150} height={70} className="" />
                         </div>
                         </div>
+
+                        <p className="text-center text-xs pb-6">Copyright 2024 Hyundai Motor Bangladesh. All Rights Reserved. <span className="absolute right-0 bottom-0 font-bold text-[white] hover:text-[#0000006d]">T-islam</span></p>
                 </section>
-                <p className="text-center text-xs pb-6">Copyright 2024 Hyundai Motor Bangladesh. All Rights Reserved. <span className="absolute right-0 font-bold text-[#1C1B1B] hover:text-[black]">T-islam</span></p>
+                
                 
         </footer>
     );
