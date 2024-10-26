@@ -88,7 +88,7 @@ const HeroSlider = () => {
           sliders.map((image,i) => <SwiperSlide key={i} className='mb-10 w-full h-[300px] '>
           
           <section className='relative w-[100%] h-[300px] md:h-full '>
-                  <Image  alt="car" src={image.img} width={1500} height={100} className=' w-full h-full object-cover z-0'/>
+                  <Image  alt="car" src={image.img} width={1500} height={700} className=' w-full h-full object-cover z-0'/>
                   <div className='absolute z-10 bg-[#00000000] w-full  md:bottom-20 bottom-4  left-16   '>
                               <div className='container text-[2vw] space-y-2'>
                               

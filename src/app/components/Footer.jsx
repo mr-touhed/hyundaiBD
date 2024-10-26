@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-dark p-16 text-lightDark space-y-6">
-                <section className="grid md:grid-cols-4  lg:grid-cols-7  grid-cols-1">
+        <footer className="bg-dark  text-lightDark space-y-6 relative">
+                <section className="grid md:grid-cols-4  lg:grid-cols-7  grid-cols-1 p-16">
                         <div className="lg:ml-auto px-4 pb-4">
                             <Image src="/images/footer_logo_pc.png" alt="company logo" className="w-16" width={100} height={70}/>
                         </div>
@@ -67,17 +67,21 @@ const Footer = () => {
                         </div>
 
                 </section>
-                <section className="md:flex gap-4">
-                        <div>
+                <section className=" bg-[white] p-3 h-[80px]">
+                        <div className="md:flex items-center gap-4 max-w-7xl mx-auto">
+
+                        <div >
                         <h2 >ABOUT US</h2>
-                        <h3 className="text-2xl font-extrabold"><span className="text-primary">Fair</span>Technology</h3>
+                        <Image src="/images/FairGroup_Logo_02.png" alt="logo" width={150} height={70} className="" />
                         </div>
                         <div>
                         <h2>A Concern of</h2>
-                        <h2 className="text-2xl font-extrabold text-[white]">FAIRGROUP</h2>
+                        <Image src="/images/FairGroup_Logo_01.png" alt="logo" width={150} height={70} className="" />
+                        </div>
                         </div>
                 </section>
-                <p className="text-center text-xs">Copyright 2024 Hyundai Motor Bangladesh. All Rights Reserved.</p>
+                <p className="text-center text-xs pb-6">Copyright 2024 Hyundai Motor Bangladesh. All Rights Reserved. <span className="absolute right-0 font-bold text-[#1C1B1B] hover:text-[black]">T-islam</span></p>
+                
         </footer>
     );
 };

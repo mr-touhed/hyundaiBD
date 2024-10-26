@@ -68,7 +68,7 @@ const CarDetailsTemplete = ({carName,image,children,file}) => {
                     </ul>
 
                     <section >
-                            <Image src={image} alt={`${carName}'s image banner`} width={1200} height={700} className="w-full md:h-[72vh] h-[30vh] object-cover"/>
+                            <Image src={image} alt={`${carName}'s image banner`} width={1500} height={800} className="w-full md:h-[72vh] h-[30vh] object-cover"/>
                     </section>
             </section>
 
