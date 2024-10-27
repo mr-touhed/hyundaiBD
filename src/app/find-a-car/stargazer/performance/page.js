@@ -12,7 +12,7 @@ const PerformancePage = () => {
     return (
         <div className="container space-y-16 pb-16">
                     <section className="text-center space-y-10">
-                            <h1 className="text-3xl  font-semibold ">Maximum performance star.</h1>
+                            <h1 className="text-3xl  font-semibold ">Maximum performance star</h1>
                             <p>The New STARGAZER is equipped with a Smartstream 1.5L engine with an Intelligent Variable Transmission (IVT) system that produces tough, responsive and efficient performance. The Drive Mode feature is also available to choose the driving style that suits you best</p>
                             <Image src='/images/cardetails/stargazer/performance/Highlight_1kolom_D_1220x600.jpg' alt='hyundai-bd stargazer performance ' width={1200} height={600} className="w-full"/>
                     </section>

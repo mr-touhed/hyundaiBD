@@ -20,13 +20,13 @@ const IntoriorPage = () => {
                                 <TabImage TabData={data} page="md:grid-cols-2"/>
                         </section>
                         <section className="space-y-8 mt-16 ">
-                                <h1 className="text-3xl font-semibold text-center">Better visibility.</h1>
+                                <h1 className="text-3xl font-semibold text-center">Better visibility</h1>
                                 <Image src="/images/cardetails/stargazer/interior/Visibilitas_1kolom_D_1220x600.jpg" alt="Hyundai-bd stargazer interior" width={1200} height={600} className="w-full"/>
                         </section>
 
                         <section>
                                 <div className="text-center space-y-10 py-10">
-                                    <h2 className="text-3xl font-semibold">The star of innovation.</h2>
+                                    <h2 className="text-3xl font-semibold">The star of innovation</h2>
                                     <p>You can experience convenience after convenience with innovative technology provided by New STARGAZER. There is an 8” Display Audio with smartphone connectivity, Wireless Smartphone Charger, and other advanced features that provide comfort for your and your family&#39;s trips.</p>
                                 </div>
                         </section>

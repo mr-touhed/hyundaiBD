@@ -6,7 +6,7 @@ const ConveniencePage = () => {
        <div className='container space-y-16'>
             
                 <section className='space-y-8 text-center py-16'>
-                    <h1 className='text-3xl font-semibold'>Pure delight.</h1>
+                    <h1 className='text-3xl font-semibold'>Pure delight</h1>
                     <p>CRETA GRAND delivers on its promise with a grand-sized cabin that is not only bigger but smarter. You’ll discover
 thoughtful design touches and experience pure joy in every detail. From the innovative mechanisms that simplify seat
 adjustment to the abundance of cabin space, CRETA GRAND is designed to make a grand impression. The two-tone

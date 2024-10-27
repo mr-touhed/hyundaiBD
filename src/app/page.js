@@ -1,4 +1,5 @@
 import ButtomMenu from "./components/ButtomMenu";
+import ChatBotApp from "./components/ChatBot/ChatBotApp";
 import Blogs from "./components/Home/Blogs";
 import CarDetails from "./components/Home/CarDetails";
 import DealerAndBooking from "./components/Home/DealerAndBooking";
@@ -24,6 +25,7 @@ const Home = () => {
       <News/>
      
       <ButtomMenu className="sticky bottom-0 z-20"/>
+      <ChatBotApp/>
     </>
   );
 };

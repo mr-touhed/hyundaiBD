@@ -62,7 +62,7 @@ const ExteriorPage = () => {
                 <ExtoriorCarDetails heading="Front" title="Full LED headlamps / Dark chrome radiator grille" image="/images/cardetails/palisade/exterior/Accordion_Depan-Desktop_1920x580.jpg">
                             <div className="container p-16 space-y-8">
                                     <div>
-                                    <h2 className="text-3xl text-center">Even Bolder.</h2>
+                                    <h2 className="text-3xl text-center">Even Bolder</h2>
                                     <Image src="/images/cardetails/palisade/exterior/Exterior_Premium-Parametric-Shield_2-Kolom_1120x600_PC.jpg" alt="image" width={1300} height={700}  />
                                     </div>
 

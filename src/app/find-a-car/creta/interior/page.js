@@ -20,7 +20,7 @@ const IntoriorPage = () => {
                         <ExtoriorCarDetails image="/images/cardetails/creta/interior/fitur-interior.jpg" heading="Interior Feature">
                                     <div className="container">
                                     <div className="text-center space-y-8 py-8">
-                                            <h2 className="text-3xl font-semibold ">Within the spotlight.</h2>  
+                                            <h2 className="text-3xl font-semibold ">Within the spotlight</h2>  
                                             <p>Come in and feel. The 10.25-inch TFT LCD Instrument Cluster technology and 8-inch Display Audio integrated with smartphones provide a touch of the future on your every trip.</p> 
                                             <Image src="/images/cardetails/creta/interior/1-kolom-LCD-Meter-Cluster.jpg" alt="hyundai-bd-creta interior image" width={1200} height={600} className="w-full"/>
                                     </div> 
@@ -40,7 +40,7 @@ const IntoriorPage = () => {
 
 
                 <section className="container space-y-8 mt-16">
-                        <h2 className="text-3xl font-semibold text-center">The ultimate flexibility & comfort.</h2>
+                        <h2 className="text-3xl font-semibold text-center">The ultimate flexibility & comfort</h2>
                         <div className="grid md:grid-cols-2 gap-8">
                         <Image src="/images/cardetails/creta/interior/2-kolom-flexi-seat.jpg" alt="hyundai-bd-creta interior image" width={1200} height={600} className="w-full"/>
                         <Image src="/images/cardetails/creta/interior/2-kolom-spacious-cabin.jpg" alt="hyundai-bd-creta interior image" width={1200} height={600} className="w-full"/>

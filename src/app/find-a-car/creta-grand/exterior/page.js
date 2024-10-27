@@ -6,7 +6,7 @@ const ExteriorPage = () => {
         
         <div className="bg-[#E4DCD3]">
                 <section className="container md:py-16 space-y-8 text-center">
-                        <h1 className="text-3xl font-semibold ">Radiating supreme confidence.</h1>
+                        <h1 className="text-3xl font-semibold ">Radiating supreme confidence</h1>
                         <p>Modern, sporty, and masculine—it’s just my style, it’s in perfect tune with my sensibilities, and it fits in anywhere. From any angle, CRETA GRAND projects
                         supreme confidence and authority. Your fascination only grows as you move in closer to examine the details: The LED lighting, the strikingly-designed
                         diamond-cut alloy wheels, and the catchy-looking radiator grille. But the real centre of attention and even greater delights await you inside.</p>

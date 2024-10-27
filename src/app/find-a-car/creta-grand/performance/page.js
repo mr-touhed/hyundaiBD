@@ -5,7 +5,7 @@ const PerformancePage = () => {
     return (
         <div>
             <section className="container text-center space-y-8">
-                    <h1 className="text-3xl font-semibold">Flex that muscle.</h1>
+                    <h1 className="text-3xl font-semibold">Flex that muscle</h1>
                     <p>Mostly you go with the flow, but sometimes you have to make a move and assert yourself. CRETA GRAND’s advanced powertrains deliver all the power you
 need for effortless acceleration and passing on the highway. The G2.0 gasoline engine is made of weight-saving aluminum and comes with Multi-Point
 Fuel Injection, Dual Overhead Camshafts and Dual Continuously Variable Valve Timing to maximize fuel economy and horsepower. The U2 diesel is fitted

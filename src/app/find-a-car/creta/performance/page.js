@@ -12,7 +12,7 @@ const PerformancePage = () => {
     return (
         <div className="container space-y-16 pb-16">
                     <section className="text-center space-y-10">
-                            <h1 className="text-3xl  font-semibold ">Impressive performance.</h1>
+                            <h1 className="text-3xl  font-semibold ">Impressive performance</h1>
                             <p>Armed with a 1.5L Smartstream engine with an Intelligent Variable Transmission (IVT) system, it produces tough, responsive, and efficient performance. Also equipped with a Drive Mode feature to choose the most suitable driving style for you.</p>
                             <Image src='/images/cardetails/creta/performance/1-kolom-impression-performance.jpg' alt='hyundai-bd creta performance ' width={1200} height={600} className="w-full"/>
                     </section>

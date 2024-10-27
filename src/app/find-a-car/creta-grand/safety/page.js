@@ -5,7 +5,7 @@ const SafetyPage = () => {
     return (
         <div className="space-y-8">
                 <section className="container space-y-6 text-center pb-16">
-                            <h1 className="text-3xl font-semibold">Always on guard for you.</h1>
+                            <h1 className="text-3xl font-semibold">Always on guard for you</h1>
                             <p>Though the road ahead is filled with uncertainties, CRETA GRAND’s advanced safety systems provide you with complete peace of
 mind. Special crush zones serve as your first line of defense. Made of ultra-high tensile strength steel and embedded in critical areas,
 these structures are designed to safely absorb impact forces and protect cabin occupants in the event of a collision.

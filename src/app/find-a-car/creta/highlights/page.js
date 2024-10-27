@@ -71,12 +71,12 @@ const Highlights = () => {
     return (
         <>
            <section className="container space-y-2">
-           <h2 className="text-center text-4xl font-bold">The new Hyundai CRETA Car. Undisputed. Ultimate.</h2> 
+           <h2 className="text-center text-4xl font-bold">The new Hyundai CRETA Car. Undisputed. Ultimate</h2> 
                 <p className="max-w-[544px] mx-auto text-center">Nothing stands in comparison to the presence of the new Hyundai CRETA. At first glance, the new design becomes sharper, more modern and progressive. The premium SUV looks powerful, refined, and captivating with lavish surfaces highlighting the sportiness that is signature to CRETA.</p>
             <Image src="/images/cardetails/creta/highlights/highlights-top.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
            </section>
            <section>
-           <h2 className="text-center text-4xl font-bold">What a legend looks like.</h2>
+           <h2 className="text-center text-4xl font-bold">What a legend looks like</h2>
                 <p className="max-w-[544px] mx-auto text-center">Bold. Charismatic. Extraordinary. The new Hyundai CRETA is symbolic of all things impressive no matter how you look at it.</p>
                 <TabImage TabData={TabData} page="md:grid-cols-4"/>
            </section>

@@ -32,8 +32,8 @@ const HighlightsPage = () => {
                         </section>
 
                         <section className="space-y-12">
-                                <h2 className="text-3xl font-semibold text-center">Performa tangguh yang maksimal.</h2>
-                                <p className="text-center">STARGAZER Essential dilengkapi mesin Smartstream 1.5L yang dapat menghasilkan performa tangguh, responsif, serta efisien. Fitur Drive Mode juga tersedia untuk pilihan gaya berkendara yang paling sesuai untuk Anda.</p>
+                                <h2 className="text-3xl font-semibold text-center">Maximum robust performance</h2>
+                                <p className="text-center">The STARGAZER Essential is equipped with a 1.5L Smartstream engine that can produce tough, responsive, and efficient performance. The Drive Mode feature is also available to choose the driving style that suits you best.</p>
 
 
                                 <div className="grid md:grid-cols-2 gap-6">
@@ -53,8 +53,8 @@ const HighlightsPage = () => {
 
 
                         <section className="space-y-12">
-                                <h2 className="text-3xl font-semibold text-center">Lebih aman.</h2>
-                                <p className="text-center">Jadikan kegiatan berkendara Anda dan keluarga lebih aman dan nyaman dengan fitur Parking Sensor dan Hill-start Assist Control.</p>
+                                <h2 className="text-3xl font-semibold text-center">It&lsquo;s safer</h2>
+                                <p className="text-center">Make your and your family&lsquo;s driving activities safer and more comfortable with the Parking Sensor and Hill-start Assist Control features.</p>
 
 
                                 <div className="grid md:grid-cols-2 gap-6">
@@ -74,7 +74,7 @@ const HighlightsPage = () => {
                         <section className="space-y-12">
                                 <Image src="/images/cardetails/stargazer/highlights/CaptainSeat_1kolom_D_1220x600.jpg" alt="hyundai Bd stargazer highlights car" width={1200} height={600} className="w-full"/>
                                 <h2 className="text-3xl font-semibold text-center">Captain Seat</h2>
-                                <p className="text-center">Perjalanan bersama keluarga semakin menyenangkan. STARGAZER Essential hadir dengan pilihan Captain Seat dan ruang kabin yang luas. Memberikan kenyamanan ekstra untuk beraktivitas saat berada di dalam mobil.</p>
+                                <p className="text-center">Traveling with family is getting more fun. The STARGAZER Essential comes with a choice of Captain Seats and spacious cabin space. Provides extra comfort for activities while in the car.</p>
                         </section>
 
 
@@ -111,13 +111,13 @@ const HighlightsPage = () => {
 
                         <section className="space-y-14 ">
                         <h2 className="text-2xl font-semibold text-center">Spacious Cabin</h2> 
-                        <p className="text-center">Dilengkapi dengan Horizon type DRL (Daytime Running Lights), STARGAZER Essential tampil futuristik dan dinamis.</p>
+                        <p className="text-center">Equipped with Horizon type DRL (Daytime Running Lights), the STARGAZER Essential looks futuristic and dynamic.</p>
                         <Image src="/images/cardetails/stargazer/highlights/HorizonTypeDRL_1kolom_D_1220x600.jpg" alt="hyundai Bd stargazer highlights car" width={1200} height={600} className="w-full"/>
                         <h2 className="text-2xl font-bold ">Horizon type DRL (Daytime Running Light)</h2> 
                         </section>
 
                         <section className="space-y-14 ">
-                        <h2 className="text-2xl font-semibold text-center">Bintangnya perlindungan.</h2> 
+                        <h2 className="text-2xl font-semibold text-center">The star is protection.</h2> 
                         <p className="text-center">Owning a Hyundai is now more secure because Hyundai offers additional protection for vehicles and Hyundai STARGAZER users through the Owner Assurance Program**.</p>
                         <Image src="/images/cardetails/stargazer/highlights/new-assurance-all-star-hyundai.jpg" alt="hyundai Bd stargazer highlights car" width={1200} height={600} className="w-full"/>
                         <div>

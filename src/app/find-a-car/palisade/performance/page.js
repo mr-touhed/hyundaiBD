@@ -5,7 +5,7 @@ const PerformancePage = () => {
     <section>
       <div className="container space-y-8">
         <h1 className="text-3xl text-center font-semibold">
-          Empower your journey.
+          Empower your journey
         </h1>
         <p className="text-center max-w-[700px] mx-auto">
           The 2.2L turbo diesel engine in the New PALISADE provides a powerful,

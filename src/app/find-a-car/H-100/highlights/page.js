@@ -20,7 +20,7 @@ const Highlights = () => {
     return (
         <>
            <section className="container space-y-2">
-           <h2 className="text-center text-4xl font-bold">Your dependable business partner.</h2> 
+           <h2 className="text-center text-4xl font-bold">Your dependable business partner</h2> 
           
            <p className="max-w-[800px] mx-auto text-center">No matter how tough the conditions, the H-100 delivers 100 percent of the time.</p>
             <Image src="/images/cardetails/pick-up/highlights/h-100-pe-2-highlights-white-car-man-outside-pc.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
@@ -30,12 +30,12 @@ const Highlights = () => {
                     <div className="container flex gap-6">
                                 <div className="space-y-3">
                                 <Image src="/images/cardetails/pick-up/highlights/h-100-pe2-highlights-front-part-white-original.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
-                                <h2 className=" text-2xl font-bold">Your dependable business partner.</h2>
+                                <h2 className=" text-2xl font-bold">Your dependable business partner</h2>
                                 <p>H-100 has a sleek profile and solid build quality to provide an equal measure of style and stability.</p>     
                                 </div>
                                 <div className="space-y-3">
                                 <Image src="/images/cardetails/pick-up/highlights/h-100-pe2-highlights-rear-view-white-original.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />
-                                <h2 className=" text-2xl font-bold">Your dependable business partner.</h2>
+                                <h2 className=" text-2xl font-bold">Your dependable business partner</h2>
                                 <p>H-100 has a sleek profile and solid build quality to provide an equal measure of style and stability.</p>     
                                 </div>
                     </div>

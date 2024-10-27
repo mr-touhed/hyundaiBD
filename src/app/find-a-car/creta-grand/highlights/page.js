@@ -41,7 +41,7 @@ const Highlights = () => {
     return (
         <>
            <section className="container space-y-2">
-           <h2 className="text-center text-4xl font-bold">Live the grand life.</h2> 
+           <h2 className="text-center text-4xl font-bold">Live the grand life</h2> 
           
            <p className="max-w-[800px] mx-auto text-center">Designed to exceed all expectations.</p>
             <Image src="/images/cardetails/creta-grand/highlights/creta-grand-hrighlight.jpg" alt="" width={1200} height={600} className="w-full h-auto py-16" />

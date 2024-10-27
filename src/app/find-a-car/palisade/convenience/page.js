@@ -5,7 +5,7 @@ const ConveniencePage = () => {
     return (
        <section className='container space-y-8 py-16'>
                 <div className='text-center'>
-                <h1 className='text-3xl font-semibold '>Empower you to live comfortably.</h1>
+                <h1 className='text-3xl font-semibold '>Empower you to live comfortably</h1>
                 <p>New PALISADE special features create your family trip safer and more comfortable.</p>
 
                     <Image src="/images/cardetails/palisade/convenience/04-Mewah-Berkelas-New-Hyundai-PALISADE-Signature.jpg" alt=""  width={1300} height={700} className=''/>
@@ -30,7 +30,7 @@ const ConveniencePage = () => {
 
                 <div className='space-y-8'>
                             <div className='text-center'>
-                            <h2 className='text-3xl font-semibold '>Empower you to live comfortably.</h2>
+                            <h2 className='text-3xl font-semibold '>Empower you to live comfortably</h2>
                             <p>New PALISADE flexible cabin space arrangement and special features provide premium comfort.</p>
                             </div>
                 <Image src="/images/cardetails/palisade/convenience/Kenyamanan-Captain-Seat_1-Kolom_1120x600_PC.jpg" alt=""  width={1300} height={700} className=''/>
@@ -41,7 +41,7 @@ const ConveniencePage = () => {
 
                         <div className='space-y-4'>
                         <Image src="/images/cardetails/palisade/convenience/Heated-Seated_2-Kolom_544x360.jpg" alt=""  width={1300} height={700} className=''/>
-                        <h2 className='text-xl font-semibold '>Empower you to live comfortably.</h2>
+                        <h2 className='text-xl font-semibold '>Empower you to live comfortably</h2>
                         </div>
 
 

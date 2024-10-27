@@ -50,7 +50,7 @@ const ExteriorPage = () => {
                             <Experience360 images={threeSixtyImages}/>
                 </section>
                 <section className="space-y-12 py-16">
-                        <h2 className="text-3xl font-semibold text-center">Look stunning like a star.</h2>
+                        <h2 className="text-3xl font-semibold text-center">Look stunning like a star</h2>
                         <p className="text-center">The futuristic and dynamic design will be immediately visible through the <b>one curve design</b> that was created to turn away every glance. Equipped with <b>Horizon type DRL (Daytime Running Lights) and H-shape LED Rear Combination Lamp,</b> the New STARGAZER is even more charming with an exterior that makes you and your family look stunning like stars.</p>
                         <Image src="/images/cardetails/stargazer/exterior/23MY_KS_RHD_SIDE_MAIN_1kolom_D_.jpg" alt="hyundai bd car stargazer exterior" width={1200} height={600} className="w-full"/>
                 </section>

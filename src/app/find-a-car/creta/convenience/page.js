@@ -7,7 +7,7 @@ const ConveniencePage = () => {
                     <div className='space-y-16 pb-16'>
                         <section>
                                <div className='text-center max-w-[800px] mx-auto space-y-8'>
-                               <h1 className='text-3xl font-semibold'>The classy convenience.</h1>
+                               <h1 className='text-3xl font-semibold'>The classy convenience</h1>
                                 <p>Classy comfort. CRETA provides premium features such as Panoramic Sunroof, BOSE Premium Sound System,
                                 and Ventilated Seat to support the driving experience at a higher level.</p>
                                </div>
