@@ -6,10 +6,10 @@ const HighlightsPage = () => {
         <div className="my-16">
             <div className="container space-y-16">
                         <section className="space-y-12">
-                                <h1 className="text-3xl font-semibold text-center">Better visibility.</h1>
-                                <p className="text-center"> Hadir dengan desain dashboard baru, STARGAZER Essential memberikan visibilitas berkendara yang lebih baik.</p>
+                                <h1 className="text-3xl font-semibold text-center">Better visibility</h1>
+                                <p className="text-center">Coming with a new dashboard design, STARGAZER Essential provides better driving visibility. </p>
                                 <Image src="/images/cardetails/stargazer/highlights/visibilitas_1kolom_D_1220x600.jpg" alt="hyundai Bd stargazer highlights car" width={1200} height={600} className="w-full"/>
-                                <h2 className="text-3xl font-bold">New Dashboard Design with Piano Black</h2>
+                                <h2 className="text-3xl font-bold"></h2>
                         </section>
 
                         <section className="grid md:grid-cols-2 gap-6">
