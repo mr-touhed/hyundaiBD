@@ -146,7 +146,7 @@ export const StoryMenuItems =[
     },
     {
         menu:"Global News",
-        link:"/hyundai-story/global-news"
+        link:"https://www.hyundai.com/worldwide/en/newsroom"
     },
     {
         menu:"Bangladesh News",
