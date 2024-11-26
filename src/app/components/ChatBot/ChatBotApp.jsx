@@ -45,10 +45,12 @@ const ChatBotApp = () => {
       backgroundColor: '#f2f2f2',
     },
     chatButtonStyle: {
+      backgroundColor:"white",
+      backgroundImage:"none",
            width: "55px",
     height: "55px",
     bottom: "110px"
-    }
+    },
     
     // ...other styles
   };

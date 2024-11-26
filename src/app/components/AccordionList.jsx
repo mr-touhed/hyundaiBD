@@ -5,79 +5,79 @@ import { FaMapLocationDot } from "react-icons/fa6";
 const AccordionList = () => {
     
     const [accordions, setAccordion] = useState([ 
-        { 
-            key: 1, 
-            title: 'Hyundai Experience Center, Tejgaon Dhaka',
-            number:"+88 09613-505080" ,
-            data: `246, Rangs Babylonia, Bir Uttam Mir Shawkat Sarak, Tejgaon, Dhaka 1208.`, 
-            isOpen: false
-        }, 
+        // { 
+        //     key: 1, 
+        //     title: 'Hyundai Experience Center, Tejgaon Dhaka',
+        //     number:"+88 09613-505080" ,
+        //     data: `246, Rangs Babylonia, Bir Uttam Mir Shawkat Sarak, Tejgaon, Dhaka 1208.`, 
+        //     isOpen: false
+        // }, 
         { 
             key: 2, 
-            title: 'Hyundai 3S Center (Sales, Service & Spares), Tejgaon Dhaka', 
+            title: 'Tejgaon Dhaka 3S Center (Sales, Service & Spares), ', 
             number:'+88 09613-505080279',
             data: `Tejgaon I/A, Dhaka-1208,Bangladesh`, 
             isOpen: false
         }, 
         { 
             key: 3, 
-            title: 'Hyundai 1S Center (Sales), Tejgaon Dhaka', 
+            title: 'Tejgaon Dhaka 1S Center (Sales), ', 
             number:"+88 09613-505080",
             data: `191/A, Haque Tower, Bir Uttam Mir Shawkat Sarak,Tejgaon, Dhaka 1208`, 
             isOpen: false
         }, 
         { 
             key: 4, 
-            title: 'Hyundai 1S Center (Sales) Uttara, Rabindra Sarani Dhaka', 
+            title: 'Rabindra Sarani, Uttara, Dhaka 1S Center (Sales) , ', 
             number:"+88 09613-505080",
             data: `Plot # 41, Sector # 03, Road # 15 (Rabindra Sarani), Uttara R/A.`, 
             isOpen: false
         }, 
         { 
             key: 5, 
-            title: 'Hyundai 1S Center (Sales), Dhanmondi Dhaka', 
+            title: 'Dhanmondi Dhaka 1S Center (Sales), ', 
             number:"+88 09613-505080",
             data: `Hakim Heritage, 15/A, New-16, Road-6, Dhanmondi, Mirpur Road, Dhaka`, 
             isOpen: false
         }, 
         { 
             key: 6, 
-            title: 'Hyundai 1S Center (Sales), Kakrail, Dhaka', 
+            title: 'Kakrail, Dhaka 1S Center (Sales), ', 
             number:"+88 09613-505080",
             data: `House -77, Kakrail Circle, Ramna, Dhaka-1000`, 
             isOpen: false
         }, 
         { 
             key: 7, 
-            title: 'Hyundai 1S Center (Sales), Progoti Sarani, Dhaka', 
+            title: 'Progoti Sarani, Dhaka 1S Center (Sales), ', 
             number:"+88 09613-505080",
             data: `House-49/1, Shahid Abdul Aziz Sarok, Howlader Tower, Pragati Sharani, Baridhara, Dhaka -1229`, 
             isOpen: false
         }, 
-        { 
-            key: 8, 
-            title: 'Hyundai 3S Center (Sales, Service & Spares), Chattogram', 
-            number:"+8809613-505080",
-            data: `156, SKS Project, Shersha Bangla Bazar, Hyrrican Factory, Bayezid Link Road, Chattogram`, 
-            isOpen: false
-        }, 
-        { 
-            key: 9, 
-            title: 'Hyundai 1S Center(Sales), Kazir Dewri, Chattogram', 
-            number:"+88 09613-505080",
-            data: `281, Chatteswari Road, Kazir Dewri, Chattogram.`, 
-            isOpen: false
-        }, 
+        // { 
+        //     key: 8, 
+        //     title: 'Hyundai 3S Center (Sales, Service & Spares), Chattogram', 
+        //     number:"+8809613-505080",
+        //     data: `156, SKS Project, Shersha Bangla Bazar, Hyrrican Factory, Bayezid Link Road, Chattogram`, 
+        //     isOpen: false
+        // }, 
+        // { 
+        //     key: 9, 
+        //     title: 'Hyundai 1S Center(Sales), Kazir Dewri, Chattogram', 
+        //     number:"+88 09613-505080",
+        //     data: `281, Chatteswari Road, Kazir Dewri, Chattogram.`, 
+        //     isOpen: false
+        // }, 
         { 
             key: 10, 
-            title: 'Hyundai 3S Center (Sales, Service & Spares), Bogura', 
+            title: 'Matidhali, Bogura 3S Center (Sales, Service & Spares), ', 
             number:"+8809613-505080",
             data: `6123, Nishindara, Matidhali, Bogura.`, 
             isOpen: false
         }, 
         { 
             key: 11, 
-            title: 'Hyundai 2S Center (Service & Spares), Diabari ,Uttara Dhaka', 
+            title: 'Diabari ,Uttara Dhaka 2S Center (Service & Spares), ', 
             number:"+88 09613-505080",
             data: `R#2, Sector#15, Diya Bari, Zero Point, Uttara, Dhaka`, 
             isOpen: false

@@ -80,7 +80,7 @@ const Footer = () => {
                         </div>
                         </div>
 
-                        <p className="text-center text-xs pb-6">Copyright 2024 Hyundai Motor Bangladesh. All Rights Reserved. <span className="absolute right-0 bottom-0 font-bold text-[white] hover:text-[#0000006d]">T-islam</span></p>
+                        <p className="text-center text-xs pb-6">Copyright Fair Technology Limited. All Rights Reserved. <span className="absolute right-0 bottom-0 font-bold text-[white] hover:text-[#0000006d]">T-islam</span></p>
                 </section>
                 
                 
