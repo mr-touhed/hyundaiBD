@@ -30,11 +30,13 @@ const ChatBotApp = () => {
     },
     tooltipStyle:{
         fontSize:"12px",
-        bottom: "110px",
-        right: '89px'
+        bottom: "123px",
+        right: '99px',
+        background:"#002C5F",
+        padding:"16px"
     },
-    chatWindowStyle: {
-
+    tooltipTail: {
+background:"#002C5F"
     },
     headerStyle: {
       background: '#011732',
@@ -47,9 +49,9 @@ const ChatBotApp = () => {
     chatButtonStyle: {
       backgroundColor:"white",
       backgroundImage:"none",
-           width: "55px",
-    height: "55px",
-    bottom: "110px"
+           width: "60px",
+    height: "60px",
+    bottom: "120px"
     },
     
     // ...other styles
@@ -61,12 +63,17 @@ const ChatBotApp = () => {
             
             <ChatBot 
             styles={styles}
-            settings={{general: {embedded: false}, 
-            
+            settings={{
+            general: {embedded: false}, 
+            fileAttachment:{disabled:true},
             chatButton:{icon:"/images/button_icon-02.png", width:"50px", height:"50px"},
-            voice: {disabled: false}, 
+            voice: { disabled: true }, // Removes voice icon
+            notification: { disabled: true }, // Removes bell icon 
             header:{title:"Hyundai BD",avatar:"/images/header_icon-02.png",  }, 
-            chatHistory: {storageKey: "example_smart_welcome"}}} 
+            chatHistory: {storageKey: "example_smart_welcome"},
+            footer:{text:"HYUNDAI BANGLADESH", fontSize: 12}
+          }}
+            
             flow={flow}/>
             </div>
       

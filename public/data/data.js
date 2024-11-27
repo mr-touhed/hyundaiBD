@@ -324,5 +324,89 @@ export const backendData = [
 
 
 
-
+export const LocationData = [ 
+    { 
+        key: 1, 
+        title: 'Tejgaon Experience Center, Dhaka (Sales): ',
+        number:"+8801958655734" ,
+        data: `246, Rangs Babylonia, Bir Uttam Mir Shawkat Sarak, Dhaka- 1208`,
+        pb:"!1m18!1m12!1m3!1d3651.3573773240623!2d90.4050817!3d23.770284999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c707f8384d61%3A0xb0a1ddf6aefcf93a!2sHyundai%20Experience%20Center%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1732727468926!5m2!1sen!2sbd",
+        isOpen: true
+    }, 
+    { 
+        key: 2, 
+        title: 'Tejgaon 3S Center, Dhaka (Sales, Service & Spares) ', 
+        number:'+8801958655807',
+        data: `Tejgaon I/A, Dhaka-1208,Bangladesh`,
+        pb:"!1m18!1m12!1m3!1d3651.483801231379!2d90.4040124!3d23.7657804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7558f257591%3A0xc48d07e29b937a7e!2sHyundai%203S%20Center%20Tejgaon%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1732727986590!5m2!1sen!2sbd",
+        isOpen: false
+    }, 
+    { 
+        key: 3, 
+        title: 'Dhanmondi 1S Center, Dhaka (Sales)', 
+        number:"+8801958655809",
+        data: `Hakim Heritage, 15/A, New-16, Road-6, Dhanmondi, Mirpur Road, Dhaka- 1209`,
+        pb:"!1m14!1m8!1m3!1d3651.9898796822795!2d90.3759685!3d23.7477403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b90e25c8f5d3%3A0xac2544592c1a1e22!2sDhanmondi!5e0!3m2!1sen!2sbd!4v1732728037699!5m2!1sen!2sbd", 
+        isOpen: false
+    },
+    { 
+        key: 4, 
+        title: 'Kakrail 1S Center (Sales) ', 
+        number:"",
+        data: `House -77, Kakrail Circle, Ramna, Dhaka-1000`,
+        pb:"!1m18!1m12!1m3!1d3652.280689622619!2d90.4083635!3d23.737368000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b900300ba945%3A0xb84e96200b0e1179!2sHyundai%201S%20Showroom%2C%20Kakrail!5e0!3m2!1sen!2sbd!4v1732728095011!5m2!1sen!2sbd", 
+        isOpen: false
+    },
+    { 
+        key: 5, 
+        title: 'Pragati Sarani 1S (Sales) ', 
+        number:"",
+        data: `House-49/1, Shahid Abdul Aziz Sarok, Howlader Tower,  Pragati Sharani, Baridhara, Dhaka`,
+        pb:"!1m18!1m12!1m3!1d3650.237047618058!2d90.42153929999999!3d23.810168299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7004e866a0d%3A0x83f4f407fe28e3a!2sHyundai%201S%20Pragati%20sharani!5e0!3m2!1sen!2sbd!4v1732728151167!5m2!1sen!2sbd", 
+        isOpen: false
+    }, 
+    { 
+        key: 6, 
+        title: 'Uttara 1S Center, Dhaka (Sales) ', 
+        number:"+8801700718718",
+        data: `Plot : 41, Sector: 03, Road: 15 Rabindra Sarani, Uttara R/A. Dhaka- 1230`,
+        pb:"!1m18!1m12!1m3!1d3648.631416313552!2d90.395535!3d23.8672187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5ec32532fc9%3A0x73eb0d6ba61501df!2sHyundai%201S%20Center%20Uttara%20Rabindra%20Sarani%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1732728203805!5m2!1sen!2sbd", 
+        isOpen: false
+    }, 
+    
+    { 
+        key: 7, 
+        title: 'Diabari 2S Center, Uttara, Dhaka (Service & Spares)  ', 
+        number:"",
+        data: `R#2, Sector#15, Diya Bari, Zero Point, Uttara, Dhaka`,
+        pb:"!1m18!1m12!1m3!1d3648.4106784082!2d90.3669738!3d23.875051799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c3c26bf618dd%3A0xfca0687a33431c0d!2sHyundai%202S%20Service%20Center%20Diabari%2CUttara%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1732728258854!5m2!1sen!2sbd", 
+        isOpen: false
+    }, 
+    { 
+        key: 8, 
+        title: 'Narayanganj 3S Center, Dhaka (Sales, Service & Spares) ', 
+        number:"",
+        data: `435,436, Bhuighar Bus stand, Fatullah, Narayanganj`,
+        pb:"!1m17!1m12!1m3!1d3653.963171464322!2d90.482576!3d23.677274999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDQwJzM4LjIiTiA5MMKwMjgnNTcuMyJF!5e0!3m2!1sen!2sbd!4v1732728318363!5m2!1sen!2sbd", 
+        isOpen: false
+    }, 
+    { 
+        key: 9, 
+        title: 'Chattogram 3S Center (Sales, Service & Spares)', 
+        number:"",
+        data: `156, Bayezid Link Road, Chattogram- 4210`,
+        pb:"!1m18!1m12!1m3!1d3689.166039022808!2d91.8095292!3d22.385097200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd971a2aa83eb%3A0xb9f17e9199dd191f!2sHyundai%203S%20Center%20Chattogram%20%2C%20Shersha%2C%20Baizid%20%7C%20FairTechnology!5e0!3m2!1sen!2sbd!4v1732728366302!5m2!1sen!2sbd", 
+        isOpen: false
+    }, 
+    { 
+        key: 10, 
+        title: 'Bogura 3S Center (Sales, Service & Spares)', 
+        number:"",
+        data: `6123, Nishindara, Matidhali, Bogura`,
+        pb:"!1m17!1m12!1m3!1d3619.3963687177697!2d89.362006!3d24.884458000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUzJzA0LjEiTiA4OcKwMjEnNDMuMiJF!5e0!3m2!1sen!2sbd!4v1732728414970!5m2!1sen!2sbd", 
+        isOpen: false
+    }, 
+   
+    
+]
 
