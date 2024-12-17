@@ -22,7 +22,7 @@ const MileStone2023Component = () => {
                 </AccordionItemHeading>
                 <AccordionItemPanel className='bg-[#F6F3F2] px-16 py-8'>
                     
-                            <table className='w-full text-center'cellPadding={10}  >
+                            {/* <table className='w-full text-center'cellPadding={10}  >
                                     <thead className='bg-[#E4DCD3]'>
                                             <tr>
                                             <th className=' border-r border-[#F4F4F4]'>Year</th>
@@ -38,7 +38,7 @@ const MileStone2023Component = () => {
                                                 <td>Hyundai launches the VENUE N-LINE, India&#39;s first mass market performance oriented SUV</td>
                                             </tr>
                                     </tbody>
-                            </table>
+                            </table> */}
                 </AccordionItemPanel>
             </AccordionItem>
             <AccordionItem uuid="2022" dangerouslySetExpanded={false}>

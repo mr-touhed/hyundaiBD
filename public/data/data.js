@@ -219,10 +219,10 @@ export const carData = [
     {
         name:'STARGAZER',
         image:"/images/cars/stargazer.png",
-        price:"1000",
+        price:"36.50 lacs",
         engine:[
-            "1.2 | Kappa petrol",
-            "1.0 | kappa turbo GDi petrol"
+            "1.5L | Gasoline",
+            "7 Seater"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -231,10 +231,10 @@ export const carData = [
     {
         name:'PALISADE',
         image:"/images/cars/palisade.png",
-        price:"1000",
+        price:"1.5Crore",
         engine:[
-            "1.2 | Kappa petrol",
-            "1.0 | kappa turbo GDi petrol"
+            "2.2L  | T Diesel",
+            "7/8 seater SUV"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -243,10 +243,11 @@ export const carData = [
     {
         name:'TUCSON',
         image:"/images/cars/TUCSON.png",
-        price:"1000",
+        price:"61.50 lacs",
         engine:[
-            "1.2 | Kappa petrol",
-            "1.0 | kappa turbo GDi petrol"
+            "2.0L | D",
+            "2.0L | Gasoline",
+            "5 seater SUV"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -255,10 +256,10 @@ export const carData = [
     {
         name:'CRETA GRAND',
         image:"/images/cars/grand.png",
-        price:"1000",
+        price:"44.50 lacs",
         engine:[
-            "1.2 | Kappa petrol",
-            "1.0 | kappa turbo GDi petrol"
+            "1.5L | Diesel",
+            "5 seater SUV"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -267,10 +268,10 @@ export const carData = [
     {
         name:'CRETA',
         image:"/images/cars/creat.png",
-        price:"1000",
+        price:"37.00 lacs",
         engine:[
-            "1.2 | Kappa petrol",
-            "1.0 | kappa turbo GDi petrol"
+            "1.5L | Gasoline",
+            "5 seater SUV"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -279,10 +280,10 @@ export const carData = [
     {
         name:'H-100',
         image:"/images/cars/h-100.png",
-        price:"1000",
+        price:"23.50 lacs",
         engine:[
-            "1.2 | Kappa petrol",
-            "1.0 | kappa turbo GDi petrol"
+            "2.6L | Gasoline",
+            
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"LCV",
