@@ -11,7 +11,7 @@ const TestDrivePageForm = ({districtList,car}) => {
     const modelList = carData.map(car => car.name.toLowerCase());
     const [selectState,setSelectState] = useState('Dhaka');
     const [cityList,SetcityList] = useState([])
-    const [formData,setFormData] = useState({dealer:"FairTechnology", service_type:'', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:"", type:"pending"})
+    const [formData,setFormData] = useState({dealer:"FairTechnology", service_type:'Test Drive', name:"",email:"",mobile:"",model:car, state:"",city:"",comments:"", type:"pending"})
     const [loading,setLoading] = useState(false)
 
     useEffect(()=>{
@@ -64,9 +64,9 @@ const TestDrivePageForm = ({districtList,car}) => {
                 <div className=' flex gap-4 bg-[white] justify-center text-base font-light p-2 rounded-lg' >
                     
                     <select required onChange={(e)=>handel_form_value(e)} name="service_type" id="" className="text-base border bg-primary text-[white] p-1 rounded-md font-thin" value={formData.service_type}>
-                        <option disabled value="">Select Service Type</option>
+                        {/* <option disabled value="">Select Service Type</option> */}
                         <option value="Test Drive">Test Drive</option>
-                        <option value="Query">Query</option>
+                        {/* <option value="Query">Query</option> */}
                     </select>
                 </div>
                 <div className='grid text-md'>

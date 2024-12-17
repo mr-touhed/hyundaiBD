@@ -10,11 +10,11 @@ const PageBanner = ({img}) => {
     return (
         <section className="bg-[#EEEDF2]">
                     <ul className="flex container py-6 md:gap-2 gap-1 items-center font-light md:text-base text-xs flex-wrap">
-                        <li className="underline ">
+                        <li className=" ">
                             <Link href="/">Home</Link>
                         </li>
                         {
-                            PathList.map((path,i)=> <><li key={path} className={`${PathList.length-1 === i ? "underline text-primary font-semibold" : "underline"} `}>
+                            PathList.map((path,i)=> <><li key={path} className={`${PathList.length-1 === i ? " text-primary font-semibold" : ""} capitalize`}>
                             {path}
                             
                         </li>

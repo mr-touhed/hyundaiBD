@@ -196,10 +196,10 @@ export const ContactUsMenuItems = [
     //     menu:"Online Finance",
     //     link:"/contact-us/online-finance"
     // },
-    {
-        menu:"Hyundai Partners",
-        link:"/contact-us/hyundai-partners"
-    },
+    // {
+    //     menu:"Hyundai Partners",
+    //     link:"/contact-us/hyundai-partners"
+    // },
     {
         menu:"Career",
         link:"/contact-us/career"

@@ -21,15 +21,15 @@ const TestDrivepage = async  ({searchParams}) => {
             <section className="">
             <h2 className='font-semibold text-center text-3xl py-8'>Explore more</h2>
             <div className="bg-[#F6F3F2] py-16">
-            <ul className="flex md:flex-row flex-col md:items-baseline items-center space-y-8  justify-between container " >
+            <ul className="flex md:flex-row flex-col md:items-baseline items-center space-y-8  gap-8 justify-center container " >
                         <li >
                                 <Link href="/click-to-buy/find-an-outlet"><Image src={`/images/Find-a-Dealer.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
                                 <h4 className="text-xl font-semibold">Find an Outlet & Website</h4></Link>
                         </li>
-                        <li >
+                        {/* <li >
                         <Link href="/bookACar"><Image src={`/images/Clicktobuy.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
                         <h4 className="text-xl font-semibold">Click To Buy</h4></Link>
-                        </li>
+                        </li> */}
                         {/* <li >
                         <Link href="/">
                         <Image src={`/images/specialofferpc.jpg`} alt={` image banner`} width={1200} height={700} className="max-w-[256px] max-h-[170px] object-cover"/>
