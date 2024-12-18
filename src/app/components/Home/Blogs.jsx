@@ -60,7 +60,7 @@ const Blogs = () => {
                   />
                 </div>
                 <div className="mt-4">
-                  <p>BREND</p>
+                  {/* <p>BREND</p> */}
                   <h4 className="font-semibold">{blog.title}</h4>
                 </div>
               </div>

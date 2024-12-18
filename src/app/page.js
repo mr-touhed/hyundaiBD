@@ -20,7 +20,7 @@ const Home = () => {
       <LocationMap/>
       
       <Blogs/>
-      <ShowCase/>
+      {/* <ShowCase/> */}
       <SocialBlog/>
       <News/>
      
