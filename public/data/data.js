@@ -1,15 +1,15 @@
 
 
 export const ServiceMenuItems = [
-    {
-        menu:"Book a Service",
-        sub:[
-            {
-                menu:"Service Booking",
-                link:"/connect-to-service/book-a-service/service-booking"
-            }
-        ]
-    },
+    // {
+    //     menu:"Book a Service",
+    //     sub:[
+    //         {
+    //             menu:"Service Booking",
+    //             link:"/connect-to-service/book-a-service/service-booking"
+    //         }
+    //     ]
+    // },
     {
         menu:"Know Your Hyundai",
         sub:[
@@ -21,14 +21,11 @@ export const ServiceMenuItems = [
                 menu:"With in Warranty",
                 link:"/connect-to-service/know-your-hyundai/with-in-warranty"
             },
-            {
-                menu:"Post Warranty",
-                link:"/connect-to-service/know-your-hyundai/post-warranty"
-            },
-            {
-                menu:"Extended Warranty",
-                link:"/connect-to-service/know-your-hyundai/extended-warranty"
-            },
+            // {
+            //     menu:"Post Warranty",
+            //     link:"/connect-to-service/know-your-hyundai/post-warranty"
+            // },
+            
         ]
     },
     // {
@@ -40,8 +37,8 @@ export const ServiceMenuItems = [
     //     link:"/connect-to-service/service-package"
     // },
     {
-        menu:"PMS Charts",
-        link:"/connect-to-service/pms-charts"
+        menu:"Free service information",
+        link:"/connect-to-service/free-service-information"
     },
     {
         menu:"Genuine Parts",
@@ -57,55 +54,60 @@ export const ServiceMenuItems = [
         ]
     },
     {
-        menu:"Value Added Service",
+        menu:"Beautification",
         sub:[
-            {
-                menu:"Beautification",
-                link:"/connect-to-service/value-added-service/beautification"
-            },
-            {
-                menu:"Underbody Coating",
-                link:"/connect-to-service/value-added-service/underbody-coating"
-            },
-            {
-                menu:"Throttle Body Cleaning",
-                link:"/connect-to-service/value-added-service/throttle-body-cleaning"
-            },
-            {
-                menu:"Sanitization",
-                link:"/connect-to-service/value-added-service/sanitization"
-            },
+           
+               
+                
+                    {
+                        menu:"Paint protection (ceramic coating)",
+                        link:"/connect-to-service/value-added-service/underbody-coating"
+                    },
+                    {
+                        menu:"Under body treatment (Anti rust coating)",
+                        link:"/connect-to-service/value-added-service/throttle-body-cleaning"
+                    },
+                    {
+                        menu:"Exterior interior polish ",
+                        link:"/connect-to-service/value-added-service/sanitization"
+                    },
+                    {
+                        menu:"Throttle body cleaning service ",
+                        link:"/connect-to-service/value-added-service/sanitization"
+                    },
+                
+            
         ]
     },
-    {
-        menu:"Oil & Consummables",
-        sub:[
-            {
-                menu:"Engine Oil",
-                link:"/connect-to-service/oil-&-consummables/engine-oil"
-            },
-            {
-                menu:"Manual Transmission Oil",
-                 link:"/connect-to-service/oil-&-consummables/manual-transmission-oil"
-            },
-            {
-                menu:"Automatic Transmission Oil",
-                link:"/connect-to-service/oil-&-consummables/automatic-transmission-oil"
-            },
-            {
-                menu:"Coolant",
-                link:"/connect-to-service/oil-&-consummables/coolant"
-            },
-            {
-                menu:"Brake Oil",
-                 link:"/connect-to-service/oil-&-consummables/brake-oil"
-            },
-        ]
-    },
-    {
-        menu:"Owner's Manual",
-        link:"/connect-to-service/owners-manual"
-    },
+    // {
+    //     menu:"Oil & Consummables",
+    //     sub:[
+    //         {
+    //             menu:"Engine Oil",
+    //             link:"/connect-to-service/oil-&-consummables/engine-oil"
+    //         },
+    //         {
+    //             menu:"Manual Transmission Oil",
+    //              link:"/connect-to-service/oil-&-consummables/manual-transmission-oil"
+    //         },
+    //         {
+    //             menu:"Automatic Transmission Oil",
+    //             link:"/connect-to-service/oil-&-consummables/automatic-transmission-oil"
+    //         },
+    //         {
+    //             menu:"Coolant",
+    //             link:"/connect-to-service/oil-&-consummables/coolant"
+    //         },
+    //         {
+    //             menu:"Brake Oil",
+    //              link:"/connect-to-service/oil-&-consummables/brake-oil"
+    //         },
+    //     ]
+    // },
+    // {
+    //     menu:"Owner's Manual",
+    //     link:"/connect-to-service/owners-manual"
+    // },
     {
         menu:"Important Customer Notification",
         link:"/connect-to-service/important-customer-notification"
@@ -219,10 +221,11 @@ export const carData = [
     {
         name:'STARGAZER',
         image:"/images/cars/stargazer.png",
-        price:"36.50 lacs",
+        price:"37.00 Lacs",
         engine:[
             "1.5L | Gasoline",
-            "7 Seater"
+            "7 Seater / 1500CC",
+            
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -234,7 +237,7 @@ export const carData = [
         price:"1.5Crore",
         engine:[
             "2.2L  | T Diesel",
-            "7/8 seater SUV"
+            "7 seater SUV / 2200CC"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -243,7 +246,7 @@ export const carData = [
     {
         name:'TUCSON',
         image:"/images/cars/TUCSON.png",
-        price:"61.50 lacs",
+        price:"61.50 lacs / 56.00 lacs",
         engine:[
             "2.0L | D",
             "2.0L | Gasoline",
@@ -256,10 +259,10 @@ export const carData = [
     {
         name:'CRETA GRAND',
         image:"/images/cars/grand.png",
-        price:"44.50 lacs",
+        price:"45.50 lacs",
         engine:[
             "1.5L | Diesel",
-            "5 seater SUV"
+            "7 seater SUV / 1500CC"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -268,10 +271,10 @@ export const carData = [
     {
         name:'CRETA',
         image:"/images/cars/creat.png",
-        price:"37.00 lacs",
+        price:"38.00 Lacs ",
         engine:[
             "1.5L | Gasoline",
-            "5 seater SUV"
+            "5 seater SUV / 1500CC"
         ],
         transmission:"5 speed manual / Smart Auto AMT",
         model:"SUV",
@@ -282,7 +285,8 @@ export const carData = [
         image:"/images/cars/h-100.png",
         price:"23.50 lacs",
         engine:[
-            "2.6L | Gasoline",
+            "2.6L | Diesel",
+            "2600CC"
             
         ],
         transmission:"5 speed manual / Smart Auto AMT",

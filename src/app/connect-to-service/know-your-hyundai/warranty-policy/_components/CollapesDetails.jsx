@@ -39,23 +39,23 @@ const CollapesDetails = () => {
                     <tbody>
                             <tr>
                                 <td className="border border-[#E4DCD3]">Creta</td>
-                                <td className="border border-[#E4DCD3]">3 years / Unlimited Kms</td>
+                                <td className="border border-[#E4DCD3]">Up to 5 years / 100,000 Kms whichever comes earlier</td>
                             </tr>
                             <tr>
                                 <td className="border border-[#E4DCD3]">Tucson</td>
-                                <td className="border border-[#E4DCD3]">3 years / Unlimited Kms</td>
+                                <td className="border border-[#E4DCD3]">Up to 5 years / 100,000 Kms whichever comes earlier</td>
                             </tr>
                             <tr>
                                 <td className="border border-[#E4DCD3]">STARGAZER</td>
-                                <td className="border border-[#E4DCD3]">3 years / Unlimited Kms</td>
+                                <td className="border border-[#E4DCD3]">5 years / 100,000 Kms whichever comes earlier</td>
                             </tr>
                             <tr>
                                 <td className="border border-[#E4DCD3]">Palisade</td>
-                                <td className="border border-[#E4DCD3]">3 years / Unlimited Kms</td>
+                                <td className="border border-[#E4DCD3]">3 years / 100,000 Kms whichever comes earlier</td>
                             </tr>
                             <tr>
                                 <td className="border border-[#E4DCD3]">Creta Grand</td>
-                                <td className="border border-[#E4DCD3]">3 years / Unlimited Kms</td>
+                                <td className="border border-[#E4DCD3]">Up to 5 years / 100,000 Kms whichever comes earlier</td>
                             </tr>
                     </tbody>
                 </table>
